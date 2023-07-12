@@ -1,0 +1,2 @@
+Code addapted from AlejoG10's Python Chess
+Available @ https://github.com/AlejoG10/python-chess-ai-yt/

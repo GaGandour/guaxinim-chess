@@ -1,2 +1,4 @@
 __pycache__/
 *.ipynb
+poetry.lock
+pyproject.toml
