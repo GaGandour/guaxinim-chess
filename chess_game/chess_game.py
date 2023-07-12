@@ -114,24 +114,24 @@ class ChessEngine:
     def __init__(self) -> None:
         self.games_dictionary = dict()
 
-        self.alpha: float = None
-        self.beta: float = None
+        # self.alpha: float = None
+        # self.beta: float = None
 
     def best_move(self, chess_game: ChessGame) -> chess.Move:
         """
         Returns predicted best move given a chess game.
         """
-        # alpha_beta_function = self._alpha_beta_fail_soft_recursion
-        alpha_beta_function = self._alpha_beta_fail_hard_recursion
+        alpha_beta_function = self._alpha_beta_fail_soft_recursion
+        # alpha_beta_function = self._alpha_beta_fail_hard_recursion
         assert not chess_game.has_finished()
         white = chess_game.white_to_play()
-        self.alpha = -inf
-        self.beta = +inf
+        alpha = -inf
+        beta = +inf
         best_move = None
         best_move_value = None
         for move in chess_game.legal_moves():
             chess_game.play(move)
-            value = alpha_beta_function(chess_game, ChessEngine.DEPTH - 1)
+            value = alpha_beta_function(chess_game, ChessEngine.DEPTH - 1, alpha, beta)
             chess_game.pop_play()
             if best_move is None:
                 best_move = move
@@ -148,53 +148,53 @@ class ChessEngine:
                 best_move = move
         return best_move
 
-    def _alpha_beta_fail_hard_recursion(self, chess_game: ChessGame, depth: int) -> float:
+    def _alpha_beta_fail_hard_recursion(self, chess_game: ChessGame, depth: int, alpha, beta) -> float:
         if depth == 0 or chess_game.has_finished():
             return self._evaluate_game_node(chess_game)
         if chess_game.white_to_play():
             value = -inf
             for move in chess_game.legal_moves():
                 chess_game.play(move)
-                alpha_beta = self._alpha_beta_fail_hard_recursion(chess_game, depth - 1)
+                alpha_beta = self._alpha_beta_fail_hard_recursion(chess_game, depth - 1, alpha, beta)
                 chess_game.pop_play()
                 value = max(value, alpha_beta)
-                if value > self.beta:
+                if value > beta:
                     break
-                self.alpha = max(self.alpha, value)
+                alpha = max(alpha, value)
             return value
         # if black:
         value = +inf
         for move in chess_game.legal_moves():
             chess_game.play(move)
-            alpha_beta = self._alpha_beta_fail_hard_recursion(chess_game, depth - 1)
+            alpha_beta = self._alpha_beta_fail_hard_recursion(chess_game, depth - 1, alpha, beta)
             chess_game.pop_play()
             value = min(value, alpha_beta)
-            if value < self.alpha:
+            if value < alpha:
                 break
-            self.beta = min(self.beta, value)
+            beta = min(beta, value)
         return value
 
-    def _alpha_beta_fail_soft_recursion(self, chess_game: ChessGame, depth: int) -> float:
+    def _alpha_beta_fail_soft_recursion(self, chess_game: ChessGame, depth: int, alpha, beta) -> float:
         if depth == 0 or chess_game.has_finished():
             return self._evaluate_game_node(chess_game)
         if chess_game.white_to_play():
             value = -inf
             for move in chess_game.legal_moves():
                 chess_game.play(move)
-                alpha_beta = self._alpha_beta_fail_soft_recursion(chess_game, depth - 1)
+                alpha_beta = self._alpha_beta_fail_soft_recursion(chess_game, depth - 1, alpha, beta)
                 chess_game.pop_play()
                 value = max(value, alpha_beta)
-                if value >= self.beta:
+                if value >= beta:
                     break
             return value
         # if black:
         value = +inf
         for move in chess_game.legal_moves():
             chess_game.play(move)
-            alpha_beta = self._alpha_beta_fail_soft_recursion(chess_game, depth - 1)
+            alpha_beta = self._alpha_beta_fail_soft_recursion(chess_game, depth - 1, alpha, beta)
             chess_game.pop_play()
             value = min(value, alpha_beta)
-            if value <= self.alpha:
+            if value <= alpha:
                 break
         return value
 
