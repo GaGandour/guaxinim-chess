@@ -2,7 +2,7 @@ import pygame
 import sys
 
 from chess_interface.src.const import *
-from chess_interface.src.game import Game
+from chess_interface.src.interface import Interface
 from chess_interface.src.square import Square
 from chess_interface.src.move import Move
 
@@ -12,22 +12,22 @@ class Main:
         pygame.init()
         self.screen = pygame.display.set_mode( (WIDTH, HEIGHT) )
         pygame.display.set_caption('Chess')
-        self.game = Game()
+        self.interface = Interface()
 
     def mainloop(self):
         
         screen = self.screen
-        game = self.game
-        board = self.game.board
-        dragger = self.game.dragger
+        interface = self.interface
+        board = self.interface.board
+        dragger = self.interface.dragger
 
         while True:
             # show methods
-            game.show_bg(screen)
-            game.show_last_move(screen)
-            game.show_moves(screen)
-            game.show_pieces(screen)
-            game.show_hover(screen)
+            interface.show_bg(screen)
+            interface.show_last_move(screen)
+            interface.show_moves(screen)
+            interface.show_pieces(screen)
+            interface.show_hover(screen)
 
             if dragger.dragging:
                 dragger.update_blit(screen)
@@ -45,31 +45,31 @@ class Main:
                     if board.squares[clicked_row][clicked_col].has_piece():
                         piece = board.squares[clicked_row][clicked_col].piece
                         # valid piece (color) ?
-                        if piece.color == game.next_player:
+                        if piece.color == interface.next_player:
                             board.calc_moves(piece, clicked_row, clicked_col, bool=True)
                             dragger.save_initial(event.pos)
                             dragger.drag_piece(piece)
                             # show methods 
-                            game.show_bg(screen)
-                            game.show_last_move(screen)
-                            game.show_moves(screen)
-                            game.show_pieces(screen)
+                            interface.show_bg(screen)
+                            interface.show_last_move(screen)
+                            interface.show_moves(screen)
+                            interface.show_pieces(screen)
                 
                 # mouse motion
                 elif event.type == pygame.MOUSEMOTION:
                     motion_row = event.pos[1] // SQSIZE
                     motion_col = event.pos[0] // SQSIZE
 
-                    game.set_hover(motion_row, motion_col)
+                    interface.set_hover(motion_row, motion_col)
 
                     if dragger.dragging:
                         dragger.update_mouse(event.pos)
                         # show methods
-                        game.show_bg(screen)
-                        game.show_last_move(screen)
-                        game.show_moves(screen)
-                        game.show_pieces(screen)
-                        game.show_hover(screen)
+                        interface.show_bg(screen)
+                        interface.show_last_move(screen)
+                        interface.show_moves(screen)
+                        interface.show_pieces(screen)
+                        interface.show_hover(screen)
                         dragger.update_blit(screen)
                 
                 # click release
@@ -95,13 +95,13 @@ class Main:
                             board.set_true_en_passant(dragger.piece)                            
 
                             # sounds
-                            game.play_sound(captured)
+                            interface.play_sound(captured)
                             # show methods
-                            game.show_bg(screen)
-                            game.show_last_move(screen)
-                            game.show_pieces(screen)
+                            interface.show_bg(screen)
+                            interface.show_last_move(screen)
+                            interface.show_pieces(screen)
                             # next turn
-                            game.next_turn()
+                            interface.next_turn()
                     
                     dragger.undrag_piece()
                 
@@ -110,14 +110,14 @@ class Main:
                     
                     # changing themes
                     if event.key == pygame.K_t:
-                        game.change_theme()
+                        interface.change_theme()
 
                      # changing themes
                     if event.key == pygame.K_r:
-                        game.reset()
-                        game = self.game
-                        board = self.game.board
-                        dragger = self.game.dragger
+                        interface.reset()
+                        interface = self.interface
+                        board = self.interface.board
+                        dragger = self.interface.dragger
 
                 # quit application
                 elif event.type == pygame.QUIT:

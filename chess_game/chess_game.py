@@ -15,9 +15,16 @@ class ChessGame:
     def legal_moves(self) -> List[chess.Move]:
         """
         Returns a list containing all the legal moves for the
-        current position.
+        current board state.
         """
         return list(self.board.legal_moves)
+    
+    def piece_legal_moves(self, piece_pos: str):
+        """
+        Returns a list containing all the legal moves for a
+        given piece. 
+        """
+        return [move for move in self.legal_moves() if move[0:2] == piece_pos]
 
     def play(self, move: Union[str, chess.Move]) -> None:
         """
@@ -40,6 +47,15 @@ class ChessGame:
             self._play_move_from_chess_move_class(move)
         else:
             raise ValueError("move is neither a string nor a chess.Move")
+        
+    def board_matrix(self) -> List[List[str]]:
+        """
+        Returns a matrix in which each element corresponds
+        to a piece or a blank square (".") in the board.
+        """
+        matrix = str(self.board).split("\n")
+        matrix = [line.split(' ') for line in matrix]
+        return matrix
 
     def has_finished(self) -> bool:
         """

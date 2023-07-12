@@ -1,15 +1,19 @@
+from chess_game.chess_game import ChessGame
+
 from chess_interface.src.const import *
 from chess_interface.src.square import Square
 from chess_interface.src.piece import *
 from chess_interface.src.move import Move
 from chess_interface.src.sound import Sound
+
 import copy
 import os
 
 class Board:
     def __init__(self):
-        self.squares = [[0, 0, 0, 0, 0, 0, 0, 0] for col in range(COLS)]
-        self.last_move = None
+        self.squares: Square = [[None]*ROWS for col in range(COLS)]
+        self.last_move: Move = None
+        self.chess_game: ChessGame = ChessGame()
         self._create()
         self._add_pieces('white')
         self._add_pieces('black')
@@ -98,6 +102,8 @@ class Board:
         '''
             Calculate all the possible (valid) moves of an specific piece on a specific position
         '''
+        print(row)
+        # chess_moves = self.chess_game.piece_legal_moves("d8")
         
         def pawn_moves():
             # steps

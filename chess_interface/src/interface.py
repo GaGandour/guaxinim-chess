@@ -6,7 +6,7 @@ from chess_interface.src.dragger import Dragger
 from chess_interface.src.config import Config
 from chess_interface.src.square import Square
 
-class Game:
+class Interface:
 
     def __init__(self):
         self.next_player = 'white'
@@ -55,7 +55,6 @@ class Game:
                 # piece ?
                 if self.board.squares[row][col].has_piece():
                     piece = self.board.squares[row][col].piece
-                    
                     # all pieces except dragger piece
                     if piece is not self.dragger.piece:
                         piece.set_texture(size=80)
