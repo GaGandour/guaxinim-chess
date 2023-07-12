@@ -6,12 +6,17 @@ from copy import deepcopy
 
 class ChessGame:
     def __init__(self, board: chess.Board = None) -> None:
+        self.board: chess.Board = None
         if board is None:
             self.board = chess.Board()
         else:
             self.board = board
 
     def legal_moves(self) -> List[chess.Move]:
+        """
+        Returns a list containing all the legal moves for the
+        current position.
+        """
         return list(self.board.legal_moves)
 
     def play(self, move: Union[str, chess.Move]) -> None:
@@ -37,20 +42,44 @@ class ChessGame:
             raise ValueError("move is neither a string nor a chess.Move")
 
     def has_finished(self) -> bool:
+        """
+        Returns True if the game has
+        finished. Returns False otherwise.
+        """
         if self.board.result() == "*":
             return False
         return True
 
+    def pop_play(self) -> None:
+        """
+        Undo one move.
+        """
+        self.board.pop()
+
     def white_to_play(self) -> bool:
+        """
+        Returns True if it's white's turn.
+        Returns False otherwise.
+        """
         return self.board.turn
 
     def child_game_copy(self, move: Union[str, chess.Move]) -> "ChessGame":
+        """
+        Do not use this method.
+
+        Returns a copy of what a chess game would be if the
+        given move is played.
+        """
         child_game_board = deepcopy(self.board)
         child_game = ChessGame(board=child_game_board)
         child_game.play(move)
         return child_game
-    
+
     def hash_game(self) -> str:
+        """
+        Returns the current board's FEN. It's a string that
+        represents the board and current state of the game.
+        """
         return self.board.fen()
 
     def _play_move_from_string(self, move: str) -> None:
@@ -58,6 +87,7 @@ class ChessGame:
 
     def _play_move_from_chess_move_class(self, move: chess.Move) -> None:
         self.board.push(move)
+
 
 class ChessGameByFen(ChessGame):
     def __init__(self, fen: str) -> None:
@@ -82,13 +112,17 @@ class ChessEngine:
     }
 
     def __init__(self) -> None:
-        # For storing calculated games and optimize time
         self.games_dictionary = dict()
 
         self.alpha: float = None
         self.beta: float = None
 
     def best_move(self, chess_game: ChessGame) -> chess.Move:
+        """
+        Returns predicted best move given a chess game.
+        """
+        # alpha_beta_function = self._alpha_beta_fail_soft_recursion
+        alpha_beta_function = self._alpha_beta_fail_hard_recursion
         assert not chess_game.has_finished()
         white = chess_game.white_to_play()
         self.alpha = -inf
@@ -96,8 +130,9 @@ class ChessEngine:
         best_move = None
         best_move_value = None
         for move in chess_game.legal_moves():
-            child_game = chess_game.child_game_copy(move)
-            value = self._alpha_beta_fail_hard_recursion(child_game, ChessEngine.DEPTH-1)
+            chess_game.play(move)
+            value = alpha_beta_function(chess_game, ChessEngine.DEPTH - 1)
+            chess_game.pop_play()
             if best_move is None:
                 best_move = move
                 best_move_value = value
@@ -119,8 +154,9 @@ class ChessEngine:
         if chess_game.white_to_play():
             value = -inf
             for move in chess_game.legal_moves():
-                child_game = chess_game.child_game_copy(move)
-                alpha_beta = self._alpha_beta_fail_hard_recursion(child_game, depth - 1)
+                chess_game.play(move)
+                alpha_beta = self._alpha_beta_fail_hard_recursion(chess_game, depth - 1)
+                chess_game.pop_play()
                 value = max(value, alpha_beta)
                 if value > self.beta:
                     break
@@ -129,8 +165,9 @@ class ChessEngine:
         # if black:
         value = +inf
         for move in chess_game.legal_moves():
-            child_game = chess_game.child_game_copy(move)
-            alpha_beta = self._alpha_beta_fail_hard_recursion(child_game, depth - 1)
+            chess_game.play(move)
+            alpha_beta = self._alpha_beta_fail_hard_recursion(chess_game, depth - 1)
+            chess_game.pop_play()
             value = min(value, alpha_beta)
             if value < self.alpha:
                 break
@@ -143,8 +180,9 @@ class ChessEngine:
         if chess_game.white_to_play():
             value = -inf
             for move in chess_game.legal_moves():
-                child_game = chess_game.child_game_copy(move)
-                alpha_beta = self._alpha_beta_fail_soft_recursion(child_game, depth - 1)
+                chess_game.play(move)
+                alpha_beta = self._alpha_beta_fail_soft_recursion(chess_game, depth - 1)
+                chess_game.pop_play()
                 value = max(value, alpha_beta)
                 if value >= self.beta:
                     break
@@ -152,8 +190,9 @@ class ChessEngine:
         # if black:
         value = +inf
         for move in chess_game.legal_moves():
-            child_game = chess_game.child_game_copy(move)
-            alpha_beta = self._alpha_beta_fail_soft_recursion(child_game, depth - 1)
+            chess_game.play(move)
+            alpha_beta = self._alpha_beta_fail_soft_recursion(chess_game, depth - 1)
+            chess_game.pop_play()
             value = min(value, alpha_beta)
             if value <= self.alpha:
                 break
@@ -165,7 +204,6 @@ class ChessEngine:
         """
         game_hash = game.hash_game()
         if game_hash not in self.games_dictionary:
-
             self.games_dictionary[game_hash] = self._dummy_evaluation(game.board)
         return self.games_dictionary[game_hash]
 

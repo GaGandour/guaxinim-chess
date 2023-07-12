@@ -1,6 +1,7 @@
 from typing import List
 from chess import Move
 
+
 class Puzzle:
     def __init__(self, puzzle_string: str) -> None:
         self.puzzle_string: str = puzzle_string
@@ -17,7 +18,7 @@ class Puzzle:
         self.parse_puzzle(puzzle_string)
 
     def parse_puzzle(self, puzzle_string: str) -> None:
-        fields = puzzle_string.split(',')
+        fields = puzzle_string.split(",")
         self.puzzle_id = fields[0]
         self.fen = fields[1]
         moves_strings = fields[2].split(" ")
