@@ -19,7 +19,7 @@ class ChessGame:
         """
         return list(self.board.legal_moves)
     
-    def piece_legal_moves(self, piece_pos: str):
+    def piece_legal_moves(self, piece_pos: str) -> List[chess.Move]:
         """
         Returns a list containing all the legal moves for a
         given piece. 
