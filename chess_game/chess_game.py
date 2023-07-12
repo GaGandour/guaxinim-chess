@@ -59,6 +59,11 @@ class ChessGame:
     def _play_move_from_chess_move_class(self, move: chess.Move) -> None:
         self.board.push(move)
 
+class ChessGameByFen(ChessGame):
+    def __init__(self, fen: str) -> None:
+        board = chess.Board(fen)
+        super().__init__(board)
+
 
 class ChessEngine:
     MATE_PUNCTUATION = 40
@@ -110,7 +115,7 @@ class ChessEngine:
 
     def _alpha_beta_fail_hard_recursion(self, chess_game: ChessGame, depth: int) -> float:
         if depth == 0 or chess_game.has_finished():
-            return self._evaluate_game_node(chess_game.board)
+            return self._evaluate_game_node(chess_game)
         if chess_game.white_to_play():
             value = -inf
             for move in chess_game.legal_moves():
@@ -134,7 +139,7 @@ class ChessEngine:
 
     def _alpha_beta_fail_soft_recursion(self, chess_game: ChessGame, depth: int) -> float:
         if depth == 0 or chess_game.has_finished():
-            return self._evaluate_game_node(chess_game.board)
+            return self._evaluate_game_node(chess_game)
         if chess_game.white_to_play():
             value = -inf
             for move in chess_game.legal_moves():
@@ -154,11 +159,15 @@ class ChessEngine:
                 break
         return value
 
-    def _evaluate_game_node(self, board: chess.Board) -> float:
+    def _evaluate_game_node(self, game: ChessGame) -> float:
         """
         Evaluates the advantage or disadvantage of white pieces in a board.
         """
-        return self._dummy_evaluation(board)
+        game_hash = game.hash_game()
+        if game_hash not in self.games_dictionary:
+
+            self.games_dictionary[game_hash] = self._dummy_evaluation(game.board)
+        return self.games_dictionary[game_hash]
 
     def _dummy_evaluation(self, board: chess.Board) -> float:
         # DUMMY EVALUATION
