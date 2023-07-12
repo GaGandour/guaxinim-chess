@@ -97,7 +97,7 @@ class ChessEngine:
         best_move_value = None
         for move in chess_game.legal_moves():
             child_game = chess_game.child_game_copy(move)
-            value = self._alpha_beta_fail_hard_recursion(child_game, ChessEngine.DEPTH)
+            value = self._alpha_beta_fail_hard_recursion(child_game, ChessEngine.DEPTH-1)
             if best_move is None:
                 best_move = move
                 best_move_value = value

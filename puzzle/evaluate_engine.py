@@ -1,5 +1,6 @@
 from chess_game.chess_game import ChessEngine, ChessGameByFen
 from puzzle.puzzle_parser.puzzle_parser import Puzzle
+from time import time
 
 global_counter = 1
 
@@ -30,14 +31,18 @@ def evaluate_engine_by_category(category: str, limit = None) -> float:
     chess_engine = ChessEngine()
     total_count = 0
     correct_count = 0
+    total_time = 0
     with open(file_name, "r") as f:
         for line in f:
             puzzle = Puzzle(line)
+            start = time()
             if engine_solves_puzzle(puzzle, chess_engine):
                 correct_count += 1
+            total_time += time() - start
             total_count += 1
             if limit:
                 if total_count >= limit:
                     break
+    print(f"Average time for category {category}: {total_time/total_count} s",)
     return correct_count/total_count
 
