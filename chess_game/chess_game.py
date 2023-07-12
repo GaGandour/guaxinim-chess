@@ -49,6 +49,9 @@ class ChessGame:
         child_game = ChessGame(board=child_game_board)
         child_game.play(move)
         return child_game
+    
+    def hash_game(self) -> str:
+        return self.board.fen()
 
     def _play_move_from_string(self, move: str) -> None:
         self.board.push(chess.Move.from_uci(move))
