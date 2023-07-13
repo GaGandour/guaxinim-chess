@@ -104,7 +104,9 @@ class ChessGame:
         Returns the current board's FEN. It's a string that
         represents the board and current state of the game.
         """
-        return self.board.fen()
+        fen = self.board.fen()
+        hash = " ".join(fen.split(" ")[:-2])
+        return hash
 
     def _play_move_from_string(self, move: str) -> None:
         self.board.push(chess.Move.from_uci(move))
