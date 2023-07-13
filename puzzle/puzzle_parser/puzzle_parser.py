@@ -8,6 +8,7 @@ class Puzzle:
         self.puzzle_id: str = None
         self.fen: str = None
         self.moves: List[Move] = None
+        self.num_moves: int = None
         self.rating: int = None
         self.rating_deviation: int = None
         self.popularity: int = None
@@ -23,6 +24,7 @@ class Puzzle:
         self.fen = fields[1]
         moves_strings = fields[2].split(" ")
         self.moves = [Move.from_uci(move_string) for move_string in moves_strings]
+        self.num_moves = len(self.moves) // 2
         self.rating = int(fields[3])
         self.rating_deviation = int(fields[4])
         self.popularity = int(fields[5])

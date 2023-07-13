@@ -20,7 +20,7 @@ class ChessGame:
         current board state.
         """
         legal_moves = list(self.board.legal_moves)
-        # legal_moves = sorted(legal_moves, key = lambda m: self._move_score(m))
+        legal_moves = sorted(legal_moves, key = lambda m: self._move_score(m))
         return legal_moves
     
     def _move_score(self, move: chess.Move) -> int:
@@ -139,7 +139,7 @@ class ChessGameByFen(ChessGame):
 
 class ChessEngine:
     MATE_PUNCTUATION = 100
-    DEPTH = 3
+    DEPTH = 5
     PUNCTUATIONS = {
         "R": 5,
         "N": 3,

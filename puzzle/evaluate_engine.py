@@ -15,13 +15,16 @@ def engine_solves_puzzle(puzzle: Puzzle, engine: ChessEngine) -> bool:
     num_moves = len(moves)
     assert num_moves % 2 == 0
     num_moves = num_moves // 2
+    total_time = 0
     for i in range(num_moves):
         game.play(moves[2 * i])
+        start = time()
         predicted_move = engine.best_move(game)
+        total_time += time() - start
         if predicted_move != moves[2 * i + 1]:
-            return False
+            return False, total_time/(i+1)
         game.play(predicted_move)
-    return True
+    return True, total_time/num_moves
 
 
 def evaluate_engine_by_category(category: str, limit=None) -> float:
@@ -34,18 +37,19 @@ def evaluate_engine_by_category(category: str, limit=None) -> float:
         for line in f:
             chess_engine = ChessEngine()
             puzzle = Puzzle(line)
-            start = time()
-            if engine_solves_puzzle(puzzle, chess_engine):
+            
+            success, average_time_per_move = engine_solves_puzzle(puzzle, chess_engine)
+            if success:
                 correct_count += 1
             else:
                 with open(report_file_name, "a") as rf:
                     rf.write(f"{puzzle.puzzle_id}\n")
-            total_time += time() - start
+            total_time += average_time_per_move
             total_count += 1
             if limit:
                 if total_count >= limit:
                     break
 
     score = correct_count / total_count
-    average_time = total_time / total_count
-    return score, average_time
+    average_time_per_move = total_time / total_count
+    return score, average_time_per_move
