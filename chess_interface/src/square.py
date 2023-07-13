@@ -11,7 +11,6 @@ class Square:
         self.piece = piece
         self.alphacol = Square.ALPHACOLS[col]
         self.position = self.row_col_to_position(row, col)
-        
     
     def row_col_to_position(self, row, col) -> str:
         position = Square.ALPHACOLS[col] + str(8-row)

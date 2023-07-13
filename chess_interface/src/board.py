@@ -29,7 +29,6 @@ class Board:
 
 
     def set_true_en_passant(self, piece):
-        
         if not isinstance(piece, Pawn):
             return
 
@@ -40,21 +39,6 @@ class Board:
         
         piece.en_passant = True
 
-    def in_check(self, piece, move):
-        temp_piece = copy.deepcopy(piece)
-        temp_board = copy.deepcopy(self)
-        temp_board.move(temp_piece, move, testing=True)
-        
-        for row in range(ROWS):
-            for col in range(COLS):
-                if temp_board.squares[row][col].has_enemy_piece(piece.color):
-                    p = temp_board.squares[row][col].piece
-                    temp_board.calc_moves(p, row, col, bool=False)
-                    for m in p.moves:
-                        if isinstance(m.final.piece, King):
-                            return True
-        
-        return False
 
     def calc_moves(self, row, col) -> List[Move]:
         '''
@@ -62,11 +46,12 @@ class Board:
         '''
         initial_square = Square(row, col)
         position = initial_square.position
-        chess_legal_moves = self.chess_game.piece_legal_moves(position)
-        chess_legal_finals = [str(move[2:]) for move in chess_legal_moves]
-        final_squares_row_cols = [initial_square.position_to_row_col(p) for p in chess_legal_finals]
-        final_squares = [Square(row=r[0], col=r[0]) for r in final_squares_row_cols]
+        chess_legal_moves = self.chess_game.piece_legal_moves(position) # chess.Moves
+        chess_legal_finals = [str(move[2:]) for move in chess_legal_moves] # "a8" com o ultimo quadrado do movimento
+        final_squares_row_cols = [initial_square.position_to_row_col(p) for p in chess_legal_finals] # (0, 1)
+        final_squares = [Square(row=r[0], col=r[1]) for r in final_squares_row_cols]
         moves = [Move(initial=initial_square, final=final_square) for final_square in final_squares]
+        return moves
 
     def _create(self):
         for row in range(ROWS):
