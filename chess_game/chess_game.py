@@ -1,4 +1,5 @@
 import chess
+import json
 from typing import Union, List
 from math import inf
 from copy import deepcopy
@@ -48,6 +49,13 @@ class ChessGame:
         else:
             raise ValueError("move is neither a string nor a chess.Move")
         
+    def play_by_san(self, move: str) -> None:
+        self.board.push_san(move)
+
+    def parse_san(self, move: str) -> chess.Move:
+        return self.board.parse_san(move)
+
+
     def board_matrix(self) -> List[List[str]]:
         """
         Returns a matrix in which each element corresponds
@@ -129,6 +137,9 @@ class ChessEngine:
 
     def __init__(self) -> None:
         self.games_dictionary = dict()
+        self.opening_sheet = dict()
+        with open("opening_parser/opening_sheet.json", "r") as f:
+            self.opening_sheet = json.load(f)
 
         # self.alpha: float = None
         # self.beta: float = None
@@ -137,6 +148,10 @@ class ChessEngine:
         """
         Returns predicted best move given a chess game.
         """
+        opening_move = self._try_to_get_opening_move(chess_game)
+        if opening_move is not None:
+            return opening_move
+        
         alpha_beta_function = self._alpha_beta_fail_soft_recursion
         # alpha_beta_function = self._alpha_beta_fail_hard_recursion
         assert not chess_game.has_finished()
@@ -163,6 +178,12 @@ class ChessEngine:
                 best_move_value = value
                 best_move = move
         return best_move
+    
+    def _try_to_get_opening_move(self, chess_game: ChessGame) -> chess.Move:
+        move = self.opening_sheet.get(chess_game.hash_game(), None)
+        if move is None:
+            return None
+        return chess.Move.from_uci(move)
 
     def _alpha_beta_fail_hard_recursion(self, chess_game: ChessGame, depth: int, alpha, beta) -> float:
         if depth == 0 or chess_game.has_finished():
