@@ -139,7 +139,7 @@ class ChessGameByFen(ChessGame):
 
 class ChessEngine:
     MATE_PUNCTUATION = 100
-    DEPTH = 5
+    DEPTH = 7
     PUNCTUATIONS = {
         "R": 5,
         "N": 3,
@@ -158,6 +158,7 @@ class ChessEngine:
         self.tree_values_memory = dict()
         self.tree_moves_memory = dict()
         self.tree_height_memory = dict()
+        self.tree_time_memory = dict()
         self.opening_sheet = dict()
         with open("opening_parser/opening_sheet.json", "r") as f:
             self.opening_sheet = json.load(f)
@@ -180,13 +181,14 @@ class ChessEngine:
 
         stored_positions = [position for position in self.tree_height_memory]
         for position in stored_positions:
-            stored_height = self.tree_height_memory[position]
-            if stored_height == 0:
+            remaining_time = self.tree_time_memory[position]
+            if remaining_time == 0:
                 del self.tree_values_memory[position]
                 del self.tree_moves_memory[position]
                 del self.tree_height_memory[position]
+                del self.tree_time_memory[position]
             else:
-                self.tree_height_memory[position] -= 1
+                self.tree_time_memory[position] -= 1
         return best_move
     
     def _try_to_get_opening_move(self, chess_game: ChessGame) -> chess.Move:
@@ -249,6 +251,7 @@ class ChessEngine:
         self.tree_values_memory[game_hash] = alpha_beta_value
         self.tree_moves_memory[game_hash] = move
         self.tree_height_memory[game_hash] = height
+        self.tree_time_memory[game_hash] = height + 1
         return alpha_beta_value, move
 
     def _evaluate_game_node(self, game: ChessGame) -> float:
