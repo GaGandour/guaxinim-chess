@@ -4,6 +4,7 @@ from typing import List
 
 opening_sheet = dict()
 opening_probabilities = dict()
+opening_length = dict()
 
 def parse_opening(opening_string: str) -> List[str]:
     moves = opening_string.split(" ")
@@ -18,6 +19,7 @@ with open("opening_parser/Guaxinim Chess Openings - FinalTable.csv") as opening_
         count += 1
         if count == 1:
             continue
+        # print(count)
         fields = line.split(",")
         white_probability = float(fields[0][:-1])
         black_probability = float(fields[1][:-1])
@@ -25,15 +27,19 @@ with open("opening_parser/Guaxinim Chess Openings - FinalTable.csv") as opening_
         if opening[-1] == '\n':
             opening = opening[:-1]
         moves = parse_opening(opening)
+        num_moves = len(moves)
         chess_game = ChessGame()
         for move in moves:
-            probability = opening_probabilities.get(chess_game.hash_game(), 0)
-            current_probability = black_probability
-            if chess_game.white_to_play():
-                current_probability = white_probability
+            # probability = opening_probabilities.get(chess_game.hash_game(), 0)
+            board_num_moves = opening_length.get(chess_game.hash_game(), 0)
+            # current_probability = black_probability
+            # if chess_game.white_to_play():
+            #     current_probability = white_probability
 
-            if current_probability > probability:
-                opening_probabilities[chess_game.hash_game()] = white_probability
+            # if current_probability > probability:
+            if num_moves > board_num_moves:
+                # opening_probabilities[chess_game.hash_game()] = white_probability
+                opening_length[chess_game.hash_game()] = num_moves
                 opening_sheet[chess_game.hash_game()] = str(chess_game.parse_san(move))
             
             chess_game.play_by_san(move)

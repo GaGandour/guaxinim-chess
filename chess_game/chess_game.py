@@ -139,7 +139,6 @@ class ChessGameByFen(ChessGame):
 
 class ChessEngine:
     MATE_PUNCTUATION = 100
-    DEPTH = 7
     PUNCTUATIONS = {
         "R": 5,
         "N": 3,
@@ -153,13 +152,14 @@ class ChessEngine:
         "p": -1,
     }
 
-    def __init__(self) -> None:
+    def __init__(self, depth: int= 6) -> None:
         self.games_dictionary = dict()
         self.tree_values_memory = dict()
         self.tree_moves_memory = dict()
         self.tree_height_memory = dict()
         self.tree_time_memory = dict()
         self.opening_sheet = dict()
+        self.depth = depth
         with open("opening_parser/opening_sheet.json", "r") as f:
             self.opening_sheet = json.load(f)
 
@@ -177,7 +177,7 @@ class ChessEngine:
         
         alpha = -inf
         beta = +inf
-        _, best_move = alpha_beta_function(chess_game, ChessEngine.DEPTH, alpha, beta)
+        _, best_move = alpha_beta_function(chess_game, self.depth, alpha, beta)
 
         stored_positions = [position for position in self.tree_height_memory]
         for position in stored_positions:
@@ -238,6 +238,7 @@ class ChessEngine:
         return self._store_node_alpha_beta_value(chess_game, best_value, best_move, depth)
     
     def _get_node_alpha_beta_value_and_move(self, game: ChessGame, height: int) -> Tuple[float, chess.Move]:
+        # return None, None
         game_hash = game.hash
         stored_height = self.tree_height_memory.get(game_hash, None)
         if stored_height is None:
@@ -247,6 +248,7 @@ class ChessEngine:
         return None, None
     
     def _store_node_alpha_beta_value(self, game: ChessGame, alpha_beta_value: float, move: chess.Move, height: int) -> Tuple[float, chess.Move]:
+        # return alpha_beta_value, move
         game_hash = game.hash
         self.tree_values_memory[game_hash] = alpha_beta_value
         self.tree_moves_memory[game_hash] = move

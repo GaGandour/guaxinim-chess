@@ -1,429 +1,1058 @@
-White Win %,Black Win %,Moves
-42.30%,32.90%,1.e4 Nf6 2.e5 Nd5 3.d4 d6 4.c4 Nb6 5.f4 dxe5 6.fxe5 Nc6 7.Be3
-35.50%,41.90%,1.e4 Nf6 2.e5 Nd5 3.c4 Nb6 4.c5 Nd5 5.Nc3 e6 6.Bc4
-38.10%,40.30%,1.e4 Nf6 2.e5 Nd5 3.d4 d6 4.Nf3 Bg4 5.c4 Nb6 6.Be2
-46.70%,17.30%,1.e4 Nf6 2.e5 Nd5 3.d4 d6 4.Nf3 g6 5.Bc4 Nb6 6.Bb3 Bg7 7.a4
-38.60%,38.60%,1.d4 Nf6 2.c4 c5 3.d5 b5 4.cxb5 a6 5.bxa6 g6 6.Nc3 Bxa6 7.f4
-42.50%,29.30%,1.d4 Nf6 2.c4 c5 3.d5 b5 4.cxb5 a6 5.bxa6 Bxa6 6.Nc3 g6 7.Nf3 d6 8.g3 Bg7 9.Bg2
-44.00%,26.30%,1.d4 Nf6 2.c4 c5 3.d5 b5 4.cxb5 a6 5.bxa6 Bxa6 6.Nc3 d6 7.e4 Bxf1 8.Kxf1 g6 9.g3 Bg7 10.Kg2 O-O 11.Nf3
-38.80%,40.80%,1.d4 Nf6 2.c4 c5 3.d5 b5 4.cxb5 a6 5.bxa6 Bxa6 6.Nc3 d6 7.e4 Bxf1 8.Kxf1 g6 9.Nge2
-40.20%,35.10%,1.d4 Nf6 2.c4 c5 3.d5 b5 4.cxb5 a6 5.bxa6 Bxa6 6.Nc3 d6 7.e4
-37.90%,45.80%,1.d4 Nf6 2.c4 c5 3.d5 b5 4.cxb5 a6 5.Nc3 axb5 6.e4 b4 7.Nb5
-46.60%,33.00%,1.d4 Nf6 2.c4 c5 3.d5 e6 4.Nc3 exd5 5.cxd5 d6 6.e4 g6 7.Nf3 Bg7 8.Bg5
-44.60%,28.10%,1.d4 Nf6 2.c4 c5 3.d5 e6 4.Nc3 exd5 5.cxd5 d6 6.e4 g6 7.Nf3 Bg7 8.Be2 O-O 9.O-O Re8 10.Nd2 Na6 11.f3
-43.50%,32.20%,1.d4 Nf6 2.c4 c5 3.d5 e6 4.Nc3 exd5 5.cxd5 d6 6.e4 g6 7.Nf3 Bg7 8.Be2 O-O 9.O-O Re8 10.Nd2
-42.50%,35.10%,1.d4 Nf6 2.c4 c5 3.d5 e6 4.Nc3 exd5 5.cxd5 d6 6.e4 g6 7.Nf3 Bg7 8.Be2 O-O 9.O-O a6 10.a4
-36.00%,40.90%,1.d4 Nf6 2.c4 c5 3.d5 e6 4.Nc3 exd5 5.cxd5 d6 6.e4 g6 7.Nf3
-36.00%,35.70%,1.d4 Nf6 2.c4 c5 3.d5 e6 4.Nc3 exd5 5.cxd5 d6 6.e4 g6 7.Nf3 Bg7 8.Be2 O-O 9.O-O
-45.10%,25.80%,1.d4 Nf6 2.c4 c5 3.d5 e6 4.Nc3 exd5 5.cxd5 d6 6.e4 g6 7.Nf3 Bg7 8.h3
-38.70%,34.20%,1.d4 Nf6 2.c4 c5 3.d5 e6 4.Nc3 exd5 5.cxd5 d6 6.e4 g6 7.Nf3 Bg7 8.Be2
-44.70%,34.30%,1.d4 Nf6 2.c4 c5 3.d5 e6 4.Nc3 exd5 5.cxd5 d6 6.e4
-47.20%,27.00%,1.d4 Nf6 2.c4 c5 3.d5 e6 4.Nc3 exd5 5.cxd5 d6 6.Nf3 g6 7.Nd2
-48.40%,33.90%,1.d4 Nf6 2.c4 c5 3.d5 e6 4.Nc3 exd5 5.cxd5 d6 6.e4 g6 7.f4 Bg7 8.e5
-56.00%,29.50%,1.d4 Nf6 2.c4 c5 3.d5 e6 4.Nc3 exd5 5.cxd5 d6 6.e4 g6 7.f4
-50.30%,30.60%,1.d4 Nf6 2.c4 c5 3.d5 e6 4.Nc3 exd5 5.cxd5 d6 6.e4 g6 7.f4 Bg7 8.Bb5+
-43.70%,31.30%,1.d4 Nf6 2.c4 c5 3.d5 e6 4.Nc3 exd5 5.cxd5 d6 6.Nf3 g6 7.Bg5
-39.90%,37.60%,1.e4 c6 2.d4 d5 3.e5 Bf5 4.Nc3 e6 5.g4 Bg6 6.Nge2 c5 7.h4
-34.60%,31.80%,1.e4 c6 2.d3 d5 3.Nd2 g6 4.g3 Bg7 5.Bg2 e5 6.Ngf3 Ne7 7.O-O O-O 8.b4
-37.40%,25.90%,1.e4 c6 2.d4 d5 3.Nc3 dxe4 4.Nxe4 Bf5 5.Ng3 Bg6 6.Nh3
-36.30%,30.80%,1.e4 c6 2.d4 d5 3.Nc3 dxe4 4.Nxe4 Bf5 5.Ng3 Bg6 6.h4
-45.50%,29.70%,1.e4 c6 2.d4 d5 3.Nc3 dxe4 4.Nxe4 Bf5 5.Ng3 Bg6 6.f4
-36.70%,24.30%,1.e4 c6 2.d4 d5 3.Nc3 dxe4 4.Nxe4 Bf5 5.Ng3 Bg6 6.h4 h6 7.Nf3 Nd7 8.h5 Bh7 9.Bd3 Bxd3 10.Qxd3
-36.90%,32.00%,1.e4 c6 2.d4 d5 3.exd5 cxd5 4.Bd3 Nc6 5.c3 Nf6 6.Bf4
-32.70%,26.50%,1.e4 c6 2.d4 d5 3.Nc3 dxe4 4.Nxe4 Nf6 5.Nxf6+ exf6 6.Bc4
-39.90%,20.00%,1.e4 c6 2.d4 d5 3.Nc3 dxe4 4.Nxe4 Nd7 5.Ng5 Ngf6 6.Bd3 e6 7.N1f3 Bd6 8.Qe2 h6 9.Ne4 Nxe4 10.Qxe4
-38.00%,29.90%,1.e4 c6 2.d4 d5 3.Nc3 dxe4 4.Nxe4 Nd7 5.Nf3 Ngf6 6.Ng3
-40.40%,24.70%,1.e4 c6 2.d4 d5 3.Nc3 dxe4 4.Nxe4 Nd7 5.Bc4 Ngf6 6.Ng5 e6 7.Qe2 Nb6 8.Bb3
-66.70%,18.30%,1.e4 c6 2.d4 d5 3.f3 dxe4 4.fxe4 e5 5.Nf3 exd4 6.Bc4
-56.60%,14.40%,1.d4 Nf6 2.c4 e6 3.g3 d5 4.Bg2 Be7 5.Nf3 O-O 6.O-O Nbd7 7.Qc2
-51.20%,20.60%,1.d4 Nf6 2.c4 e6 3.g3 d5 4.Bg2 Be7 5.Nf3 O-O 6.O-O Nbd7 7.Nc3 c6 8.Qd3
-29.00%,30.30%,1.d4 Nf6 2.c4 e6 3.g3 d5 4.Bg2 dxc4 5.Qa4+ Nbd7 6.Qxc4
-41.30%,30.00%,1.d4 f5 2.c4 Nf6 3.g3 e6 4.Bg2 Be7 5.Nf3 O-O 6.O-O d6 7.Nc3 Qe8 8.Qc2
-52.00%,21.50%,1.d4 f5 2.c4 Nf6 3.g3 e6 4.Bg2 Be7 5.Nf3 O-O 6.O-O d6 7.Nc3 Qe8 8.b3
-52.70%,16.00%,1.d4 f5 2.c4 Nf6 3.g3 e6 4.Bg2 Be7 5.Nf3 O-O 6.O-O d5 7.b3 c6 8.Ba3
-40.20%,25.70%,1.d4 f5 2.c4 Nf6 3.g3 e6 4.Bg2 Be7 5.Nf3 O-O 6.O-O d5 7.b3
-32.90%,30.30%,1.c4 e5 2.Nc3 Nc6 3.g3 g6 4.Bg2 Bg7 5.d3 d6 6.e4
-39.20%,29.40%,1.c4 e5 2.Nc3 Nc6 3.Nf3 Nf6 4.e3 Bb4 5.Qc2 O-O 6.Nd5 Re8 7.Qf5
-27.00%,35.70%,1.c4 c5 2.Nc3 Nc6 3.g3 g6 4.Bg2 Bg7 5.Nf3 Nf6 6.O-O O-O 7.b3
-28.60%,27.40%,1.c4 c5 2.Nc3 Nc6 3.g3 g6 4.Bg2 Bg7 5.Nf3 Nf6 6.O-O O-O 7.d3
-43.70%,19.90%,1.c4 c5 2.Nc3 Nc6 3.g3 g6 4.Bg2 Bg7 5.Nf3 Nf6 6.O-O O-O 7.d4
-48.00%,24.80%,1.e4 e5 2.Nf3 Nc6 3.Nc3 Nf6 4.Bb5 Bb4 5.O-O O-O 6.d3
-36.20%,29.10%,1.e4 e5 2.Nf3 Nc6 3.Nc3 Nf6 4.Bb5 Bb4 5.O-O O-O 6.d3 Bxc3 7.bxc3 d6 8.Re1
-28.90%,23.10%,1.e4 e5 2.Nf3 Nc6 3.Nc3 Nf6 4.Bb5 Bb4 5.O-O O-O 6.Bxc6
-36.30%,22.40%,1.e4 e5 2.Nf3 Nc6 3.Nc3 Nf6 4.Bb5 Bb4 5.O-O O-O 6.d3 d6 7.Ne2
-43.90%,32.10%,1.e4 e6 2.d4 d5 3.e5 c5 4.c3 Nc6 5.Nf3 Qb6 6.a3
-41.60%,40.50%,1.e4 e6 2.d4 d5 3.e5 c5 4.c3 Nc6 5.Nf3 Qb6 6.Bd3
-48.90%,30.90%,1.e4 e6 2.d4 d5 3.Nc3 Nf6 4.Bg5 Be7 5.e5 Nfd7 6.h4
-50.20%,25.30%,1.e4 e6 2.d4 d5 3.Nc3 Nf6 4.Bg5 Be7 5.e5 Nfd7 6.Bxe7 Qxe7 7.Nb5
-45.80%,32.80%,1.e4 e6 2.d4 d5 3.Nc3 Nf6 4.Bg5 Be7 5.e5 Nfd7 6.Bxe7 Qxe7 7.Qg4
-42.00%,43.40%,1.e4 e6 2.d4 d5 3.Nc3 Nf6 4.Bg5 Be7 5.Bxf6 Bxf6 6.e5 Be7 7.Qg4
-51.20%,28.40%,1.e4 e6 2.d4 d5 3.Nc3 Nf6 4.Bg5 Be7 5.e5 Nfd7 6.Bxe7 Qxe7 7.Qd2
-44.40%,27.00%,1.e4 e6 2.d4 d5 3.Nc3 Nf6 4.Bg5 Be7 5.e5 Nfd7 6.Bxe7 Qxe7 7.f4
-46.50%,29.80%,1.e4 e6 2.d4 d5 3.Nc3 Nf6 4.Bg5 Bb4 5.e5 h6 6.Bh4
-26.10%,47.80%,1.e4 e6 2.d4 d5 3.Nc3 Nf6 4.Bg5 Bb4 5.e5 h6 6.exf6
-43.90%,28.40%,1.e4 e6 2.d4 d5 3.Nc3 Nf6 4.Bg5 Bb4 5.e5 h6 6.Bc1
-46.70%,31.00%,1.e4 e6 2.d4 d5 3.Nc3 Nf6 4.Bg5 Bb4 5.e5 h6 6.Be3
-50.00%,14.30%,1.e4 e6 2.d4 d5 3.Nc3 dxe4 4.Nxe4 Nd7 5.Nf3 Ngf6 6.Nxf6+ Nxf6 7.Ne5
-40.00%,33.10%,1.e4 e6 2.d4 d5 3.Nc3 Nf6 4.e5 Nfd7 5.f4 c5 6.Nf3
-42.40%,29.10%,1.e4 e6 2.d4 d5 3.Nc3 Nf6 4.e5 Nfd7 5.f4 c5 6.Nf3 Nc6 7.Be3
-41.60%,28.60%,1.e4 e6 2.d4 d5 3.Nd2 Nf6 4.e5 Nfd7 5.Bd3 c5 6.c3 Nc6 7.Ne2 cxd4 8.cxd4
-71.70%,11.30%,1.e4 e6 2.d4 d5 3.Nc3 Bb4 4.e5 c5 5.a3 cxd4 6.axb4 dxc3 7.Nf3
-43.80%,30.60%,1.e4 e6 2.d4 d5 3.Nc3 Bb4 4.e5 c5 5.a3 Bxc3+ 6.bxc3
-42.00%,29.40%,1.e4 e6 2.d4 d5 3.Nc3 Bb4 4.e5 c5 5.a3 Bxc3+ 6.bxc3 Ne7 7.a4
-37.90%,23.10%,1.e4 e6 2.d4 d5 3.Nc3 Bb4 4.e5 c5 5.Bd2 Ne7 6.f4
-48.80%,25.40%,1.e4 e6 2.d4 d5 3.Nc3 Bb4 4.exd5 exd5 5.Bd3 Ne7 6.Qh5
-43.90%,31.70%,1.e4 e6 2.d4 d5 3.Nc3 Bb4 4.Bd2 dxe4 5.Qg4 Nf6 6.Qxg7 Rg8 7.Qh6
-42.80%,28.90%,1.e4 e6 2.d4 d5 3.Nc3 Bb4 4.e5 c5 5.a3 Bxc3+ 6.bxc3 Ne7 7.Qg4
-45.20%,31.60%,1.e4 e6 2.d4 d5 3.Nc3 Bb4 4.e5 c5 5.a3 Bxc3+ 6.bxc3 Ne7 7.Qg4 Qc7 8.Qxg7 Rg8 9.Qxh7 cxd4 10.Ne2
-34.50%,40.40%,1.e4 e6 2.d4 d5 3.Nc3 Bb4 4.e5 c5 5.a3 Bxc3+ 6.bxc3 Ne7 7.Qg4 Qc7 8.Qxg7 Rg8 9.Qxh7 cxd4 10.Kd1
-39.60%,32.30%,1.e4 e6 2.d4 d5 3.Nc3 Bb4 4.e5 c5 5.a3 Bxc3+ 6.bxc3 Ne7 7.Nf3
-32.20%,24.40%,1.d4 Nf6 2.c4 g6 3.Nc3 d5 4.Bf4 Bg7 5.e3 O-O 6.cxd5 Nxd5 7.Nxd5 Qxd5 8.Bxc7
-37.60%,28.30%,1.d4 Nf6 2.c4 g6 3.Nc3 d5 4.Bf4 Bg7 5.e3 O-O 6.Rc1
-32.80%,33.00%,1.d4 Nf6 2.c4 g6 3.Nc3 d5 4.cxd5 Nxd5 5.e4 Nxc3 6.bxc3 Bg7 7.Bc4
-35.90%,28.00%,1.d4 Nf6 2.c4 g6 3.Nc3 d5 4.cxd5 Nxd5 5.e4 Nxc3 6.bxc3 Bg7 7.Nf3
-43.00%,25.60%,1.d4 Nf6 2.c4 g6 3.Nc3 d5 4.cxd5 Nxd5 5.e4 Nxc3 6.bxc3 Bg7 7.Nf3 c5 8.h3
-31.70%,28.10%,1.d4 Nf6 2.c4 g6 3.Nc3 d5 4.cxd5 Nxd5 5.e4 Nxc3 6.bxc3 Bg7 7.Bc4 O-O 8.Ne2 c5 9.O-O Nc6 10.Be3 Bg4 11.f3 Na5 12.Bxf7+
-38.00%,31.10%,1.d4 Nf6 2.c4 g6 3.Nc3 d5 4.cxd5 Nxd5 5.e4 Nxc3 6.bxc3 Bg7 7.Bc4 O-O 8.Ne2 c5 9.O-O Nc6 10.Be3 cxd4 11.cxd4 Bg4 12.f3 Na5 13.Bd3 Be6 14.d5
-41.20%,26.40%,1.d4 Nf6 2.c4 g6 3.Nc3 d5 4.cxd5 Nxd5 5.e4 Nxc3 6.bxc3 Bg7 7.Bc4 O-O 8.Ne2 c5 9.O-O Nc6 10.Be3 cxd4 11.cxd4
-36.60%,25.10%,1.d4 Nf6 2.c4 g6 3.Nc3 d5 4.Nf3 Bg7 5.e3 O-O 6.b4
-29.40%,29.20%,1.d4 Nf6 2.c4 g6 3.Nc3 d5 4.Nf3 Bg7 5.e3 O-O 6.Bd2
-43.00%,21.50%,1.d4 Nf6 2.c4 g6 3.Nc3 d5 4.Nf3 Bg7 5.Qb3 dxc4 6.Qxc4 O-O 7.e4 Bg4 8.Be3 Nfd7 9.Qb3
-42.80%,28.70%,1.d4 Nf6 2.c4 g6 3.Nc3 d5 4.Nf3 Bg7 5.Qb3 dxc4 6.Qxc4 O-O 7.e4
-33.30%,34.20%,1.d4 Nf6 2.c4 g6 3.Nc3 d5 4.Nf3 Bg7 5.Bf4 O-O 6.e3
-21.60%,54.40%,1.d4 Nf6 2.c4 g6 3.Nc3 d5 4.Nf3 Bg7 5.e3 O-O 6.Bd3
-45.30%,21.40%,1.d4 Nf6 2.c4 g6 3.Nc3 d5 4.Nf3 Bg7 5.e3 O-O 6.Qb3
-36.80%,24.40%,1.e4 e5 2.Nf3 Nc6 3.Bc4 Bc5 4.c3 Nf6 5.d3 a6 6.Bb3 Ba7 7.h3 O-O 8.O-O d6 9.Re1
-36.60%,37.90%,1.e4 e5 2.Nf3 Nc6 3.Bc4 Bc5 4.c3 Nf6 5.d4 exd4 6.O-O
-31.50%,47.50%,1.e4 e5 2.Nf3 Nc6 3.Bc4 Bc5 4.c3 Nf6 5.d4 exd4 6.cxd4 Bb4+ 7.Nc3 Nxe4 8.O-O Bxc3 9.d5
-35.00%,35.90%,1.e4 e5 2.Nf3 Nc6 3.Bc4 Bc5 4.c3 Nf6 5.d4 exd4 6.cxd4
-44.40%,40.50%,1.e4 e5 2.Nf3 Nc6 3.Bc4 Bc5 4.b4 Bxb4 5.c3 Ba5 6.O-O
-36.00%,39.00%,1.e4 e5 2.Nf3 Nc6 3.Bc4 Bc5 4.b4 Bxb4 5.c3 Ba5 6.d4 d6 7.Qb3
-33.00%,37.50%,1.e4 e5 2.Nf3 Nc6 3.Bc4 Bc5 4.d3 Nf6 5.Nc3 d6 6.Bg5
-28.00%,38.50%,1.e4 e5 2.Nf3 Nc6 3.Bc4 Nf6 4.d4 exd4 5.O-O Nxe4 6.Re1 d5 7.Bxd5 Qxd5 8.Nc3
-26.40%,24.50%,1.e4 e5 2.Nf3 Nc6 3.Bc4 Nf6 4.d4 exd4 5.O-O Nxe4 6.Re1 d5 7.Bxd5 Qxd5 8.Nc3 Qa5 9.Nxe4 Be6 10.Bd2 Qd5 11.Bg5
-39.50%,31.60%,1.e4 e5 2.Nf3 Nc6 3.Bc4 Nf6 4.d4 exd4 5.O-O Nxe4 6.Re1 d5 7.Nc3
-35.20%,45.60%,1.e4 e5 2.Nf3 Nc6 3.Bc4 Nf6 4.d4 exd4 5.O-O Bc5 6.e5 d5 7.exf6 dxc4 8.Re1+ Be6 9.Ng5 Qd5 10.Nc3 Qf5 11.Nce4
-41.80%,46.80%,1.e4 e5 2.Nf3 Nc6 3.Bc4 Nf6 4.d4 exd4 5.O-O Nxe4 6.Nc3
-42.90%,33.70%,1.e4 e5 2.Nf3 Nc6 3.Bc4 Nf6 4.d4 exd4 5.O-O Bc5 6.c3
-74.90%,19.20%,1.e4 e5 2.Nf3 Nc6 3.Bc4 Nf6 4.Ng5 d5 5.exd5 Nxd5 6.Nxf7
-69.30%,18.80%,1.e4 e5 2.Nf3 Nc6 3.Bc4 Nf6 4.Ng5 d5 5.exd5 Nxd5 6.d4
-43.70%,36.30%,1.e4 e5 2.Nf3 Nc6 3.Bc4 Nf6 4.Ng5 d5 5.exd5 Na5 6.Bb5+
-41.90%,41.70%,1.e4 e5 2.Nf3 Nc6 3.Bc4 Nf6 4.Ng5 d5 5.exd5 Na5 6.Bb5+ c6 7.dxc6 bxc6 8.Qf3
-42.50%,38.60%,1.e4 e5 2.Nf3 Nc6 3.Bc4 Nf6 4.Ng5 d5 5.exd5 Na5 6.d3
-34.90%,37.70%,1.e4 e5 2.f4 exf4 3.Nf3 g5 4.h4 g4 5.Ne5 Nf6 6.d4
-48.30%,28.50%,1.Nf3 d5 2.g3 c5 3.Bg2 Nc6 4.O-O e6 5.d3 Nf6 6.Nbd2 Be7 7.e4 O-O 8.Re1
-53.50%,24.00%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.Be2 O-O 6.Bg5
-43.80%,26.90%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.Be2 O-O 6.Bg5 c5 7.d5
-35.20%,28.20%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.Be2 O-O 6.Bg5 c5 7.dxc5
-26.30%,29.10%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.Nf3 O-O 6.Be2 e5 7.dxe5
-45.60%,24.20%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.Nf3 d6 5.g3 O-O 6.Bg2 Nbd7 7.O-O e5 8.e4 c6 9.h3
-37.80%,33.20%,1.d4 Nf6 2.c4 g6 3.Nf3 Bg7 4.g3 d6 5.Bg2 O-O 6.O-O Nbd7 7.Nc3 e5 8.b3
-38.40%,27.70%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.Nf3 d6 5.g3 O-O 6.Bg2 Nc6 7.O-O a6 8.h3 Rb8 9.Be3 b5 10.Nd2
-52.60%,23.00%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.Nf3 d6 5.g3 O-O 6.Bg2 c5 7.O-O
-43.50%,29.90%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.Nf3 d6 5.g3 O-O 6.Bg2 c5 7.O-O Nc6 8.d5
-44.30%,33.30%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.f4 O-O 6.Nf3 c5 7.d5
-38.80%,21.60%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.f4 O-O 6.Be2 c5 7.Nf3 cxd4 8.Nxd4 Nc6 9.Be3
-34.20%,40.80%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.f4 O-O 6.Be2 c5 7.d5 e6 8.Nf3 exd5 9.e5
-35.20%,31.20%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.f4 O-O 6.Be2 c5 7.Nf3
-42.70%,39.90%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.f4 O-O 6.Be2
-37.80%,36.10%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.f4 O-O 6.Be2 c5 7.d5 e6 8.Nf3
-38.20%,32.60%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.Nf3 O-O 6.Be3
-41.20%,25.90%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.Nf3 O-O 6.Be2 e5 7.O-O
-46.60%,28.70%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.Nf3 O-O 6.Be2 e5 7.O-O Nc6 8.d5 Ne7 9.b4
-44.90%,23.90%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.Nf3 O-O 6.Be2 e5 7.O-O Nc6 8.d5 Ne7 9.b4 Nh5 10.Re1
-42.90%,26.40%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.Nf3 O-O 6.Be2 e5 7.O-O Nc6 8.d5 Ne7 9.Ne1 Nd7 10.f3 f5 11.g4
-46.20%,30.70%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.Nf3 O-O 6.Be2 e5 7.O-O Nc6 8.d5 Ne7 9.Ne1 Nd7 10.Be3 f5 11.f3 f4 12.Bf2 g5 13.Rc1 Ng6 14.c5
-44.20%,31.00%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.Nf3 O-O 6.Be2 e5 7.O-O Nc6 8.d5 Ne7 9.Ne1
-45.50%,34.00%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.Nf3 O-O 6.Be2 e5 7.O-O Nc6 8.d5 Ne7 9.Ne1 Nd7 10.Be3
-44.40%,27.90%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.Nf3 O-O 6.Be2
-47.10%,23.00%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.Nf3 O-O 6.Be2 e5 7.Be3
-38.00%,32.70%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.Nf3 O-O 6.Be2 e5 7.O-O Nc6 8.d5 Ne7 9.Bd2
-44.70%,27.00%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.Nf3 O-O 6.Be2 e5 7.O-O Nc6 8.d5 Ne7 9.Nd2
-33.40%,43.10%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.Nf3 O-O 6.Be2 e5 7.O-O Nbd7 8.d5
-46.20%,30.10%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.Nf3 O-O 6.Be2 e5 7.d5
-46.80%,26.80%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.Nf3 O-O 6.Be2 e5 7.d5 Nbd7 8.Bg5 h6 9.Bh4 g5 10.Bg3 Nh5 11.h4
-47.80%,25.60%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.g3 O-O 6.Bg2 e5 7.Nge2
-48.40%,26.30%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.f3 O-O 6.Nge2
-46.40%,30.80%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.f3 O-O 6.Be3 e5 7.d5
-48.70%,29.90%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.Be2 O-O 6.Be3
-46.90%,27.90%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.f3 O-O 6.Bg5
-35.70%,42.80%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.Nf3 O-O 6.Bg5
-48.40%,24.30%,1.d4 Nf6 2.c4 g6 3.g3 d5 4.Bg2 Bg7 5.Nf3 O-O 6.O-O
-49.00%,22.50%,1.d4 Nf6 2.c4 g6 3.g3 d5 4.Bg2 Bg7 5.Nf3 O-O 6.cxd5 Nxd5 7.O-O
-38.70%,16.60%,1.d4 Nf6 2.c4 g6 3.g3 d5 4.Bg2 Bg7 5.Nf3 O-O 6.cxd5 Nxd5 7.O-O c5 8.dxc5
-34.30%,25.80%,1.d4 Nf6 2.c4 g6 3.g3 d5 4.Bg2 Bg7 5.Nf3 O-O 6.cxd5 Nxd5 7.O-O c5 8.Nc3
-47.60%,20.50%,1.d4 Nf6 2.c4 g6 3.g3 d5 4.Bg2 Bg7 5.cxd5 Nxd5 6.e4 Nb6 7.Ne2
-34.90%,20.40%,1.d4 Nf6 2.c4 e6 3.Nc3 Bb4 4.Qc2 c5 5.dxc5 O-O 6.a3 Bxc5 7.Nf3 b6 8.Bf4
-36.50%,20.10%,1.d4 Nf6 2.c4 e6 3.Nc3 Bb4 4.Qc2 d5 5.a3 Bxc3+ 6.Qxc3 Ne4 7.Qc2
-34.70%,30.10%,1.d4 Nf6 2.c4 e6 3.Nc3 Bb4 4.e3 c5 5.Ne2 cxd4 6.exd4 O-O 7.a3
-33.00%,28.30%,1.d4 Nf6 2.c4 e6 3.Nc3 Bb4 4.e3 O-O 5.Nf3 d5 6.Bd3 c5 7.O-O Nc6 8.a3 Bxc3 9.bxc3 dxc4 10.Bxc4
-32.10%,29.80%,1.d4 Nf6 2.c4 e6 3.Nc3 Bb4 4.e3 O-O 5.Nf3 d5 6.Bd3 c5 7.O-O Nc6 8.a3 Bxc3 9.bxc3
-40.30%,30.00%,1.d4 Nf6 2.c4 e6 3.Nc3 Bb4 4.e3 O-O 5.Bd3 d5 6.a3 Bxc3+ 7.bxc3
-31.60%,25.80%,1.d4 Nf6 2.c4 e6 3.Nc3 Bb4 4.e3 O-O 5.Nf3 d5 6.Bd3 c5 7.O-O dxc4 8.Bxc4
-34.30%,38.40%,1.d4 Nf6 2.c4 e6 3.Nc3 Bb4 4.e3 O-O 5.Nf3 d5 6.a3
-40.50%,26.40%,1.d4 Nf6 2.c4 e6 3.Nc3 Bb4 4.e3 Nc6 5.Nf3 O-O 6.Bd3 d5 7.O-O
-43.50%,22.20%,1.d4 Nf6 2.c4 e6 3.Nc3 Bb4 4.Nf3 c5 5.g3 O-O 6.Bg2
-42.90%,34.60%,1.d4 Nf6 2.c4 e6 3.Nc3 Bb4 4.a3 Bxc3+ 5.bxc3 O-O 6.e3
-39.80%,33.50%,1.d4 Nf6 2.c4 e6 3.Nc3 Bb4 4.a3 Bxc3+ 5.bxc3 c5 6.f3 d5 7.cxd5
-41.10%,36.70%,1.d4 Nf6 2.c4 e6 3.Nc3 Bb4 4.a3 Bxc3+ 5.bxc3 c5 6.e3
-33.80%,24.50%,1.d4 Nf6 2.c4 e6 3.Nc3 Bb4 4.a3 Bxc3+ 5.bxc3 c5 6.f3 d5 7.cxd5 Nxd5 8.dxc5
-40.50%,23.60%,1.d4 Nf6 2.c4 e6 3.Nc3 Bb4 4.Nf3 b6 5.Bg5 Bb7 6.Nd2
-58.60%,17.90%,1.e4 e5 2.Nf3 d6 3.d4 Nd7 4.Bc4 c6 5.O-O Be7 6.dxe5
-31.10%,59.60%,1.e4 e5 2.Nf3 d6 3.d4 Nf6 4.Nc3 Nbd7 5.Bc4 Be7 6.Bxf7+
-40.60%,41.80%,1.e4 e5 2.Nf3 d6 3.d4 Nf6 4.Nc3 Nbd7 5.Bc4 Be7 6.Ng5 O-O 7.Bxf7+ Rxf7 8.Ne6
-42.80%,34.50%,1.e4 d6 2.d4 Nf6 3.Nc3 g6 4.f4 Bg7 5.Nf3 O-O 6.Be3
-43.30%,29.10%,1.e4 d6 2.d4 Nf6 3.Nc3 g6 4.f4 Bg7 5.Nf3 O-O 6.e5
-47.30%,29.80%,1.e4 d6 2.d4 Nf6 3.Nc3 g6 4.f4 Bg7 5.Nf3 O-O 6.e5 Nfd7 7.h4
-41.50%,30.60%,1.e4 d6 2.d4 Nf6 3.Nc3 g6 4.f4 Bg7 5.Nf3 O-O 6.Bd3
-38.50%,31.90%,1.b4 Nf6 2.Bb2 g6 3.c4 Bg7 4.e3 d6 5.Nf3 O-O 6.d4
-34.80%,34.90%,1.d4 Nf6 2.Nf3 g6 3.Nc3 d5 4.Bf4 Bg7 5.e3 O-O 6.Be2
-43.30%,21.50%,1.d4 d5 2.c4 dxc4 3.Nf3 Nf6 4.e3 e6 5.Bxc4 c5 6.O-O a6 7.Qe2
-62.40%,8.90%,1.d4 d5 2.c4 dxc4 3.Nf3 Nf6 4.e3 e6 5.Bxc4 c5 6.O-O
-34.00%,25.50%,1.d4 d5 2.c4 dxc4 3.Nf3 Nf6 4.e3 e6 5.Bxc4 c5 6.O-O a6 7.a4
-45.90%,21.40%,1.d4 d5 2.c4 dxc4 3.Nf3 Nf6 4.e3 e6 5.Bxc4 c5 6.O-O a6 7.e4
-42.90%,16.60%,1.d4 d5 2.c4 dxc4 3.Nc3 c5 4.d5 Nf6 5.Nf3 e6 6.e4 exd5 7.e5
-41.10%,21.30%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Bg5 Be7 5.e3 O-O 6.Nf3 h6 7.Bxf6
-25.30%,8.30%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Bg5 Be7 5.e3 O-O 6.Nf3 h6 7.Bxf6 Bxf6 8.Rc1 c6 9.Bd3 Nd7 10.O-O dxc4 11.Bxc4
-48.60%,18.90%,1.d4 d5 2.c4 e6 3.Nf3 Nf6 4.Bg5 Nbd7 5.e3 c6 6.Nbd2
-45.00%,25.20%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.cxd5 exd5 5.Bg5 c6 6.Qc2
-42.40%,22.90%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.cxd5 exd5 5.Nf3 Nbd7 6.Bf4
-43.40%,23.90%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Nf3 Be7 5.Bf4 O-O 6.e3 c5 7.dxc5 Bxc5 8.Qc2 Nc6 9.a3 Qa5 10.O-O-O
-41.20%,17.60%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Nf3 Be7 5.Bf4 O-O 6.e3 c5 7.dxc5 Bxc5 8.Qc2 Nc6 9.a3 Qa5 10.Rd1
-37.40%,18.40%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Nf3 Be7 5.Bf4 O-O 6.e3 Nbd7 7.c5
-38.00%,24.50%,1.d4 d5 2.c4 e6 3.Nf3 Nf6 4.Bg5 h6 5.Bxf6 Qxf6 6.Nc3 c6 7.Qb3
-33.90%,18.40%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Bg5 Be7 5.e3 O-O 6.Nf3 h6 7.Bh4 Ne4 8.Bxe7 Qxe7 9.cxd5 Nxc3 10.bxc3
-27.90%,14.00%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Bg5 Be7 5.e3 O-O 6.Nf3 h6 7.Bh4 Ne4 8.Bxe7 Qxe7 9.Qc2
-51.40%,20.60%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Bg5 Be7 5.Nf3 O-O 6.Qc2
-44.70%,23.50%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Bg5 Be7 5.e3 O-O 6.Nf3
-46.40%,15.70%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Bg5 Be7 5.e3 O-O 6.Rc1
-40.60%,21.40%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Bg5 Be7 5.e3 O-O 6.Nf3 h6 7.Bh4
-39.60%,6.90%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Bg5 Be7 5.e3 O-O 6.Nf3 Nbd7 7.Rc1 c6 8.Bd3 dxc4 9.Bxc4 Nd5 10.Bxe7 Qxe7 11.Ne4
-40.20%,28.60%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Bg5 Be7 5.e3 O-O 6.Nf3 Nbd7 7.Bd3
-49.50%,11.90%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Bg5 Be7 5.e3 O-O 6.Nf3 Nbd7 7.Rc1 c6 8.Bd3 dxc4 9.Bxc4 Nd5 10.Bxe7 Qxe7 11.O-O Nxc3 12.Rxc3 e5 13.Qc2
-24.80%,10.40%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Bg5 Be7 5.e3 O-O 6.Nf3 Nbd7 7.Rc1 c6 8.Bd3 dxc4 9.Bxc4 Nd5 10.Bxe7 Qxe7 11.O-O Nxc3 12.Rxc3 e5 13.dxe5 Nxe5 14.Nxe5
-43.70%,18.50%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Bg5 Be7 5.e3 O-O 6.Nf3 Nbd7 7.Rc1
-40.10%,16.70%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Bg5 Be7 5.e3 O-O 6.Nf3 Nbd7 7.Rc1 c6 8.Bd3 dxc4 9.Bxc4 Nd5 10.Bxe7 Qxe7 11.O-O
-55.40%,23.30%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Bg5 Be7 5.e3 O-O 6.Nf3 Nbd7 7.Rc1 b6 8.cxd5 exd5 9.Bd3
-48.80%,19.60%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Bg5 Be7 5.e3 O-O 6.Nf3 Nbd7 7.Qc2
-30.60%,15.30%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Bg5 Be7 5.e3 O-O 6.Nf3 Nbd7 7.Qc2 c5 8.cxd5
-35.40%,19.30%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Nf3 c5 5.cxd5 Nxd5 6.e4
-39.40%,15.50%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Nf3 c5 5.cxd5 Nxd5 6.e3 Nc6 7.Bd3
-39.70%,21.20%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Nf3 c5 5.cxd5 Nxd5 6.e3
-38.80%,20.20%,1.d4 d5 2.c4 Nc6 3.cxd5 Qxd5 4.e3 e5 5.Nc3 Bb4 6.Bd2 Bxc3 7.Bxc3 exd4 8.Ne2
-43.50%,20.90%,1.d4 Nf6 2.c4 e6 3.Nf3 b6 4.g3 Bb7 5.Bg2 Be7 6.Nc3
-44.60%,23.00%,1.d4 Nf6 2.c4 e6 3.Nf3 b6 4.g3 Bb7 5.Bg2 Be7 6.O-O
-47.50%,23.20%,1.d4 Nf6 2.c4 e6 3.Nf3 b6 4.g3 Bb7 5.Bg2 Be7 6.O-O O-O 7.d5 exd5 8.Nh4
-32.90%,21.40%,1.d4 Nf6 2.c4 e6 3.Nf3 b6 4.g3 Bb7 5.Bg2 Be7 6.O-O O-O 7.Nc3
-27.70%,23.20%,1.d4 Nf6 2.c4 e6 3.Nf3 b6 4.g3 Bb7 5.Bg2 Be7 6.O-O O-O 7.Nc3 Ne4 8.Qc2 Nxc3 9.Qxc3
-39.90%,24.40%,1.d4 Nf6 2.c4 e6 3.Nf3 b6 4.g3 Bb7 5.Bg2 Be7 6.O-O O-O 7.b3
-46.50%,18.30%,1.d4 Nf6 2.c4 e6 3.Nf3 b6 4.g3 Bb7 5.Bg2 Be7 6.O-O O-O 7.Re1
-45.10%,28.40%,1.d4 Nf6 2.c4 e6 3.Nf3 b6 4.g3 Bb7 5.Bg2 c5 6.d5 exd5 7.Nh4
-37.50%,24.70%,1.d4 Nf6 2.c4 e6 3.Nf3 b6 4.Nc3 Bb7 5.a3 d5 6.cxd5 Nxd5 7.Qc2
-37.40%,24.20%,1.d4 Nf6 2.c4 e6 3.Nf3 b6 4.Nc3 Bb7 5.a3 d5 6.cxd5 Nxd5 7.e3
-28.70%,30.40%,1.d4 Nf6 2.c4 e6 3.Nf3 b6 4.Nc3 Bb7 5.a3 d5 6.cxd5 Nxd5 7.Qa4+
-36.50%,23.20%,1.d4 Nf6 2.c4 e6 3.Nf3 b6 4.Nc3 Bb7 5.a3 d5 6.cxd5 Nxd5 7.Bd2
-25.70%,40.60%,1.d4 Nf6 2.Nf3 b6 3.g3 Bb7 4.Bg2 c5 5.c4 cxd4 6.Qxd4
-41.70%,16.30%,1.d4 Nf6 2.c4 e6 3.Nf3 b6 4.g3 Bb7 5.Bg2 Be7 6.Nc3 Ne4 7.Bd2
-51.60%,21.80%,1.Nf3 d5 2.c4 c6 3.b3 Nf6 4.Bb2 e6 5.g3 Be7 6.Bg2 O-O 7.O-O
-52.00%,23.00%,1.d4 d5 2.Nf3 Nf6 3.e3 e6 4.Bd3 Nbd7 5.O-O Bd6 6.b3 O-O 7.Bb2
-37.50%,35.80%,1.e4 e5 2.Nf3 Nf6 3.Nxe5 d6 4.Nf3 Nxe4 5.d4 d5 6.Bd3 Be7 7.O-O Nc6 8.Re1 Bg4 9.c3 f5 10.Nbd2
-38.50%,22.00%,1.e4 e5 2.Nf3 Nf6 3.Nxe5 d6 4.Nf3 Nxe4 5.d4 d5 6.Bd3 Be7 7.O-O Nc6 8.Re1
-35.40%,17.70%,1.e4 e5 2.Nf3 Nf6 3.Nxe5 d6 4.Nf3 Nxe4 5.d4 d5 6.Bd3 Be7 7.O-O Nc6 8.c4 Nb4 9.cxd5
-34.80%,14.30%,1.e4 e5 2.Nf3 Nf6 3.Nxe5 d6 4.Nf3 Nxe4 5.d4 d5 6.Bd3 Be7 7.O-O Nc6 8.c4 Nb4 9.Be2
-42.20%,20.30%,1.e4 e5 2.Nf3 Nf6 3.Nxe5 d6 4.Nf3 Nxe4 5.d4 d5 6.Bd3 Be7 7.O-O Nc6 8.c4
-51.20%,23.20%,1.e4 d5 2.exd5 Qxd5 3.Nc3 Qa5 4.d4 Nf6 5.Nf3 Bf5 6.Ne5 c6 7.g4
-50.60%,23.90%,1.e4 d5 2.exd5 Qxd5 3.Nc3 Qa5 4.d4 Nf6 5.Nf3 Bg4 6.h3
-35.50%,35.90%,1.e4 e5 2.Nf3 Nc6 3.d4 exd4 4.Nxd4 Bc5 5.Be3 Qf6 6.c3 Nge7 7.Qd2
-29.10%,35.90%,1.e4 e5 2.Nf3 Nc6 3.d4 exd4 4.Nxd4 Bc5 5.Be3 Qf6 6.c3 Nge7 7.Nc2
-37.50%,31.50%,1.e4 e5 2.Nf3 Nc6 3.d4 exd4 4.Nxd4 Nf6 5.Nxc6 bxc6 6.e5
-31.10%,23.90%,1.e4 e5 2.Nf3 Nc6 3.d4 exd4 4.Nxd4 Nf6 5.Nxc6 bxc6 6.Nd2
-41.20%,35.20%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Nf3 c6 5.Bg5 h6 6.Bh4
-39.10%,29.20%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Nf3 c6 5.Bg5 dxc4 6.e4 b5 7.e5 h6 8.Bh4 g5 9.Nxg5
-43.00%,28.90%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Nf3 c6 5.Bg5 dxc4 6.e4 b5 7.e5 h6 8.Bh4 g5 9.exf6 gxh4 10.Ne5
-48.40%,27.10%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Nf3 c6 5.Bg5 dxc4 6.e4 b5 7.e5 h6 8.Bh4 g5 9.Nxg5 hxg5 10.Bxg5 Nbd7 11.g3
-44.00%,30.90%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Nf3 c6 5.Bg5 dxc4 6.e4
-40.30%,23.30%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Nf3 c6 5.e3 Nbd7 6.Bd3
-36.10%,31.70%,1.d4 d5 2.c4 e6 3.Nc3 c6 4.e4 dxe4 5.Nxe4 Bb4+ 6.Nc3
-44.60%,29.20%,1.d4 d5 2.c4 e6 3.Nc3 c6 4.e4 dxe4 5.Nxe4 Bb4+ 6.Bd2
-40.80%,27.40%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Nf3 c6 5.e3 Nbd7 6.Bd3 dxc4 7.Bxc4 b5 8.Bd3 a6 9.e4 c5 10.e5 cxd4 11.Nxb5
-36.40%,35.50%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Nf3 c6 5.e3 Nbd7 6.Bd3 dxc4 7.Bxc4 b5 8.Bd3 a6 9.e4 c5 10.e5
-41.30%,27.30%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Nf3 c6 5.e3 Nbd7 6.Bd3 dxc4 7.Bxc4 b5 8.Bd3 a6 9.e4 c5 10.d5
-46.10%,28.70%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Nf3 c6 5.e3 Nbd7 6.Bd3 dxc4 7.Bxc4 b5 8.Bd3 Bb7 9.e4 b4 10.Na4 c5 11.e5 Nd5 12.O-O cxd4 13.Nxd4
-46.10%,24.10%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Nf3 c6 5.e3 Nbd7 6.Bd3 dxc4 7.Bxc4
-39.00%,23.20%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Nf3 c6 5.e3 Nbd7 6.Qc2
-29.60%,28.30%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Nf3 c6 5.e3 Nbd7 6.Qc2 Bd6 7.e4
-44.70%,28.30%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Nf3 c6 5.e3 Nbd7 6.Qc2 Bd6 7.g4
-43.00%,24.50%,1.e4 c5 2.Nf3 Nc6 3.d4 cxd4 4.Nxd4 g6 5.c4 Bg7 6.Be3
-39.50%,32.10%,1.e4 c5 2.Nf3 Nc6 3.d4 cxd4 4.Nxd4 g6 5.Nc3 Bg7 6.Be3 Nf6 7.Bc4
-46.70%,15.60%,1.e4 c5 2.c3 d5 3.exd5 Qxd5 4.d4 cxd4 5.cxd4 Nc6 6.Nf3 e5 7.Nc3 Bb4 8.Be2
-39.50%,29.40%,1.e4 c5 2.c3 Nf6 3.e5 Nd5 4.Nf3 Nc6 5.Bc4 Nb6 6.Bb3
-22.40%,48.80%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 Nc6 6.Be2 e5 7.Nb3
-22.90%,48.60%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 Nc6 6.Be2 e5 7.Nxc6
-40.80%,23.90%,1.e4 c5 2.Nf3 d6 3.Bb5+ Bd7 4.Bxd7+ Qxd7 5.O-O Nc6 6.c3 Nf6 7.d4
-33.90%,35.50%,1.e4 c5 2.Nf3 d6 3.Bb5+ Nc6 4.O-O Bd7 5.c3 a6 6.Bxc6 Bxc6 7.Re1 Nf6 8.d4 Bxe4 9.Bg5
-34.90%,35.70%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 Nc6 6.Be2
-33.30%,34.20%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 Nc6 6.g3
-29.50%,41.60%,1.e4 c5 2.Nc3 Nc6 3.g3 g6 4.Bg2 Bg7 5.d3 d6 6.f4
-32.00%,39.90%,1.e4 c5 2.Nc3 Nc6 3.g3 g6 4.Bg2 Bg7 5.d3 d6 6.Be3
-54.30%,23.20%,1.e4 c5 2.Nf3 d6 3.c3 Nf6 4.Be2 Nc6 5.d4 cxd4 6.cxd4 Nxe4 7.d5 Qa5+ 8.Nc3 Nxc3 9.bxc3
-38.90%,33.70%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 g6 6.Be2 Bg7 7.Be3 Nc6 8.Nb3
-28.20%,43.10%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 g6 6.Be2 Bg7 7.Be3 Nc6 8.O-O
-36.50%,39.50%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 g6 6.Be2 Bg7 7.Be3
-27.70%,36.90%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 g6 6.Be2 Bg7 7.Be3 Nc6 8.O-O O-O 9.Qd2
-40.70%,30.80%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 g6 6.Be2
-33.80%,38.30%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 g6 6.Be2 Bg7 7.Be3 Nc6 8.O-O O-O 9.Nb3
-45.00%,28.60%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 g6 6.g3
-45.90%,33.40%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 g6 6.f4
-44.20%,34.00%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 g6 6.Be3 Bg7 7.f3 O-O 8.Qd2 Nc6 9.Bc4 Bd7 10.O-O-O
-46.20%,33.40%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 g6 6.Be3 Bg7 7.f3
-52.60%,25.60%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 g6 6.Be3 Bg7 7.f3 O-O 8.Qd2 Nc6 9.Bc4
-46.70%,28.70%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 g6 6.Be3 Bg7 7.f3 O-O 8.Qd2 Nc6 9.O-O-O
-48.00%,26.90%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 g6 6.Be3 Bg7 7.f3 O-O 8.Qd2 Nc6 9.g4
-43.00%,29.90%,1.e4 c5 2.Nf3 e6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 Nc6 6.Nxc6
-32.50%,45.60%,1.e4 c5 2.Nc3 Nc6 3.f4 g6 4.Nf3 Bg7 5.Bc4 e6 6.f5
-34.50%,41.20%,1.e4 c5 2.Nf3 e6 3.d4 cxd4 4.Nxd4 a6 5.Nc3 b5 6.g3
-39.00%,34.10%,1.e4 c5 2.Nf3 e6 3.d4 cxd4 4.Nxd4 a6 5.Nc3 b5 6.Bd3 Qb6 7.Nf3
-25.10%,53.60%,1.e4 c5 2.Nf3 Nc6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 e5 6.Nxc6
-19.80%,61.00%,1.e4 c5 2.Nf3 Nc6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 e5 6.Nf3
-26.10%,54.40%,1.e4 c5 2.Nf3 Nc6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 e5 6.Nb3
-37.30%,29.80%,1.e4 c5 2.Nf3 Nc6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 e5 6.Ndb5 d6 7.Bg5 a6 8.Na3 b5 9.Nd5
-41.20%,36.50%,1.e4 c5 2.Nf3 Nc6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 e5 6.Ndb5 d6 7.Bg5 a6 8.Na3 b5 9.Bxf6 gxf6 10.Nd5 f5 11.Bxb5
-37.90%,37.30%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 a6 6.Bg5 e6 7.f4
-38.40%,40.80%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 a6 6.Bg5
-41.90%,33.90%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 a6 6.h3
-38.50%,33.50%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 a6 6.f4
-39.10%,35.50%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 a6 6.Be3
-44.50%,32.10%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 a6 6.Rg1
-34.70%,38.40%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 a6 6.Be2
-47.20%,34.90%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 a6 6.Bg5 e6 7.f4 b5 8.e5 dxe5 9.fxe5 Qc7 10.Qe2
-37.60%,32.10%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 a6 6.g3
-52.60%,24.60%,1.e4 c5 2.Nf3 Nc6 3.Bb5 g6 4.O-O Bg7 5.c3 e5 6.d4
-45.20%,35.90%,1.e4 c5 2.Nf3 Nc6 3.Bb5 g6 4.O-O Bg7 5.c3 Nf6 6.d4
-45.90%,22.90%,1.e4 c5 2.Nf3 Nc6 3.Bb5 g6 4.O-O Bg7 5.c3 Nf6 6.Qa4
-43.90%,28.70%,1.e4 c5 2.Nf3 Nc6 3.Bb5 g6 4.O-O Bg7 5.Re1 e5 6.b4
-37.80%,43.60%,1.e4 c5 2.Nf3 e6 3.d4 cxd4 4.Nxd4 Nc6 5.Nc3 Nf6 6.Ndb5 Bb4 7.Nd6+
-31.80%,38.20%,1.e4 c5 2.Nf3 e6 3.d4 cxd4 4.Nxd4 Nc6 5.Nc3 Qc7 6.Be3 a6 7.Be2
-37.00%,34.90%,1.e4 c5 2.Nf3 e6 3.d4 cxd4 4.Nxd4 Nc6 5.Nc3 Qc7 6.Be3
-39.00%,33.20%,1.e4 c5 2.Nf3 e6 3.d4 cxd4 4.Nxd4 Nc6 5.Nc3 Qc7 6.Be3 a6 7.Qd2
-33.30%,44.70%,1.e4 c5 2.Nf3 e6 3.d4 cxd4 4.Nxd4 Nc6 5.Nc3 Qc7 6.Be3 a6 7.f3
-40.10%,39.10%,1.e4 c5 2.Nf3 e6 3.d4 cxd4 4.Nxd4 Nc6 5.Nc3 Qc7 6.Ndb5 Qb8 7.Be3 a6 8.Bb6
-54.00%,24.90%,1.e4 c5 2.Nf3 e6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 Bb4 6.e5
-40.10%,31.90%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.f3 e5 6.Bb5+
-44.40%,30.00%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 Nc6 6.Bg5 e6 7.Qd3
-40.50%,24.60%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 Nc6 6.Bg5 e6 7.Qd2 Be7 8.O-O-O O-O 9.f4
-36.90%,24.50%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 Nc6 6.Bg5 e6 7.Qd2 Be7 8.O-O-O O-O 9.f4 Nxd4 10.Qxd4
-38.50%,36.70%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 Nc6 6.Bg5
-39.60%,29.40%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 Nc6 6.Bg5 Bd7 7.Qd2
-39.00%,33.10%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 Nc6 6.Bg5 e6 7.Qd2 a6 8.O-O-O Bd7 9.f4 Be7 10.Nf3 b5 11.Bxf6
-38.40%,33.60%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 Nc6 6.Bg5 e6 7.Qd2
-38.00%,35.30%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 Nc6 6.Bg5 e6 7.Bb5
-33.80%,34.40%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 e6 6.Be2
-41.90%,26.50%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 e6 6.Be2 a6 7.O-O Qc7 8.f4 Nc6 9.Be3
-38.10%,29.80%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 e6 6.Be2 a6 7.O-O Qc7 8.f4 Nc6 9.Kh1 Be7 10.a4
-46.20%,29.70%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 e6 6.Be3 a6 7.g4
-46.00%,30.70%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 e6 6.Be3 a6 7.g4 e5 8.Nf5 g6 9.g5
-41.70%,35.90%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 e6 6.Be3 a6 7.Qd2
-43.20%,36.40%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 e6 6.Be3 a6 7.f3
-34.50%,31.90%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 e6 6.g3
-47.40%,25.90%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 e6 6.g4
-42.50%,26.30%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 e6 6.f4
-30.80%,31.00%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 e6 6.Be2 Nc6 7.O-O Be7 8.Be3 O-O 9.f4
-34.70%,30.80%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 e6 6.Be2 Nc6 7.O-O Be7 8.Be3 O-O 9.f4 Bd7 10.Nb3
-51.20%,25.00%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 e6 6.f4 Nc6 7.Be3 Be7 8.Qf3
-26.00%,53.60%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 e6 6.Bb5+
-34.70%,41.00%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 e6 6.Bc4
-37.80%,37.10%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 e6 6.Bc4 Nc6 7.Be3
-43.50%,33.90%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 e6 6.Bc4 Nc6 7.Be3 Be7 8.Qe2
-46.80%,19.70%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 e5 6.Bb5+
-46.30%,20.30%,1.d4 d5 2.c4 c6 3.Nf3 Nf6 4.Nc3 dxc4 5.a4 Bf5 6.Nh4
-35.70%,27.00%,1.d4 d5 2.c4 c6 3.Nf3 Nf6 4.Nc3 dxc4 5.a4 Bf5 6.e3
-34.00%,26.20%,1.d4 d5 2.c4 c6 3.Nf3 Nf6 4.Nc3 dxc4 5.a4 Bf5 6.e3 e6 7.Bxc4 Bb4 8.O-O O-O 9.Qe2
-40.30%,27.20%,1.d4 d5 2.c4 c6 3.Nf3 Nf6 4.Nc3 dxc4 5.a4 Bf5 6.Ne5
-43.80%,18.10%,1.d4 d5 2.c4 c6 3.Nf3 Nf6 4.Nc3 dxc4 5.a4 Bf5 6.Ne5 e6 7.f3 Bb4 8.e4
-42.00%,28.20%,1.d4 d5 2.c4 c6 3.Nf3 Nf6 4.e3 Bf5 5.cxd5 cxd5 6.Nc3
-42.60%,34.30%,1.d4 d5 2.c4 c6 3.Nf3 Nf6 4.Nc3 dxc4 5.e4 b5 6.e5
-48.40%,15.10%,1.e4 e5 2.Nf3 Nc6 3.Bb5 Nf6 4.O-O d6 5.d4 Bd7 6.Nc3 Be7 7.Bxc6
-41.40%,20.40%,1.e4 e5 2.Nf3 Nc6 3.Bb5 Nf6 4.O-O Nxe4 5.d4 Be7 6.dxe5
-41.40%,28.70%,1.e4 e5 2.Nf3 Nc6 3.Bb5 Bc5 4.O-O Nf6 5.c3 O-O 6.d4 Bb6 7.Bg5
-34.00%,29.30%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.d4
-37.40%,12.60%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 O-O 8.c3 d6 9.h3 Na5 10.Bc2 c5 11.d4 Qc7 12.Nbd2 Nc6 13.dxc5
-39.10%,26.60%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 O-O 8.c3 d6 9.h3 Na5 10.Bc2
-34.40%,25.10%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Bxc6
-37.50%,23.10%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 O-O 8.c3 d6 9.h3
-40.10%,23.10%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.d3
-32.80%,31.70%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Nc3
-40.50%,27.00%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 O-O 8.c3 d6 9.d3
-39.00%,22.70%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 O-O 8.c3 d6 9.a3
-44.30%,25.90%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Qe2
-49.10%,20.00%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 O-O 8.c3 d6 9.d4
-32.80%,42.70%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 O-O 8.c3 d5 9.exd5 Nxd5 10.Nxe5 Nxe5 11.Rxe5 c6 12.d4
-36.30%,23.00%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 O-O 8.c3 d5 9.exd5 Nxd5 10.Nxe5 Nxe5 11.Rxe5 c6 12.Bxd5 cxd5 13.d4 Bd6 14.Re3
-36.30%,22.30%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 O-O 8.c3 d6 9.h3 Nb8 10.d3
-41.10%,24.20%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 O-O 8.c3 d6 9.h3 Na5 10.Bc2 c5 11.d4 Qc7 12.Nbd2 cxd4 13.cxd4
-40.90%,29.40%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.d3 d6 6.c4
-39.90%,26.90%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 d6 5.Bxc6+ bxc6 6.d4
-40.40%,25.30%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 d6 5.c3 f5 6.exf5 Bxf5 7.O-O
-59.90%,20.40%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O b5 6.Bb3 Be7 7.a4
-44.00%,24.20%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Nxe4 6.d4 b5 7.Bb3
-38.00%,19.40%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Nxe4 6.d4 b5 7.Bb3 d5 8.dxe5 Be6 9.Nbd2
-40.00%,33.80%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Nxe4 6.d4 b5 7.Bb3 d5 8.dxe5 Be6 9.c3 Be7 10.Re1
-40.10%,20.70%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Nxe4 6.d4 b5 7.Bb3 d5 8.dxe5 Be6 9.Qe2
-32.70%,23.80%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Nxe4 6.d4 b5 7.Bb3 d5 8.dxe5 Be6 9.Nbd2 Nc5 10.c3 d4 11.Ng5
-33.30%,19.10%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Nxe4 6.d4 b5 7.Bb3 d5 8.dxe5 Be6 9.c3 Be7 10.Nbd2 O-O 11.Qe2
-43.60%,17.90%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Nxe4 6.d4 b5 7.Bb3 d5 8.dxe5 Be6 9.c3 Bc5 10.Qd3
-38.30%,28.90%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Nxe4 6.d4 b5 7.Bb3 d5 8.dxe5 Be6 9.c3 Bc5 10.Nbd2
-59.60%,14.40%,1.e4 e5 2.Nf3 Nc6 3.Bb5 d6 4.d4 Bd7 5.Nc3 Nf6 6.Bxc6
-44.20%,19.40%,1.d4 d5 2.c4 e6 3.Nc3 c5 4.cxd5 exd5 5.Nf3 Nc6 6.g3 Nf6 7.Bg2 Be7 8.O-O O-O 9.Bg5
-45.90%,15.90%,1.d4 d5 2.c4 e6 3.Nc3 c5 4.cxd5 exd5 5.Nf3 Nc6 6.g3 Nf6 7.Bg2 Be7 8.O-O O-O 9.dxc5 Bxc5 10.Na4
-52.20%,18.40%,1.d4 d5 2.c4 e6 3.Nc3 c5 4.cxd5 exd5 5.Nf3 Nc6 6.g3
-31.50%,26.10%,1.e4 e5 2.Nc3 Nf6 3.Bc4 Nxe4 4.Qh5 Nd6 5.Bb3 Be7 6.Nf3 Nc6 7.Nxe5
-47.80%,23.40%,1.e4 e5 2.Nc3 Nf6 3.f4 d5 4.fxe5 Nxe4 5.Nf3 Bg4 6.Qe2
-40.70%,35.20%,1.Nf3 Nf6 2.b3 g6 3.Bb2 Bg7 4.g3 O-O 5.Bg2 d6 6.O-O
-44.40%,22.40%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 O-O 8.c3 d6
-41.20%,25.10%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 O-O 8.c3 d6 9.h3 Na5 10.Bc2 c5
-39.90%,24.90%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 O-O 8.c3 d6 9.h3 Bb7
-31.40%,31.40%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 O-O 8.c3 d6 9.h3 a5
-36.80%,27.00%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 O-O 8.c3 d6 9.h3 Na5 10.Bc2 c5 11.d4 Nd7
-37.50%,23.80%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 O-O 8.c3 d6 9.h3 Nd7
-37.90%,18.30%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 O-O 8.c3 d6 9.h3 Be6
-36.30%,23.30%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 O-O 8.c3 d6 9.h3 h6
-40.50%,17.00%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 O-O 8.c3 d6 9.h3 Re8 10.d4 Bb7 11.Nbd2 Bf8 12.a3 h6
-46.40%,25.90%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 Bb7
-39.50%,30.30%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Qe2 b5 7.Bb3 O-O
-46.40%,25.10%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Qe2 b5 7.Bb3 d6
-30.70%,20.40%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 O-O 8.c3 d6 9.h3 Re8
-40.30%,25.70%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Bxc6 dxc6 5.O-O Bg4 6.h3 h5
-31.40%,25.00%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Bxc6 dxc6 5.d4 exd4 6.Qxd4 Qxd4 7.Nxd4 Bd6
-35.90%,32.60%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 O-O 8.c3 d5
-31.40%,34.80%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 O-O 8.c3 d5 9.exd5 Nxd5 10.Nxe5 Nxe5 11.Rxe5 c6 12.d4 Bd6 13.Re1 Qh4 14.g3 Qh3
-33.90%,24.90%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 O-O 8.c3 d5 9.exd5 Nxd5 10.Nxe5 Nxe5 11.Rxe5 c6
-37.80%,44.60%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 O-O 8.c3 d5 9.exd5 Nxd5 10.Nxe5 Nxe5 11.Rxe5 Nf6
-46.00%,38.10%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 O-O 8.c3 d5 9.exd5 e4
-54.90%,21.10%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O b5 6.Bb3 d6
-37.90%,30.80%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O b5 6.Bb3 Bb7
-30.80%,35.90%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 O-O 8.c3 d6 9.h3 Nb8
-36.10%,26.10%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 O-O 8.c3 d6 9.h3 Nb8 10.d4 Nbd7
-40.90%,26.10%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 d6 5.c3 Bd7 6.d4 Nge7
-35.50%,32.70%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 d6 5.Bxc6+ bxc6 6.d4 f6
-36.30%,25.70%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 d6 5.c3 Bd7 6.d4 g6
-40.30%,30.60%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Nxe4 6.d4 b5 7.Bb3 d5 8.dxe5 Be6 9.c3 Nc5
-39.00%,25.60%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Nxe4 6.d4 b5 7.Bb3 d5 8.dxe5 Be6 9.c3 Be7
-32.20%,37.90%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Nxe4 6.d4 b5 7.Bb3 d5 8.dxe5 Be6 9.c3 Bc5 10.Nbd2 O-O 11.Bc2 Nxf2
-35.40%,30.90%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Nxe4 6.d4 b5 7.Bb3 d5 8.dxe5 Be6 9.c3 Bc5
-40.00%,24.30%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Nxe4 6.d4 b5 7.Bb3 d5 8.dxe5 Be6
-43.10%,29.40%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Nxe4 6.d4 exd4
-46.20%,27.10%,1.e4 e5 2.Nf3 Nc6 3.Bb5 f5 4.Nc3 fxe4 5.Nxe4 d5 6.Nxe5 dxe4 7.Nxc6 Qg5
-42.10%,24.40%,1.e4 e5 2.Nf3 Nc6 3.Bb5 f5 4.Nc3 fxe4 5.Nxe4 d5 6.Nxe5 dxe4 7.Nxc6 Qd5
-51.30%,28.80%,1.e4 a6 2.d4 e6 3.Nf3 b5 4.Bd3 c5 5.c3 Bb7 6.O-O Nf6
-43.60%,20.60%,1.d4 d5 2.c4 e6 3.Nc3 c5 4.cxd5 exd5 5.Nf3 Nc6 6.g3 Nf6 7.Bg2 Be7 8.O-O O-O
-42.20%,22.70%,1.d4 d5 2.c4 e6 3.Nc3 c5 4.cxd5 exd5 5.Nf3 Nc6 6.g3 Nf6 7.Bg2 Be7 8.O-O O-O 9.Bg5 c4
-44.20%,29.30%,1.d4 d5 2.c4 e6 3.Nc3 c5 4.cxd5 exd5 5.Nf3 Nc6 6.g3 Nf6 7.Bg2 Be7 8.O-O O-O 9.dxc5 d4
-49.10%,13.20%,1.d4 d5 2.c4 e6 3.Nc3 c5 4.cxd5 exd5 5.Nf3 Nc6 6.g3 Nf6 7.Bg2 Be7 8.O-O O-O 9.Bg5 Be6
-44.40%,18.10%,1.d4 d5 2.c4 e6 3.Nc3 c5 4.cxd5 exd5 5.Nf3 Nc6 6.g3 Nf6 7.Bg2 Be7 8.O-O O-O 9.Bg5 cxd4 10.Nxd4 h6 11.Be3 Re8
-46.10%,18.80%,1.d4 d5 2.c4 e6 3.Nc3 c5 4.cxd5 exd5 5.Nf3 Nc6 6.g3 Nf6 7.Bg2 Be7 8.O-O O-O 9.Bg5 cxd4 10.Nxd4 Re8
-42.10%,18.90%,1.d4 d5 2.c4 e6 3.Nc3 c5 4.cxd5 exd5 5.Nf3 Nc6 6.g3 Nf6 7.Bg2 Be7 8.O-O O-O 9.Bg5 cxd4 10.Nxd4 h6 11.Be3 Bg4
-42.50%,25.90%,1.d4 d5 2.c4 e6 3.Nc3 c5 4.cxd5 exd5 5.Nf3 Nc6 6.g3 Nf6
-44.70%,22.10%,1.d4 d5 2.c4 e6 3.Nc3 c5 4.cxd5 exd5 5.Nf3 Nc6 6.g3 Nf6 7.Bg2 Be7
-40.50%,26.40%,1.d4 d5 2.c4 e6 3.Nc3 c5 4.cxd5 exd5 5.Nf3 Nc6 6.g3 c4
-44.80%,25.00%,1.d4 d5 2.c4 e6 3.Nc3 c5 4.cxd5 exd5 5.Nf3 Nc6 6.g3 Nf6 7.Bg2 Bg4
-43.70%,40.40%,1.e4 e5 2.Nc3 Nf6 3.Bc4 Nxe4 4.Qh5 Nd6 5.Bb3 Nc6 6.Nb5 g6 7.Qf3 f5 8.Qd5 Qe7 9.Nxc7+ Kd8 10.Nxa8 b6
+White Win %,Black Win %,Moves,Number of moves
+41.10%,35.90%,1.e4 Nf6 2.e5 Nd5 3.d4 d6 4.Bc4,4
+41.00%,33.40%,1.e4 Nf6 2.e5 Nd5 3.d4 d6 4.c4 Nb6 5.exd6,5
+40.20%,39.50%,1.e4 Nf6 2.e5 Nd5 3.d4 d6 4.c4 Nb6 5.f4,5
+42.30%,32.90%,1.e4 Nf6 2.e5 Nd5 3.d4 d6 4.c4 Nb6 5.f4 dxe5 6.fxe5 Nc6 7.Be3,7
+35.50%,41.90%,1.e4 Nf6 2.e5 Nd5 3.c4 Nb6 4.c5 Nd5 5.Nc3 e6 6.Bc4,6
+37.10%,39.90%,1.e4 Nf6 2.d3,2
+44.90%,24.50%,1.e4 Nf6 2.e5 Nd5 3.d4 d6 4.Nf3,4
+38.10%,40.30%,1.e4 Nf6 2.e5 Nd5 3.d4 d6 4.Nf3 Bg4 5.c4 Nb6 6.Be2,6
+46.70%,17.30%,1.e4 Nf6 2.e5 Nd5 3.d4 d6 4.Nf3 g6 5.Bc4 Nb6 6.Bb3 Bg7 7.a4,7
+44.50%,34.80%,1.e4 Nf6 2.e5 Nd5 3.d4 d6 4.Nf3 Bg4 5.h3,5
+39.50%,33.60%,1.e4 Nf6 2.e5 Nd5 3.Nc3,3
+38.40%,46.80%,1.e4 Nf6 2.Nc3 d5 3.e5 Nfd7 4.e6,4
+37.10%,44.80%,1.e4 Nf6 2.e5 Nd5 3.c4 Nb6 4.b3,4
+38.60%,45.90%,1.e4 Nf6 2.e5 Nd5 3.c4,3
+34.60%,36.70%,1.e4 Nf6 2.e5 Nd5 3.c4 Nb6 4.c5,4
+46.40%,37.00%,1.Nh3,1
+42.10%,37.50%,1.a3,1
+40.60%,47.40%,1.f3,1
+38.60%,38.60%,1.d4 Nf6 2.c4 c5 3.d5 b5 4.cxb5 a6 5.bxa6 g6 6.Nc3 Bxa6 7.f4,7
+42.20%,33.10%,1.d4 Nf6 2.c4 c5 3.d5 b5 4.cxb5 a6 5.f3,5
+42.50%,29.30%,1.d4 Nf6 2.c4 c5 3.d5 b5 4.cxb5 a6 5.bxa6 Bxa6 6.Nc3 g6 7.Nf3 d6 8.g3 Bg7 9.Bg2,9
+39.00%,34.00%,1.d4 Nf6 2.c4 c5 3.d5 b5 4.cxb5 a6 5.bxa6,5
+44.00%,26.30%,1.d4 Nf6 2.c4 c5 3.d5 b5 4.cxb5 a6 5.bxa6 Bxa6 6.Nc3 d6 7.e4 Bxf1 8.Kxf1 g6 9.g3 Bg7 10.Kg2 O-O 11.Nf3,11
+46.00%,29.30%,1.d4 Nf6 2.c4 c5 3.d5 b5 4.cxb5 a6 5.e3,5
+40.00%,34.80%,1.d4 Nf6 2.c4 c5 3.d5 b5 4.cxb5 a6 5.b6,5
+38.80%,40.80%,1.d4 Nf6 2.c4 c5 3.d5 b5 4.cxb5 a6 5.bxa6 Bxa6 6.Nc3 d6 7.e4 Bxf1 8.Kxf1 g6 9.Nge2,9
+40.20%,35.10%,1.d4 Nf6 2.c4 c5 3.d5 b5 4.cxb5 a6 5.bxa6 Bxa6 6.Nc3 d6 7.e4,7
+41.80%,31.30%,1.d4 Nf6 2.c4 c5 3.d5 b5 4.Bg5,4
+45.90%,28.20%,1.d4 Nf6 2.c4 c5 3.d5 b5 4.Nf3,4
+44.20%,40.20%,1.d4 Nf6 2.c4 c5 3.d5 b5 4.f3,4
+44.00%,33.00%,1.d4 Nf6 2.c4 c5 3.d5 b5 4.Nd2,4
+37.30%,38.20%,1.d4 Nf6 2.c4 c5 3.d5 b5 4.a4,4
+32.70%,48.70%,1.d4 Nf6 2.c4 c5 3.d5 b5 4.cxb5 a6 5.Nc3,5
+37.90%,45.80%,1.d4 Nf6 2.c4 c5 3.d5 b5 4.cxb5 a6 5.Nc3 axb5 6.e4 b4 7.Nb5,7
+32.50%,46.40%,1.d4 c5 2.dxc5,2
+45.90%,27.70%,1.d4 c5 2.d5 Nf6 3.Nf3,3
+46.60%,33.00%,1.d4 Nf6 2.c4 c5 3.d5 e6 4.Nc3 exd5 5.cxd5 d6 6.e4 g6 7.Nf3 Bg7 8.Bg5,8
+44.60%,28.10%,1.d4 Nf6 2.c4 c5 3.d5 e6 4.Nc3 exd5 5.cxd5 d6 6.e4 g6 7.Nf3 Bg7 8.Be2 O-O 9.O-O Re8 10.Nd2 Na6 11.f3,11
+43.50%,32.20%,1.d4 Nf6 2.c4 c5 3.d5 e6 4.Nc3 exd5 5.cxd5 d6 6.e4 g6 7.Nf3 Bg7 8.Be2 O-O 9.O-O Re8 10.Nd2,10
+42.50%,35.10%,1.d4 Nf6 2.c4 c5 3.d5 e6 4.Nc3 exd5 5.cxd5 d6 6.e4 g6 7.Nf3 Bg7 8.Be2 O-O 9.O-O a6 10.a4,10
+36.00%,40.90%,1.d4 Nf6 2.c4 c5 3.d5 e6 4.Nc3 exd5 5.cxd5 d6 6.e4 g6 7.Nf3,7
+36.00%,35.70%,1.d4 Nf6 2.c4 c5 3.d5 e6 4.Nc3 exd5 5.cxd5 d6 6.e4 g6 7.Nf3 Bg7 8.Be2 O-O 9.O-O,9
+45.10%,25.80%,1.d4 Nf6 2.c4 c5 3.d5 e6 4.Nc3 exd5 5.cxd5 d6 6.e4 g6 7.Nf3 Bg7 8.h3,8
+38.70%,34.20%,1.d4 Nf6 2.c4 c5 3.d5 e6 4.Nc3 exd5 5.cxd5 d6 6.e4 g6 7.Nf3 Bg7 8.Be2,8
+45.30%,29.30%,1.d4 c5 2.d5 e6 3.e4,3
+44.70%,34.30%,1.d4 Nf6 2.c4 c5 3.d5 e6 4.Nc3 exd5 5.cxd5 d6 6.e4,6
+47.20%,27.00%,1.d4 Nf6 2.c4 c5 3.d5 e6 4.Nc3 exd5 5.cxd5 d6 6.Nf3 g6 7.Nd2,7
+48.40%,33.90%,1.d4 Nf6 2.c4 c5 3.d5 e6 4.Nc3 exd5 5.cxd5 d6 6.e4 g6 7.f4 Bg7 8.e5,8
+56.00%,29.50%,1.d4 Nf6 2.c4 c5 3.d5 e6 4.Nc3 exd5 5.cxd5 d6 6.e4 g6 7.f4,7
+50.30%,30.60%,1.d4 Nf6 2.c4 c5 3.d5 e6 4.Nc3 exd5 5.cxd5 d6 6.e4 g6 7.f4 Bg7 8.Bb5+,8
+43.70%,31.30%,1.d4 Nf6 2.c4 c5 3.d5 e6 4.Nc3 exd5 5.cxd5 d6 6.Nf3 g6 7.Bg5,7
+35.90%,41.30%,1.f4,1
+41.90%,33.60%,1.e4 e5 2.Nc3 Nf6 3.Bc4 Nxe4 4.Nf3,4
+48.90%,31.40%,1.e4 e5 2.Bc4,2
+56.30%,29.10%,1.e4 e5 2.Bc4 Nf6 3.d4,3
+45.50%,32.70%,1.e4 e5 2.Bc4 Nf6 3.d4 exd4 4.Nf3,4
+42.90%,37.40%,1.e4 e5 2.Bc4 Nf6 3.d4 exd4 4.Nf3 Nxe4 5.Qxd4,5
+39.50%,32.20%,1.e4 e5 2.Bc4 Nf6 3.d3 Nc6 4.Nc3,4
+37.90%,30.40%,1.e4 e5 2.Bc4 Nf6 3.d3 Nc6 4.Nc3 Bb4 5.Ne2,5
+48.20%,29.70%,1.e4 e5 2.Bc4 Nf6 3.d3 Bc5 4.Nc3,4
+45.50%,34.50%,1.d4 d5 2.e4,2
+39.50%,50.90%,1.d4 d5 2.e4 dxe4 3.Nc3 Nf6 4.f3 exf3 5.Qxf3,5
+35.00%,46.60%,1.d4 d5 2.e4 dxe4 3.Nc3 Nf6 4.Bg5,4
+42.30%,30.20%,1.d4 Nf6 2.c4 e6 3.Nf3 c5 4.d5 b5 5.Bg5,5
+43.30%,23.80%,1.d4 Nf6 2.c4 e6 3.Nf3 Bb4+ 4.Nbd2,4
+42.70%,32.50%,1.d4 Nf6 2.c4 e5 3.dxe5 Ng4 4.Nf3,4
+55.10%,27.20%,1.d4 Nf6 2.c4 e5 3.dxe5 Ng4 4.e4,4
+42.00%,43.00%,1.d4 Nf6 2.c4 e5 3.dxe5 Ne4 4.Qc2,4
+50.90%,22.50%,1.d4 Nf6 2.c4 e5 3.dxe5 Ng4 4.Bf4,4
+47.90%,29.50%,1.e4 c6 2.c4,2
+41.30%,33.00%,1.e4 c6 2.d4 d5 3.e5,3
+42.70%,39.20%,1.e4 c6 2.d4 d5 3.e5 Bf5 4.g4,4
+43.80%,36.10%,1.e4 c6 2.d4 d5 3.e5 Bf5 4.Ne2,4
+41.30%,31.40%,1.e4 c6 2.d4 d5 3.e5 Bf5 4.Nf3,4
+44.40%,32.60%,1.e4 c6 2.d4 d5 3.e5 Bf5 4.h4,4
+40.50%,37.50%,1.e4 c6 2.d4 d5 3.e5 Bf5 4.Nc3,4
+39.90%,37.60%,1.e4 c6 2.d4 d5 3.e5 Bf5 4.Nc3 e6 5.g4 Bg6 6.Nge2 c5 7.h4,7
+40.10%,31.20%,1.e4 c6 2.d3,2
+34.60%,31.80%,1.e4 c6 2.d3 d5 3.Nd2 g6 4.g3 Bg7 5.Bg2 e5 6.Ngf3 Ne7 7.O-O O-O 8.b4,8
+37.40%,25.90%,1.e4 c6 2.d4 d5 3.Nc3 dxe4 4.Nxe4 Bf5 5.Ng3 Bg6 6.Nh3,6
+36.30%,30.80%,1.e4 c6 2.d4 d5 3.Nc3 dxe4 4.Nxe4 Bf5 5.Ng3 Bg6 6.h4,6
+45.50%,29.70%,1.e4 c6 2.d4 d5 3.Nc3 dxe4 4.Nxe4 Bf5 5.Ng3 Bg6 6.f4,6
+36.70%,24.30%,1.e4 c6 2.d4 d5 3.Nc3 dxe4 4.Nxe4 Bf5 5.Ng3 Bg6 6.h4 h6 7.Nf3 Nd7 8.h5 Bh7 9.Bd3 Bxd3 10.Qxd3,10
+39.40%,42.80%,1.e4 c6 2.b3,2
+36.90%,32.00%,1.e4 c6 2.d4 d5 3.exd5 cxd5 4.Bd3 Nc6 5.c3 Nf6 6.Bf4,6
+33.80%,39.90%,1.e4 c6 2.d4 d5 3.exd5,3
+32.70%,26.50%,1.e4 c6 2.d4 d5 3.Nc3 dxe4 4.Nxe4 Nf6 5.Nxf6+ exf6 6.Bc4,6
+39.50%,35.80%,1.e4 c6 2.Nc3 d5 3.Qf3,3
+26.20%,62.00%,1.e4 c6 2.Bc4,2
+39.90%,20.00%,1.e4 c6 2.d4 d5 3.Nc3 dxe4 4.Nxe4 Nd7 5.Ng5 Ngf6 6.Bd3 e6 7.N1f3 Bd6 8.Qe2 h6 9.Ne4 Nxe4 10.Qxe4,10
+47.30%,27.10%,1.e4 c6 2.d4 d5 3.Nc3 dxe4 4.Nxe4 Nd7 5.Ng5,5
+38.00%,29.90%,1.e4 c6 2.d4 d5 3.Nc3 dxe4 4.Nxe4 Nd7 5.Nf3 Ngf6 6.Ng3,6
+40.40%,24.70%,1.e4 c6 2.d4 d5 3.Nc3 dxe4 4.Nxe4 Nd7 5.Bc4 Ngf6 6.Ng5 e6 7.Qe2 Nb6 8.Bb3,8
+37.40%,38.60%,1.e4 c6 2.d4 d5 3.Nc3 dxe4 4.Nxe4,4
+42.70%,34.50%,1.e4 c6 2.d4 d5 3.f3,3
+66.70%,18.30%,1.e4 c6 2.d4 d5 3.f3 dxe4 4.fxe4 e5 5.Nf3 exd4 6.Bc4,6
+41.90%,29.20%,1.e4 c6 2.d4 d5 3.Nd2,3
+52.20%,24.90%,1.e4 c6 2.d4 d5 3.exd5 cxd5 4.c4 Nf6 5.Nc3,5
+49.30%,27.60%,1.e4 c6 2.d4 d5 3.exd5 cxd5 4.c4,4
+38.30%,39.80%,1.e4 c6 2.d4 d5 3.exd5 cxd5 4.c4 Nf6 5.c5,5
+36.00%,44.10%,1.e4 c6 2.d4 d5 3.Nc3 dxe4 4.f3,4
+46.60%,35.80%,1.e4 c6 2.d4 d5 3.Nc3,3
+42.20%,32.20%,1.e4 c6 2.Nc3 d5 3.Nf3,3
+37.90%,45.80%,1.e4 c6 2.d4 d5 3.Nc3 dxe4 4.Bc4,4
+42.30%,21.10%,1.d4 Nf6 2.c4 e6 3.g3 d5 4.Bg2 Be7 5.Nf3,5
+56.60%,14.40%,1.d4 Nf6 2.c4 e6 3.g3 d5 4.Bg2 Be7 5.Nf3 O-O 6.O-O Nbd7 7.Qc2,7
+40.80%,27.90%,1.d4 Nf6 2.c4 e6 3.g3 d5 4.Bg2,4
+51.20%,20.60%,1.d4 Nf6 2.c4 e6 3.g3 d5 4.Bg2 Be7 5.Nf3 O-O 6.O-O Nbd7 7.Nc3 c6 8.Qd3,8
+36.60%,29.90%,1.d4 Nf6 2.c4 e6 3.g3,3
+29.00%,30.30%,1.d4 Nf6 2.c4 e6 3.g3 d5 4.Bg2 dxc4 5.Qa4+ Nbd7 6.Qxc4,6
+31.60%,27.40%,1.d4 Nf6 2.c4 e6 3.g3 d5 4.Bg2 dxc4 5.Qa4+,5
+36.20%,28.70%,1.d4 Nf6 2.c4 e6 3.g3 d5 4.Bg2 dxc4 5.Nf3,5
+52.10%,30.10%,1.e4 e5 2.d4 exd4 3.Qxd4 Nc6 4.Qe3,4
+45.00%,38.20%,1.h3,1
+44.80%,29.00%,1.d4 d5 2.Nf3 Nf6 3.e3 e6 4.Bd3,4
+37.00%,35.50%,1.d4 d5 2.Nf3 Nf6 3.e3 e6 4.Bd3 c5 5.c3,5
+47.70%,38.40%,1.e4 e5 2.d4 exd4 3.c3,3
+41.30%,28.50%,1.d4 f5 2.g3 Nf6 3.Bg2 e6 4.Nh3,4
+39.40%,40.80%,1.d4 f5 2.e4 fxe4 3.Nc3 Nf6 4.f3,4
+44.40%,25.90%,1.d4 f5 2.c4 Nf6 3.g3 e6 4.Bg2,4
+50.80%,22.50%,1.d4 f5 2.c4 Nf6 3.g3 e6 4.Bg2 Be7 5.Nh3,5
+41.30%,30.00%,1.d4 f5 2.c4 Nf6 3.g3 e6 4.Bg2 Be7 5.Nf3 O-O 6.O-O d6 7.Nc3 Qe8 8.Qc2,8
+52.00%,21.50%,1.d4 f5 2.c4 Nf6 3.g3 e6 4.Bg2 Be7 5.Nf3 O-O 6.O-O d6 7.Nc3 Qe8 8.b3,8
+52.70%,16.00%,1.d4 f5 2.c4 Nf6 3.g3 e6 4.Bg2 Be7 5.Nf3 O-O 6.O-O d5 7.b3 c6 8.Ba3,8
+40.20%,25.70%,1.d4 f5 2.c4 Nf6 3.g3 e6 4.Bg2 Be7 5.Nf3 O-O 6.O-O d5 7.b3,7
+44.60%,27.20%,1.d4 f5 2.g3,2
+43.30%,30.90%,1.d4 f5 2.c4 Nf6 3.g3,3
+46.90%,30.60%,1.d4 f5 2.Bg5,2
+44.30%,35.60%,1.d4 f5 2.h3 Nf6 3.g4,3
+43.80%,35.60%,1.d4 f5 2.Qd3,2
+44.30%,36.10%,1.d4 f5 2.h3,2
+48.60%,36.40%,1.d4 f5 2.g4,2
+39.90%,30.00%,1.d4 f5 2.c4 Nf6 3.g3 g6 4.Bg2 Bg7 5.Nf3,5
+39.40%,38.00%,1.d4 f5 2.c4 Nf6 3.Nc3,3
+48.40%,27.10%,1.d4 f5 2.Nc3,2
+40.50%,34.40%,1.d4 f5 2.c4 e6 3.Nc3,3
+42.00%,35.30%,1.d4 f5 2.e4 fxe4 3.Nc3 Nf6 4.Bg5,4
+46.60%,31.30%,1.d4 f5 2.e4 fxe4 3.Nc3 Nf6 4.Bg5 g6 5.f3,5
+38.50%,29.30%,1.c4 e6 2.Nf3 d5 3.g3,3
+41.80%,23.90%,1.c4 e6 2.Nf3 d5 3.g3 Nf6 4.Bg2 Be7 5.O-O,5
+38.90%,31.70%,1.c4 e6 2.Nf3 d5 3.b3 Nf6 4.Bb2 c5 5.e3,5
+49.70%,21.50%,1.c4 Nf6 2.Nc3 d5 3.cxd5 Nxd5 4.Nf3,4
+39.10%,27.90%,1.c4 Nf6 2.Nc3 g6 3.Nf3 Bg7 4.e4,4
+45.90%,24.10%,1.c4 Nf6 2.Nc3 e6 3.e4 d5 4.e5,4
+55.30%,22.00%,1.c4 Nf6 2.Nc3 e6 3.e4,3
+40.70%,25.20%,1.c4 Nf6 2.Nf3,2
+40.70%,31.70%,1.c4 Nf6 2.Nc3,2
+51.60%,18.90%,1.c4 Nf6 2.Nc3 e6 3.Nf3 b6 4.e4 Bb7 5.Bd3,5
+47.50%,27.60%,1.c4 Nf6 2.Nc3 e6 3.Nf3 Bb4 4.g4,4
+38.20%,36.50%,1.c4,1
+32.90%,30.30%,1.c4 e5 2.Nc3 Nc6 3.g3 g6 4.Bg2 Bg7 5.d3 d6 6.e4,6
+38.20%,30.60%,1.c4 e5 2.Nc3 Nc6 3.g3 g6 4.Bg2 Bg7 5.d3,5
+41.90%,31.90%,1.c4 e5 2.Nc3 Nc6 3.Nf3 Nf6 4.e4,4
+37.30%,27.50%,1.c4 e5 2.Nc3 Nc6 3.Nf3 Nf6 4.g3,4
+38.80%,27.40%,1.c4 e5 2.Nc3 Nc6 3.Nf3 Nf6 4.d3,4
+39.70%,24.90%,1.c4 e5 2.Nc3 Nc6 3.Nf3 Nf6 4.a3,4
+39.20%,29.40%,1.c4 e5 2.Nc3 Nc6 3.Nf3 Nf6 4.e3 Bb4 5.Qc2 O-O 6.Nd5 Re8 7.Qf5,7
+41.00%,28.80%,1.c4 e5 2.Nc3 Nc6 3.Nf3 Nf6 4.e3,4
+36.30%,36.70%,1.c4 e5 2.Nc3 d6 3.Nf3,3
+41.40%,25.00%,1.c4 e5 2.Nc3 Nc6 3.g3 g6 4.Bg2 Bg7 5.Rb1,5
+45.10%,29.60%,1.c4 e5 2.Nf3,2
+42.40%,32.90%,1.c4 e5 2.Nc3,2
+40.20%,34.20%,1.c4 e5 2.Nc3 Nc6 3.Nf3,3
+46.60%,29.00%,1.c4 e5 2.Nc3 Nf6 3.g3,3
+38.20%,34.70%,1.c4 c5 2.Nf3 Nf6 3.d4,3
+29.60%,41.40%,1.c4 c5 2.Nc3 Nc6 3.g3 g6 4.Bg2 Bg7 5.e4,5
+27.00%,35.70%,1.c4 c5 2.Nc3 Nc6 3.g3 g6 4.Bg2 Bg7 5.Nf3 Nf6 6.O-O O-O 7.b3,7
+28.60%,27.40%,1.c4 c5 2.Nc3 Nc6 3.g3 g6 4.Bg2 Bg7 5.Nf3 Nf6 6.O-O O-O 7.d3,7
+42.10%,30.00%,1.c4 c5 2.Nc3 Nf6 3.g3,3
+50.70%,24.80%,1.c4 c5 2.Nc3 Nc6 3.g3,3
+43.70%,19.90%,1.c4 c5 2.Nc3 Nc6 3.g3 g6 4.Bg2 Bg7 5.Nf3 Nf6 6.O-O O-O 7.d4,7
+37.20%,34.00%,1.c4 c5 2.Nc3,2
+28.00%,36.00%,1.c4 c5 2.Nc3 Nc6 3.g3 g6 4.Bg2 Bg7 5.Nf3,5
+35.80%,51.20%,1.e4 e5 2.c4,2
+35.00%,47.60%,1.d4 e5 2.d5,2
+64.40%,27.30%,1.d4 e5 2.dxe5 Nc6 3.Nf3 Qe7 4.Qd5,4
+42.70%,34.70%,1.d4 e5 2.e3,2
+48.00%,24.80%,1.e4 e5 2.Nf3 Nc6 3.Nc3 Nf6 4.Bb5 Bb4 5.O-O O-O 6.d3,6
+42.60%,31.60%,1.e4 e5 2.Nf3 Nc6 3.Nc3 Nf6 4.a3,4
+43.00%,43.80%,1.e4 e5 2.Nf3 Nc6 3.Nc3 Nf6 4.Nxe5,4
+28.80%,51.90%,1.e4 e5 2.Nf3 Nc6 3.Nc3 Nf6 4.Bc4,4
+23.50%,63.10%,1.e4 e5 2.Nf3 Nc6 3.Nc3 Nf6 4.Bc4 Nxe4 5.Bxf7+,5
+36.20%,29.10%,1.e4 e5 2.Nf3 Nc6 3.Nc3 Nf6 4.Bb5 Bb4 5.O-O O-O 6.d3 Bxc3 7.bxc3 d6 8.Re1,8
+28.90%,23.10%,1.e4 e5 2.Nf3 Nc6 3.Nc3 Nf6 4.Bb5 Bb4 5.O-O O-O 6.Bxc6,6
+53.10%,24.20%,1.e4 e5 2.Nf3 Nc6 3.Nc3 Nf6 4.Bb5 a6 5.Bxc6,5
+45.30%,34.50%,1.e4 e5 2.Nf3 Nc6 3.Nc3 Nf6 4.d4,4
+35.60%,35.00%,1.e4 e5 2.Nf3 Nc6 3.Nc3 Nf6 4.d4 exd4 5.Nd5,5
+36.90%,28.50%,1.e4 e5 2.Nf3 Nc6 3.Nc3 Nf6 4.d4 Bb4 5.Nxe5,5
+38.30%,34.50%,1.e4 e5 2.Nf3 Nc6 3.Nc3 Nf6 4.Bb5,4
+16.30%,19.60%,1.e4 e5 2.Nf3 Nc6 3.Nc3 Nf6 4.Bb5 Nd4 5.Nxd4,5
+36.30%,22.40%,1.e4 e5 2.Nf3 Nc6 3.Nc3 Nf6 4.Bb5 Bb4 5.O-O O-O 6.d3 d6 7.Ne2,7
+40.60%,38.20%,1.e4 e6 2.d4 d5 3.e5 c5 4.c3,4
+39.40%,39.10%,1.e4 e6 2.d4 d5 3.e5,3
+43.90%,32.10%,1.e4 e6 2.d4 d5 3.e5 c5 4.c3 Nc6 5.Nf3 Qb6 6.a3,6
+41.60%,40.50%,1.e4 e6 2.d4 d5 3.e5 c5 4.c3 Nc6 5.Nf3 Qb6 6.Bd3,6
+42.30%,41.40%,1.e4 e6 2.d4 d5 3.e5 c5 4.Qg4,4
+44.00%,38.70%,1.e4 e6 2.d4 d5 3.e5 c5 4.Qg4 cxd4 5.Nf3,5
+32.20%,51.20%,1.e4 e6 2.d4 d5 3.e5 c5 4.Nf3,4
+39.50%,38.10%,1.e4 e6 2.d4 d5 3.e5 c5 4.c3 Nc6 5.Nf3,5
+36.80%,43.70%,1.e4 e6 2.d4 d5 3.e5 c5 4.Nf3 cxd4 5.Bd3,5
+45.50%,32.90%,1.e4 e6 2.d4 d5 3.Be3,3
+48.90%,30.90%,1.e4 e6 2.d4 d5 3.Nc3 Nf6 4.Bg5 Be7 5.e5 Nfd7 6.h4,6
+45.70%,30.70%,1.e4 e6 2.Qe2,2
+50.20%,25.30%,1.e4 e6 2.d4 d5 3.Nc3 Nf6 4.Bg5 Be7 5.e5 Nfd7 6.Bxe7 Qxe7 7.Nb5,7
+33.90%,36.10%,1.e4 e6 2.d4 d5 3.Nc3 Nf6 4.exd5,4
+45.80%,32.80%,1.e4 e6 2.d4 d5 3.Nc3 Nf6 4.Bg5 Be7 5.e5 Nfd7 6.Bxe7 Qxe7 7.Qg4,7
+42.00%,43.40%,1.e4 e6 2.d4 d5 3.Nc3 Nf6 4.Bg5 Be7 5.Bxf6 Bxf6 6.e5 Be7 7.Qg4,7
+39.50%,39.50%,1.e4 e6 2.d4 d5 3.Nc3 Nf6 4.Bg5 Be7 5.Bxf6,5
+51.20%,28.40%,1.e4 e6 2.d4 d5 3.Nc3 Nf6 4.Bg5 Be7 5.e5 Nfd7 6.Bxe7 Qxe7 7.Qd2,7
+43.10%,35.80%,1.e4 e6 2.d4 d5 3.Nc3 Nf6 4.e5,4
+44.40%,27.00%,1.e4 e6 2.d4 d5 3.Nc3 Nf6 4.Bg5 Be7 5.e5 Nfd7 6.Bxe7 Qxe7 7.f4,7
+40.70%,37.30%,1.e4 e6 2.d4 d5 3.Nc3 Nf6 4.Bd3,4
+27.30%,37.00%,1.e4 e6 2.d4 d5 3.exd5,3
+36.90%,35.90%,1.e4 e6 2.d4 d5 3.exd5 exd5 4.c4,4
+31.30%,34.30%,1.e4 e6 2.d4 d5 3.exd5 exd5 4.Nc3 Nf6 5.Bg5,5
+39.50%,40.20%,1.e4 e6 2.b3,2
+45.10%,32.90%,1.e4 e6 2.b3 d5 3.Bb2,3
+42.00%,32.50%,1.e4 e6 2.d3,2
+28.60%,52.70%,1.e4 e6 2.Nf3,2
+39.20%,39.20%,1.e4 e6 2.f4,2
+46.50%,29.80%,1.e4 e6 2.d4 d5 3.Nc3 Nf6 4.Bg5 Bb4 5.e5 h6 6.Bh4,6
+26.10%,47.80%,1.e4 e6 2.d4 d5 3.Nc3 Nf6 4.Bg5 Bb4 5.e5 h6 6.exf6,6
+43.90%,28.40%,1.e4 e6 2.d4 d5 3.Nc3 Nf6 4.Bg5 Bb4 5.e5 h6 6.Bc1,6
+39.50%,28.90%,1.e4 e6 2.d4 d5 3.Nc3 Nf6 4.Bg5 Bb4 5.exd5,5
+46.70%,31.00%,1.e4 e6 2.d4 d5 3.Nc3 Nf6 4.Bg5 Bb4 5.e5 h6 6.Be3,6
+38.20%,34.00%,1.e4 e6 2.d4 d5 3.Nc3 Nf6 4.Bg5 Bb4 5.Ne2,5
+51.90%,31.00%,1.e4 e6 2.d4,2
+41.70%,30.50%,1.e4 e6 2.d4 d5 3.Nc3,3
+47.10%,43.50%,1.e4 e6 2.c4 d5 3.cxd5 exd5 4.Qb3,4
+35.40%,33.30%,1.e4 e6 2.Nc3 d5 3.f4,3
+31.10%,52.30%,1.e4 e6 2.Nc3,2
+36.00%,42.10%,1.e4 e6 2.g3,2
+37.20%,27.60%,1.e4 e6 2.d3 d5 3.Nd2 Nf6 4.Ngf3 Nc6 5.Be2,5
+50.00%,14.30%,1.e4 e6 2.d4 d5 3.Nc3 dxe4 4.Nxe4 Nd7 5.Nf3 Ngf6 6.Nxf6+ Nxf6 7.Ne5,7
+43.30%,34.40%,1.e4 e6 2.d4 d5 3.Bd3,3
+36.80%,38.40%,1.e4 e6 2.e5,2
+40.00%,33.10%,1.e4 e6 2.d4 d5 3.Nc3 Nf6 4.e5 Nfd7 5.f4 c5 6.Nf3,6
+42.40%,29.10%,1.e4 e6 2.d4 d5 3.Nc3 Nf6 4.e5 Nfd7 5.f4 c5 6.Nf3 Nc6 7.Be3,7
+48.10%,33.30%,1.e4 e6 2.d4 d5 3.Nc3 Nf6 4.e5 Nfd7 5.Qg4,5
+47.10%,26.90%,1.e4 e6 2.d4 d5 3.Nd2,3
+41.60%,28.60%,1.e4 e6 2.d4 d5 3.Nd2 Nf6 4.e5 Nfd7 5.Bd3 c5 6.c3 Nc6 7.Ne2 cxd4 8.cxd4,8
+38.70%,25.10%,1.e4 e6 2.d4 d5 3.Nd2 c5 4.Ngf3,4
+34.30%,43.60%,1.e4 e6 2.d4 d5 3.Nd2 c5 4.c3,4
+48.30%,29.50%,1.e4 e6 2.d4 d5 3.Nd2 Nf6 4.e5 Nfd7 5.f4,5
+40.30%,35.70%,1.e4 e6 2.Nc3 d5 3.Nf3,3
+53.40%,24.40%,1.e4 e6 2.d4 d5 3.Nc3 Bb4 4.e5 c5 5.a3,5
+71.70%,11.30%,1.e4 e6 2.d4 d5 3.Nc3 Bb4 4.e5 c5 5.a3 cxd4 6.axb4 dxc3 7.Nf3,7
+43.80%,30.60%,1.e4 e6 2.d4 d5 3.Nc3 Bb4 4.e5 c5 5.a3 Bxc3+ 6.bxc3,6
+42.00%,29.40%,1.e4 e6 2.d4 d5 3.Nc3 Bb4 4.e5 c5 5.a3 Bxc3+ 6.bxc3 Ne7 7.a4,7
+41.80%,31.80%,1.e4 e6 2.d4 d5 3.Nc3 Bb4 4.e5,4
+45.60%,32.90%,1.e4 e6 2.d4 d5 3.Nc3 Bb4 4.e5 c5 5.Qg4,5
+40.60%,30.30%,1.e4 e6 2.d4 d5 3.Nc3 Bb4 4.Ne2,4
+43.80%,29.80%,1.e4 e6 2.d4 d5 3.Nc3 Bb4 4.e5 c5 5.Bd2,5
+37.90%,23.10%,1.e4 e6 2.d4 d5 3.Nc3 Bb4 4.e5 c5 5.Bd2 Ne7 6.f4,6
+36.10%,31.80%,1.e4 e6 2.d4 d5 3.Nc3 Bb4 4.exd5,4
+48.80%,25.40%,1.e4 e6 2.d4 d5 3.Nc3 Bb4 4.exd5 exd5 5.Bd3 Ne7 6.Qh5,6
+33.30%,45.40%,1.e4 e6 2.d4 d5 3.Nc3 Bb4 4.Bd2,4
+43.90%,31.70%,1.e4 e6 2.d4 d5 3.Nc3 Bb4 4.Bd2 dxe4 5.Qg4 Nf6 6.Qxg7 Rg8 7.Qh6,7
+42.80%,28.90%,1.e4 e6 2.d4 d5 3.Nc3 Bb4 4.e5 c5 5.a3 Bxc3+ 6.bxc3 Ne7 7.Qg4,7
+45.20%,31.60%,1.e4 e6 2.d4 d5 3.Nc3 Bb4 4.e5 c5 5.a3 Bxc3+ 6.bxc3 Ne7 7.Qg4 Qc7 8.Qxg7 Rg8 9.Qxh7 cxd4 10.Ne2,10
+34.50%,40.40%,1.e4 e6 2.d4 d5 3.Nc3 Bb4 4.e5 c5 5.a3 Bxc3+ 6.bxc3 Ne7 7.Qg4 Qc7 8.Qxg7 Rg8 9.Qxh7 cxd4 10.Kd1,10
+39.60%,32.30%,1.e4 e6 2.d4 d5 3.Nc3 Bb4 4.e5 c5 5.a3 Bxc3+ 6.bxc3 Ne7 7.Nf3,7
+42.00%,36.50%,1.e4 e6 2.d4 d5 3.Nc3 Bb4 4.a3,4
+44.10%,39.20%,1.e4 e6 2.Nf3 d5 3.e5 c5 4.b4,4
+42.00%,45.70%,1.g4,1
+45.90%,37.60%,1.g4 d5 2.Bg2,2
+52.60%,38.40%,1.g4 d5 2.Bg2 Bxg4 3.c4,3
+35.20%,26.90%,1.d4 Nf6 2.c4 g6 3.Nc3 d5 4.Bf4,4
+32.20%,24.40%,1.d4 Nf6 2.c4 g6 3.Nc3 d5 4.Bf4 Bg7 5.e3 O-O 6.cxd5 Nxd5 7.Nxd5 Qxd5 8.Bxc7,8
+37.60%,28.30%,1.d4 Nf6 2.c4 g6 3.Nc3 d5 4.Bf4 Bg7 5.e3 O-O 6.Rc1,6
+32.80%,33.00%,1.d4 Nf6 2.c4 g6 3.Nc3 d5 4.cxd5 Nxd5 5.e4 Nxc3 6.bxc3 Bg7 7.Bc4,7
+35.90%,28.00%,1.d4 Nf6 2.c4 g6 3.Nc3 d5 4.cxd5 Nxd5 5.e4 Nxc3 6.bxc3 Bg7 7.Nf3,7
+43.00%,25.60%,1.d4 Nf6 2.c4 g6 3.Nc3 d5 4.cxd5 Nxd5 5.e4 Nxc3 6.bxc3 Bg7 7.Nf3 c5 8.h3,8
+39.00%,30.90%,1.d4 Nf6 2.c4 g6 3.Nc3 d5 4.cxd5 Nxd5 5.Na4,5
+31.70%,28.10%,1.d4 Nf6 2.c4 g6 3.Nc3 d5 4.cxd5 Nxd5 5.e4 Nxc3 6.bxc3 Bg7 7.Bc4 O-O 8.Ne2 c5 9.O-O Nc6 10.Be3 Bg4 11.f3 Na5 12.Bxf7+,12
+38.00%,31.10%,1.d4 Nf6 2.c4 g6 3.Nc3 d5 4.cxd5 Nxd5 5.e4 Nxc3 6.bxc3 Bg7 7.Bc4 O-O 8.Ne2 c5 9.O-O Nc6 10.Be3 cxd4 11.cxd4 Bg4 12.f3 Na5 13.Bd3 Be6 14.d5,14
+41.20%,26.40%,1.d4 Nf6 2.c4 g6 3.Nc3 d5 4.cxd5 Nxd5 5.e4 Nxc3 6.bxc3 Bg7 7.Bc4 O-O 8.Ne2 c5 9.O-O Nc6 10.Be3 cxd4 11.cxd4,11
+41.00%,24.90%,1.d4 Nf6 2.c4 g6 3.Nc3 d5 4.Nf3 Bg7 5.Qa4+,5
+43.50%,37.70%,1.d4 Nf6 2.c4 g6 3.Nc3 d5 4.f3,4
+36.60%,25.10%,1.d4 Nf6 2.c4 g6 3.Nc3 d5 4.Nf3 Bg7 5.e3 O-O 6.b4,6
+29.40%,29.20%,1.d4 Nf6 2.c4 g6 3.Nc3 d5 4.Nf3 Bg7 5.e3 O-O 6.Bd2,6
+45.80%,27.10%,1.d4 Nf6 2.c4 g6 3.Nc3 d5 4.Nf3 Bg7 5.Qb3,5
+41.40%,26.20%,1.d4 Nf6 2.c4 g6 3.Nc3 d5 4.Qb3,4
+43.00%,21.50%,1.d4 Nf6 2.c4 g6 3.Nc3 d5 4.Nf3 Bg7 5.Qb3 dxc4 6.Qxc4 O-O 7.e4 Bg4 8.Be3 Nfd7 9.Qb3,9
+42.80%,28.70%,1.d4 Nf6 2.c4 g6 3.Nc3 d5 4.Nf3 Bg7 5.Qb3 dxc4 6.Qxc4 O-O 7.e4,7
+31.00%,39.20%,1.d4 Nf6 2.c4 g6 3.Nc3 d5 4.Nf3 Bg7 5.e3,5
+36.70%,28.70%,1.d4 Nf6 2.c4 g6 3.Nc3 d5 4.Nf3 Bg7 5.Bf4,5
+33.30%,34.20%,1.d4 Nf6 2.c4 g6 3.Nc3 d5 4.Nf3 Bg7 5.Bf4 O-O 6.e3,6
+21.60%,54.40%,1.d4 Nf6 2.c4 g6 3.Nc3 d5 4.Nf3 Bg7 5.e3 O-O 6.Bd3,6
+33.80%,32.30%,1.d4 Nf6 2.c4 g6 3.Nc3 d5 4.Nf3 Bg7 5.Bg5,5
+45.30%,21.40%,1.d4 Nf6 2.c4 g6 3.Nc3 d5 4.Nf3 Bg7 5.e3 O-O 6.Qb3,6
+44.00%,31.10%,1.d4 Nf6 2.c4 g6 3.Nc3 d5 4.h4,4
+40.40%,32.70%,1.g3,1
+40.10%,34.80%,1.d4 Nf6 2.c4 g6 3.d5,3
+40.30%,34.70%,1.d4 Nf6 2.c4 g6 3.f3,3
+36.90%,31.10%,1.d4 Nf6 2.c4 e6 3.Nf3,3
+33.60%,33.60%,1.d4 Nf6 2.Nf3,2
+36.60%,36.20%,1.d4 Nf6 2.Nf3 e6 3.Bf4,3
+33.90%,38.70%,1.d4 Nf6 2.Nf3 g6 3.Bf4,3
+40.60%,37.00%,1.d4 Nf6 2.c4,2
+35.40%,51.00%,1.d4 Nf6 2.f3,2
+34.60%,32.70%,1.d4 Nf6 2.Nf3 g6 3.g3,3
+32.00%,46.40%,1.d4 Nf6 2.c4 e6 3.Bg5,3
+38.70%,32.50%,1.d4 Nf6 2.g3,2
+33.70%,35.20%,1.d4 Nf6 2.Nf3 e6 3.e3,3
+41.20%,37.00%,1.e4 e5 2.Nf3 Nc6 3.Bc4 Bc5 4.c3 Nf6 5.b4,5
+42.90%,37.60%,1.e4 e5 2.Nf3 Nc6 3.Bc4 Bc5 4.c3 Nf6 5.O-O,5
+58.60%,28.60%,1.e4 e5 2.Nf3 Nc6 3.Bc4 Bc5 4.c3 Nf6 5.d4,5
+56.70%,26.20%,1.e4 e5 2.Nf3 Nc6 3.Bc4 Bc5 4.c3,4
+39.90%,30.80%,1.e4 e5 2.Nf3 Nc6 3.Bc4 Bc5 4.c3 Nf6 5.d3,5
+36.80%,24.40%,1.e4 e5 2.Nf3 Nc6 3.Bc4 Bc5 4.c3 Nf6 5.d3 a6 6.Bb3 Ba7 7.h3 O-O 8.O-O d6 9.Re1,9
+36.60%,37.90%,1.e4 e5 2.Nf3 Nc6 3.Bc4 Bc5 4.c3 Nf6 5.d4 exd4 6.O-O,6
+31.50%,47.50%,1.e4 e5 2.Nf3 Nc6 3.Bc4 Bc5 4.c3 Nf6 5.d4 exd4 6.cxd4 Bb4+ 7.Nc3 Nxe4 8.O-O Bxc3 9.d5,9
+35.00%,35.90%,1.e4 e5 2.Nf3 Nc6 3.Bc4 Bc5 4.c3 Nf6 5.d4 exd4 6.cxd4,6
+45.10%,34.50%,1.e4 e5 2.Nf3 Nc6 3.Bc4 Bc5 4.O-O Nf6 5.d4,5
+44.40%,40.50%,1.e4 e5 2.Nf3 Nc6 3.Bc4 Bc5 4.b4 Bxb4 5.c3 Ba5 6.O-O,6
+36.00%,39.00%,1.e4 e5 2.Nf3 Nc6 3.Bc4 Bc5 4.b4 Bxb4 5.c3 Ba5 6.d4 d6 7.Qb3,7
+50.40%,28.50%,1.e4 e5 2.Nf3 Nc6 3.Bc4,3
+42.40%,36.00%,1.e4 e5 2.Nf3 Nc6 3.Bc4 Bc5 4.d3,4
+33.00%,37.50%,1.e4 e5 2.Nf3 Nc6 3.Bc4 Bc5 4.d3 Nf6 5.Nc3 d6 6.Bg5,6
+34.60%,39.80%,1.e4 e5 2.Nf3 Nc6 3.Bc4 Bc5 4.d3 Nf6 5.Nc3,5
+34.50%,52.60%,1.e4 e5 2.Nf3 Nc6 3.Bc4 Bc5 4.d4,4
+62.30%,20.80%,1.e4 e5 2.Nf3 Nc6 3.Bc4 Nf6 4.d4 exd4 5.O-O,5
+28.00%,38.50%,1.e4 e5 2.Nf3 Nc6 3.Bc4 Nf6 4.d4 exd4 5.O-O Nxe4 6.Re1 d5 7.Bxd5 Qxd5 8.Nc3,8
+26.40%,24.50%,1.e4 e5 2.Nf3 Nc6 3.Bc4 Nf6 4.d4 exd4 5.O-O Nxe4 6.Re1 d5 7.Bxd5 Qxd5 8.Nc3 Qa5 9.Nxe4 Be6 10.Bd2 Qd5 11.Bg5,11
+39.50%,31.60%,1.e4 e5 2.Nf3 Nc6 3.Bc4 Nf6 4.d4 exd4 5.O-O Nxe4 6.Re1 d5 7.Nc3,7
+35.20%,45.60%,1.e4 e5 2.Nf3 Nc6 3.Bc4 Nf6 4.d4 exd4 5.O-O Bc5 6.e5 d5 7.exf6 dxc4 8.Re1+ Be6 9.Ng5 Qd5 10.Nc3 Qf5 11.Nce4,11
+41.80%,46.80%,1.e4 e5 2.Nf3 Nc6 3.Bc4 Nf6 4.d4 exd4 5.O-O Nxe4 6.Nc3,6
+42.90%,33.70%,1.e4 e5 2.Nf3 Nc6 3.Bc4 Nf6 4.d4 exd4 5.O-O Bc5 6.c3,6
+74.90%,19.20%,1.e4 e5 2.Nf3 Nc6 3.Bc4 Nf6 4.Ng5 d5 5.exd5 Nxd5 6.Nxf7,6
+84.10%,10.30%,1.e4 e5 2.Nf3 Nc6 3.Bc4 Nf6 4.Ng5,4
+69.30%,18.80%,1.e4 e5 2.Nf3 Nc6 3.Bc4 Nf6 4.Ng5 d5 5.exd5 Nxd5 6.d4,6
+40.10%,32.30%,1.e4 e5 2.Nf3 Nc6 3.Bc4 Nf6 4.d3,4
+37.30%,37.80%,1.e4 e5 2.Nf3 Nc6 3.Bc4 Nf6 4.d4 exd4 5.Ng5,5
+43.70%,36.30%,1.e4 e5 2.Nf3 Nc6 3.Bc4 Nf6 4.Ng5 d5 5.exd5 Na5 6.Bb5+,6
+41.90%,41.70%,1.e4 e5 2.Nf3 Nc6 3.Bc4 Nf6 4.Ng5 d5 5.exd5 Na5 6.Bb5+ c6 7.dxc6 bxc6 8.Qf3,8
+42.50%,38.60%,1.e4 e5 2.Nf3 Nc6 3.Bc4 Nf6 4.Ng5 d5 5.exd5 Na5 6.d3,6
+42.70%,36.30%,1.e4 e5 2.Nf3 Nc6 3.Bc4 Nf6 4.Ng5 Bc5 5.Bxf7+,5
+28.30%,52.80%,1.e4 e5 2.Nf3 Nc6 3.Bc4 Nf6 4.Ng5 Bc5 5.Nxf7,5
+49.00%,40.40%,1.h4,1
+31.90%,39.10%,1.d4 e6 2.c4 Bb4+ 3.Nc3,3
+42.40%,36.10%,1.e4 e5 2.Ne2,2
+35.10%,50.00%,1.e4 e5 2.Nf3 Nc6 3.c4,3
+32.80%,52.80%,1.e4 e5 2.d3,2
+38.00%,44.60%,1.e4 e5 2.c3,2
+36.80%,35.60%,1.e4 e5 2.Nf3 Nc6 3.Be2,3
+34.60%,32.70%,1.e4 e5 2.Nf3 Nc6 3.Be2 Nf6 4.d3 d5 5.Nbd2,5
+42.10%,40.50%,1.e4 e5 2.Qh5,2
+42.60%,39.00%,1.e4 e5 2.f4 exf4 3.Bc4,3
+43.20%,38.30%,1.e4 e5 2.f4 exf4 3.Bc4 Nf6 4.Nc3,4
+35.10%,49.70%,1.e4 e5 2.f4 exf4 3.Nf3 g5 4.Bc4 Bg7 5.O-O,5
+34.90%,37.70%,1.e4 e5 2.f4 exf4 3.Nf3 g5 4.h4 g4 5.Ne5 Nf6 6.d4,6
+59.60%,27.80%,1.e4 e5 2.f4 exf4 3.Nf3,3
+37.70%,39.00%,1.e4 e5 2.f4 exf4 3.Nc3,3
+45.50%,35.70%,1.e4 e5 2.f4 Bc5 3.Nf3 d6 4.c3,4
+64.40%,22.00%,1.e4 e5 2.f4 d5 3.exd5,3
+35.80%,38.30%,1.e4 e5 2.f4 d5 3.Nf3,3
+49.30%,23.10%,1.e4 e5 2.f4 d5 3.exd5 e4 4.d3,4
+52.90%,26.40%,1.e4 e5 2.f4 d5 3.exd5 e4 4.d3 Nf6 5.dxe4,5
+65.30%,23.70%,1.e4 e5 2.f4,2
+41.70%,27.50%,1.Nf3 d5 2.g3,2
+42.60%,30.30%,1.Nf3 d5 2.g3 c5 3.Bg2,3
+48.30%,28.50%,1.Nf3 d5 2.g3 c5 3.Bg2 Nc6 4.O-O e6 5.d3 Nf6 6.Nbd2 Be7 7.e4 O-O 8.Re1,8
+42.60%,26.80%,1.Nf3 Nf6 2.g3 g6 3.b4,3
+45.20%,31.90%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.Bg5,5
+53.50%,24.00%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.Be2 O-O 6.Bg5,6
+43.80%,26.90%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.Be2 O-O 6.Bg5 c5 7.d5,7
+35.20%,28.20%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.Be2 O-O 6.Bg5 c5 7.dxc5,7
+26.30%,29.10%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.Nf3 O-O 6.Be2 e5 7.dxe5,7
+45.60%,24.20%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.Nf3 d6 5.g3 O-O 6.Bg2 Nbd7 7.O-O e5 8.e4 c6 9.h3,9
+47.60%,26.80%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.Nf3 d6 5.g3,5
+37.80%,33.20%,1.d4 Nf6 2.c4 g6 3.Nf3 Bg7 4.g3 d6 5.Bg2 O-O 6.O-O Nbd7 7.Nc3 e5 8.b3,8
+39.00%,25.90%,1.d4 Nf6 2.c4 g6 3.g3,3
+38.40%,27.70%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.Nf3 d6 5.g3 O-O 6.Bg2 Nc6 7.O-O a6 8.h3 Rb8 9.Be3 b5 10.Nd2,10
+52.60%,23.00%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.Nf3 d6 5.g3 O-O 6.Bg2 c5 7.O-O,7
+43.50%,29.90%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.Nf3 d6 5.g3 O-O 6.Bg2 c5 7.O-O Nc6 8.d5,8
+45.80%,30.00%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.f4,5
+44.30%,33.30%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.f4 O-O 6.Nf3 c5 7.d5,7
+38.80%,21.60%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.f4 O-O 6.Be2 c5 7.Nf3 cxd4 8.Nxd4 Nc6 9.Be3,9
+34.20%,40.80%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.f4 O-O 6.Be2 c5 7.d5 e6 8.Nf3 exd5 9.e5,9
+35.20%,31.20%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.f4 O-O 6.Be2 c5 7.Nf3,7
+42.70%,39.90%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.f4 O-O 6.Be2,6
+37.80%,36.10%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.f4 O-O 6.Be2 c5 7.d5 e6 8.Nf3,8
+44.00%,32.30%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.Nge2,5
+38.20%,32.60%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.Nf3 O-O 6.Be3,6
+48.80%,27.90%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.h3,5
+41.20%,36.00%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4,4
+35.40%,40.80%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.g3,5
+38.90%,30.40%,1.d4 Nf6 2.c4 g6 3.Nf3,3
+47.70%,28.10%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.Nf3,5
+49.80%,30.00%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.Be2,5
+41.20%,25.90%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.Nf3 O-O 6.Be2 e5 7.O-O,7
+46.60%,28.70%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.Nf3 O-O 6.Be2 e5 7.O-O Nc6 8.d5 Ne7 9.b4,9
+44.90%,23.90%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.Nf3 O-O 6.Be2 e5 7.O-O Nc6 8.d5 Ne7 9.b4 Nh5 10.Re1,10
+42.90%,26.40%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.Nf3 O-O 6.Be2 e5 7.O-O Nc6 8.d5 Ne7 9.Ne1 Nd7 10.f3 f5 11.g4,11
+46.20%,30.70%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.Nf3 O-O 6.Be2 e5 7.O-O Nc6 8.d5 Ne7 9.Ne1 Nd7 10.Be3 f5 11.f3 f4 12.Bf2 g5 13.Rc1 Ng6 14.c5,14
+44.20%,31.00%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.Nf3 O-O 6.Be2 e5 7.O-O Nc6 8.d5 Ne7 9.Ne1,9
+45.50%,34.00%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.Nf3 O-O 6.Be2 e5 7.O-O Nc6 8.d5 Ne7 9.Ne1 Nd7 10.Be3,10
+44.40%,27.90%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.Nf3 O-O 6.Be2,6
+47.10%,23.00%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.Nf3 O-O 6.Be2 e5 7.Be3,7
+38.00%,32.70%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.Nf3 O-O 6.Be2 e5 7.O-O Nc6 8.d5 Ne7 9.Bd2,9
+44.70%,27.00%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.Nf3 O-O 6.Be2 e5 7.O-O Nc6 8.d5 Ne7 9.Nd2,9
+33.40%,43.10%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.Nf3 O-O 6.Be2 e5 7.O-O Nbd7 8.d5,8
+46.20%,30.10%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.Nf3 O-O 6.Be2 e5 7.d5,7
+46.80%,26.80%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.Nf3 O-O 6.Be2 e5 7.d5 Nbd7 8.Bg5 h6 9.Bh4 g5 10.Bg3 Nh5 11.h4,11
+47.80%,25.60%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.g3 O-O 6.Bg2 e5 7.Nge2,7
+47.50%,27.00%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.f3,5
+48.40%,26.30%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.f3 O-O 6.Nge2,6
+46.40%,30.80%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.f3 O-O 6.Be3 e5 7.d5,7
+48.70%,29.90%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.Be2 O-O 6.Be3,6
+43.70%,30.60%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.Nf3 d6 5.Bg5,5
+46.90%,27.90%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.f3 O-O 6.Bg5,6
+35.70%,42.80%,1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.Nf3 O-O 6.Bg5,6
+69.80%,21.60%,1.e4 e5 2.Nf3,2
+39.90%,38.10%,1.e4 e5 2.Nf3 Nc6 3.g3,3
+39.50%,39.10%,1.e4,1
+47.40%,34.70%,1.e4 e5 2.Nf3 f5 3.exf5,3
+58.30%,25.50%,1.e4 e5 2.Nf3 f5 3.Nxe5 Qf6 4.d4 d6 5.Nc4,5
+62.00%,21.90%,1.e4 e5 2.Nf3 f5 3.Nxe5 Qf6 4.Nc4 fxe4 5.Nc3,5
+50.00%,33.80%,1.e4 e5 2.Nf3 f5 3.d4,3
+44.50%,36.30%,1.e4 d6 2.d4 Nf6 3.Nc3 Nbd7 4.f4,4
+57.00%,22.10%,1.e4 d6 2.d4 Nf6 3.Nc3 Nbd7 4.g4,4
+44.40%,27.60%,1.e4 d6 2.d4 Nf6 3.f3,3
+34.30%,38.10%,1.d4 d5 2.Nf3 Nf6 3.Bf4 c5 4.e3 Qb6 5.Nc3,5
+39.90%,39.00%,1.d3,1
+39.30%,34.10%,1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4,4
+50.40%,27.80%,1.d4 g6 2.c4 Bg7 3.e4 d6 4.Be3 Nf6 5.f3,5
+37.30%,42.80%,1.e4 g6 2.d4 Bg7 3.Bc4,3
+36.70%,32.80%,1.e4 g6 2.d4 Bg7 3.Nf3 d6 4.c3,4
+44.80%,34.10%,1.e4 g6 2.d4 Bg7 3.Nc3 d6 4.f4,4
+38.30%,36.80%,1.e4 g6 2.d4 Bg7 3.Nc3,3
+33.60%,43.80%,1.e4 g6 2.d4 Bg7 3.f4,3
+37.20%,40.20%,1.e4 g6 2.d4 Bg7 3.Nc3 d6 4.Nf3,4
+48.40%,24.30%,1.d4 Nf6 2.c4 g6 3.g3 d5 4.Bg2 Bg7 5.Nf3 O-O 6.O-O,6
+49.00%,22.50%,1.d4 Nf6 2.c4 g6 3.g3 d5 4.Bg2 Bg7 5.Nf3 O-O 6.cxd5 Nxd5 7.O-O,7
+38.70%,16.60%,1.d4 Nf6 2.c4 g6 3.g3 d5 4.Bg2 Bg7 5.Nf3 O-O 6.cxd5 Nxd5 7.O-O c5 8.dxc5,8
+34.30%,25.80%,1.d4 Nf6 2.c4 g6 3.g3 d5 4.Bg2 Bg7 5.Nf3 O-O 6.cxd5 Nxd5 7.O-O c5 8.Nc3,8
+47.60%,20.50%,1.d4 Nf6 2.c4 g6 3.g3 d5 4.Bg2 Bg7 5.cxd5 Nxd5 6.e4 Nb6 7.Ne2,7
+31.80%,26.00%,1.d4 Nf6 2.c4 g6 3.g3 d5 4.Bg2 Bg7 5.Nf3,5
+34.40%,31.80%,1.d4 Nf6 2.c4 e6 3.Nc3 Bb4 4.Qc2,4
+34.90%,20.40%,1.d4 Nf6 2.c4 e6 3.Nc3 Bb4 4.Qc2 c5 5.dxc5 O-O 6.a3 Bxc5 7.Nf3 b6 8.Bf4,8
+36.50%,20.10%,1.d4 Nf6 2.c4 e6 3.Nc3 Bb4 4.Qc2 d5 5.a3 Bxc3+ 6.Qxc3 Ne4 7.Qc2,7
+33.70%,29.30%,1.d4 Nf6 2.c4 e6 3.Nc3 Bb4 4.Qc2 d5 5.a3,5
+40.90%,28.60%,1.d4 Nf6 2.c4 e6 3.Nc3 Bb4 4.e3 b6 5.Ne2,5
+39.60%,26.90%,1.d4 Nf6 2.c4 e6 3.Nc3 Bb4 4.e3 c5 5.Ne2,5
+34.70%,30.10%,1.d4 Nf6 2.c4 e6 3.Nc3 Bb4 4.e3 c5 5.Ne2 cxd4 6.exd4 O-O 7.a3,7
+40.10%,35.70%,1.d4 Nf6 2.c4 e6 3.Nc3 Bb4 4.f3,4
+32.20%,42.40%,1.d4 Nf6 2.c4 e6 3.Nc3 Bb4 4.Bg5,4
+46.30%,29.60%,1.d4 Nf6 2.c4 e6 3.Nc3 Bb4 4.e3,4
+33.00%,28.30%,1.d4 Nf6 2.c4 e6 3.Nc3 Bb4 4.e3 O-O 5.Nf3 d5 6.Bd3 c5 7.O-O Nc6 8.a3 Bxc3 9.bxc3 dxc4 10.Bxc4,10
+32.10%,29.80%,1.d4 Nf6 2.c4 e6 3.Nc3 Bb4 4.e3 O-O 5.Nf3 d5 6.Bd3 c5 7.O-O Nc6 8.a3 Bxc3 9.bxc3,9
+37.90%,31.90%,1.d4 Nf6 2.c4 e6 3.Nc3 Bb4 4.e3 O-O 5.Bd3,5
+40.30%,30.00%,1.d4 Nf6 2.c4 e6 3.Nc3 Bb4 4.e3 O-O 5.Bd3 d5 6.a3 Bxc3+ 7.bxc3,7
+31.60%,25.80%,1.d4 Nf6 2.c4 e6 3.Nc3 Bb4 4.e3 O-O 5.Nf3 d5 6.Bd3 c5 7.O-O dxc4 8.Bxc4,8
+34.30%,38.40%,1.d4 Nf6 2.c4 e6 3.Nc3 Bb4 4.e3 O-O 5.Nf3 d5 6.a3,6
+40.50%,26.40%,1.d4 Nf6 2.c4 e6 3.Nc3 Bb4 4.e3 Nc6 5.Nf3 O-O 6.Bd3 d5 7.O-O,7
+32.80%,36.20%,1.d4 Nf6 2.c4 e6 3.Nc3 Bb4 4.e3 O-O 5.Ne2,5
+43.50%,22.20%,1.d4 Nf6 2.c4 e6 3.Nc3 Bb4 4.Nf3 c5 5.g3 O-O 6.Bg2,6
+37.00%,29.10%,1.d4 Nf6 2.c4 e6 3.Nc3 Bb4 4.g3,4
+42.90%,34.60%,1.d4 Nf6 2.c4 e6 3.Nc3 Bb4 4.a3 Bxc3+ 5.bxc3 O-O 6.e3,6
+39.80%,33.50%,1.d4 Nf6 2.c4 e6 3.Nc3 Bb4 4.a3 Bxc3+ 5.bxc3 c5 6.f3 d5 7.cxd5,7
+41.10%,36.70%,1.d4 Nf6 2.c4 e6 3.Nc3 Bb4 4.a3 Bxc3+ 5.bxc3 c5 6.e3,6
+35.40%,43.40%,1.d4 Nf6 2.c4 e6 3.Nc3 Bb4 4.a3 Bxc3+ 5.bxc3,5
+33.80%,24.50%,1.d4 Nf6 2.c4 e6 3.Nc3 Bb4 4.a3 Bxc3+ 5.bxc3 c5 6.f3 d5 7.cxd5 Nxd5 8.dxc5,8
+38.10%,35.30%,1.d4 Nf6 2.c4 e6 3.Nc3 Bb4 4.Qb3,4
+39.20%,28.90%,1.d4 Nf6 2.c4 e6 3.Nc3 Bb4 4.Nf3,4
+40.50%,23.60%,1.d4 Nf6 2.c4 e6 3.Nc3 Bb4 4.Nf3 b6 5.Bg5 Bb7 6.Nd2,6
+45.50%,35.40%,1.b3,1
+41.10%,41.10%,1.b3 Nf6 2.Bb2 g6 3.g4,3
+44.00%,39.10%,1.e4 Nc6 2.Nf3,2
+39.70%,43.20%,1.e4 Nc6 2.d4 e5 3.d5,3
+40.60%,32.10%,1.e4 Nc6 2.d4 e5 3.dxe5 Nxe5 4.Nf3,4
+51.70%,30.50%,1.e4 Nc6 2.Nf3 f5 3.exf5,3
+40.00%,41.40%,1.e4 Nc6 2.d4 d5 3.e5,3
+44.10%,32.40%,1.e4 Nc6 2.d4 d5 3.Nc3,3
+39.90%,32.80%,1.Nf3 d5 2.b3,2
+52.20%,20.90%,1.d4 Nf6 2.c4 d6 3.Nc3 Bf5 4.g3,4
+41.90%,29.80%,1.d4 Nf6 2.c4 d6 3.Nc3 Bf5 4.Nf3,4
+34.30%,36.20%,1.d4 Nf6 2.c4 d6 3.Nc3 Bf5 4.f3,4
+44.90%,26.00%,1.d4 Nf6 2.c4 d6 3.Nc3 e5 4.Nf3 Nbd7 5.e4,5
+46.30%,26.00%,1.d4 Nf6 2.c4 d6 3.Nc3 e5 4.Nf3,4
+43.80%,26.20%,1.d4 Nf6 2.c4 d6 3.Nc3 c6 4.Nf3,4
+63.90%,20.00%,1.e4 e5 2.Nf3 d6 3.d4 exd4 4.Nxd4,4
+68.10%,16.40%,1.e4 e5 2.Nf3 d6 3.d4,3
+48.60%,30.20%,1.e4 e5 2.Nf3 d6 3.d4 Nd7 4.Bc4 c6 5.O-O,5
+47.60%,28.00%,1.e4 e5 2.Nf3 d6 3.d4 Nd7 4.Bc4 c6 5.Nc3,5
+58.60%,17.90%,1.e4 e5 2.Nf3 d6 3.d4 Nd7 4.Bc4 c6 5.O-O Be7 6.dxe5,6
+31.10%,59.60%,1.e4 e5 2.Nf3 d6 3.d4 Nf6 4.Nc3 Nbd7 5.Bc4 Be7 6.Bxf7+,6
+40.60%,41.80%,1.e4 e5 2.Nf3 d6 3.d4 Nf6 4.Nc3 Nbd7 5.Bc4 Be7 6.Ng5 O-O 7.Bxf7+ Rxf7 8.Ne6,8
+48.30%,30.80%,1.e4 e5 2.Nf3 d6 3.d4 Nd7 4.Nc3 Ngf6 5.g4,5
+50.00%,32.20%,1.e4 e5 2.Nf3 d6 3.d4 exd4 4.Bc4,4
+44.70%,30.50%,1.e4 e5 2.Nf3 d6 3.d4 Nf6 4.dxe5,4
+53.20%,14.30%,1.e4 e5 2.Nf3 d6 3.d4 Nf6 4.dxe5 Nxe4 5.Qd5,5
+63.80%,22.90%,1.e4 e5 2.Nf3 d6 3.d4 f5 4.Nc3,4
+45.10%,29.80%,1.e4 d6 2.d4 Nf6 3.Nc3 g6 4.Be3 c6 5.Qd2,5
+49.90%,24.40%,1.e4 d6 2.d4 Nf6 3.Nc3 g6 4.Be3 c6 5.h3,5
+52.50%,26.70%,1.e4 d6 2.d4 Nf6 3.Nc3 g6 4.f4,4
+42.80%,34.50%,1.e4 d6 2.d4 Nf6 3.Nc3 g6 4.f4 Bg7 5.Nf3 O-O 6.Be3,6
+48.90%,24.40%,1.e4 d6 2.d4 Nf6 3.Nc3 g6 4.f4 Bg7 5.Bc4,5
+43.30%,29.10%,1.e4 d6 2.d4 Nf6 3.Nc3 g6 4.f4 Bg7 5.Nf3 O-O 6.e5,6
+47.30%,29.80%,1.e4 d6 2.d4 Nf6 3.Nc3 g6 4.f4 Bg7 5.Nf3 O-O 6.e5 Nfd7 7.h4,7
+41.50%,30.60%,1.e4 d6 2.d4 Nf6 3.Nc3 g6 4.f4 Bg7 5.Nf3 O-O 6.Bd3,6
+46.00%,31.50%,1.e4 d6 2.d4 Nf6 3.Nc3 g6 4.Be2 Bg7 5.h4,5
+48.90%,28.60%,1.e4 d6 2.d4 Nf6 3.Nc3 g6 4.Bg5,4
+50.00%,34.50%,1.e4 d6 2.d4 Nf6 3.Nc3 g6 4.Be2 Bg7 5.g4,5
+39.20%,38.40%,1.e4 d6 2.d4 Nf6 3.Nc3 g6 4.Be2,4
+44.20%,30.80%,1.e4 d6 2.d4 Nf6 3.Nc3 g6 4.Nf3,4
+37.40%,31.40%,1.e4 d6 2.d4 Nf6 3.Nc3 g6 4.Nf3 Bg7 5.Be2,5
+38.50%,32.30%,1.e4 d6 2.d4 Nf6 3.Nc3 g6 4.Nf3 Bg7 5.h3,5
+43.40%,36.40%,1.e4 d6 2.d4 Nf6 3.Nc3 g6 4.Bc4,4
+50.40%,25.20%,1.d4 b5 2.e4 Bb7 3.Bxb5,3
+41.50%,29.30%,1.b4 e5 2.Bb2 f6 3.b5,3
+42.70%,38.40%,1.b4 e5 2.a3,2
+38.50%,42.00%,1.b4,1
+38.50%,31.90%,1.b4 Nf6 2.Bb2 g6 3.c4 Bg7 4.e3 d6 5.Nf3 O-O 6.d4,6
+40.60%,36.70%,1.b4 Nf6 2.Bb2 d5 3.e3 e6 4.b5,4
+47.20%,39.60%,1.b4 e5 2.Bb2 f6 3.e4,3
+37.40%,35.30%,1.b4 Nf6 2.Nf3,2
+46.60%,33.30%,1.e4 e5 2.Nf3 Nc6 3.c3,3
+33.30%,44.10%,1.e4 e5 2.Nf3 Nc6 3.c3 d5 4.Bb5,4
+41.80%,35.10%,1.e4 e5 2.Bb5,2
+37.00%,42.10%,1.e4 g6 2.d4 Bg7 3.Nc3 c5 4.Be3,4
+46.50%,29.20%,1.e4 g6 2.d4 Bg7 3.Nc3 c5 4.d5,4
+51.00%,40.10%,1.e4 g6 2.d4 Bg7 3.Nc3 c5 4.dxc5,4
+30.50%,45.30%,1.d4 g6 2.c4 Bg7 3.Nc3 c5 4.e3,4
+38.90%,37.20%,1.e4 g6 2.d4 Bg7 3.Nc3 c5 4.Nf3 Qa5 5.Be3,5
+52.50%,27.00%,1.e4 g6 2.d4 Bg7 3.Nc3 c5 4.Nf3 Qa5 5.dxc5,5
+34.80%,34.90%,1.d4 Nf6 2.Nf3 g6 3.Nc3 d5 4.Bf4 Bg7 5.e3 O-O 6.Be2,6
+32.20%,40.30%,1.d4 d5 2.Nf3 Nf6 3.e3,3
+43.60%,30.00%,1.d4 d5 2.Bg5,2
+37.90%,33.90%,1.d4 d5 2.Nf3 Nf6 3.Bf4,3
+33.60%,46.90%,1.d4 d5 2.f4,2
+35.70%,43.40%,1.d4 d5 2.Bf4 c5 3.e4,3
+44.80%,31.40%,1.d4 d5 2.Bf4,2
+38.00%,41.30%,1.d4 d5 2.e3 Nf6 3.Bd3,3
+33.60%,35.70%,1.d4 d5 2.Nf3 Nf6 3.g3,3
+42.50%,28.80%,1.d4 d5 2.Nf3 Nf6 3.Bg5,3
+35.70%,41.60%,1.d4 d5 2.Nc3 Nf6 3.Bg5 e6 4.Nf3,4
+42.40%,35.10%,1.d4 d5 2.Nc3 Nf6 3.Bg5 Bf5 4.f3,4
+40.20%,29.80%,1.d4 d5 2.Nc3 Nf6 3.Bg5 Bf5 4.Bxf6,4
+43.00%,37.80%,1.d4 d5 2.Nc3,2
+32.10%,38.10%,1.d4 d5 2.Nc3 Nf6 3.Bg5 Nbd7 4.Nf3,4
+39.50%,32.00%,1.d4 d5 2.Nf3,2
+47.20%,34.30%,1.d4,1
+28.60%,47.10%,1.d4 d5 2.c4 dxc4 3.Qa4+,3
+39.30%,30.00%,1.d4 d5 2.c4 dxc4 3.Nf3 a6 4.e4,4
+43.00%,28.60%,1.d4 d5 2.c4 dxc4 3.Nf3 Nf6 4.Nc3 a6 5.e4,5
+43.30%,21.50%,1.d4 d5 2.c4 dxc4 3.Nf3 Nf6 4.e3 e6 5.Bxc4 c5 6.O-O a6 7.Qe2,7
+62.40%,8.90%,1.d4 d5 2.c4 dxc4 3.Nf3 Nf6 4.e3 e6 5.Bxc4 c5 6.O-O,6
+34.00%,25.50%,1.d4 d5 2.c4 dxc4 3.Nf3 Nf6 4.e3 e6 5.Bxc4 c5 6.O-O a6 7.a4,7
+45.90%,21.40%,1.d4 d5 2.c4 dxc4 3.Nf3 Nf6 4.e3 e6 5.Bxc4 c5 6.O-O a6 7.e4,7
+42.90%,16.60%,1.d4 d5 2.c4 dxc4 3.Nc3 c5 4.d5 Nf6 5.Nf3 e6 6.e4 exd5 7.e5,7
+39.60%,25.40%,1.d4 d5 2.c4 dxc4 3.Nf3 Nf6 4.Qa4+,4
+42.10%,31.70%,1.d4 d5 2.c4 dxc4 3.Nf3,3
+40.50%,28.90%,1.d4 d5 2.c4 dxc4 3.Nf3 Nf6 4.e3,4
+41.30%,27.50%,1.d4 d5 2.c4 dxc4 3.e3,3
+68.60%,19.60%,1.d4 d5 2.c4 dxc4 3.e4,3
+36.10%,37.50%,1.d4 d5 2.c4 dxc4 3.Nf3 Nf6 4.Nc3,4
+41.10%,21.30%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Bg5 Be7 5.e3 O-O 6.Nf3 h6 7.Bxf6,7
+25.30%,8.30%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Bg5 Be7 5.e3 O-O 6.Nf3 h6 7.Bxf6 Bxf6 8.Rc1 c6 9.Bd3 Nd7 10.O-O dxc4 11.Bxc4,11
+48.60%,18.90%,1.d4 d5 2.c4 e6 3.Nf3 Nf6 4.Bg5 Nbd7 5.e3 c6 6.Nbd2,6
+43.60%,25.40%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.cxd5,4
+52.50%,20.60%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.cxd5 exd5 5.Bg5,5
+45.00%,25.20%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.cxd5 exd5 5.Bg5 c6 6.Qc2,6
+42.40%,22.90%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.cxd5 exd5 5.Nf3 Nbd7 6.Bf4,6
+50.20%,20.20%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Nf3 Be7 5.Bf4,5
+48.40%,28.00%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Bf4,4
+43.40%,23.90%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Nf3 Be7 5.Bf4 O-O 6.e3 c5 7.dxc5 Bxc5 8.Qc2 Nc6 9.a3 Qa5 10.O-O-O,10
+41.20%,17.60%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Nf3 Be7 5.Bf4 O-O 6.e3 c5 7.dxc5 Bxc5 8.Qc2 Nc6 9.a3 Qa5 10.Rd1,10
+37.40%,18.40%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Nf3 Be7 5.Bf4 O-O 6.e3 Nbd7 7.c5,7
+38.00%,24.50%,1.d4 d5 2.c4 e6 3.Nf3 Nf6 4.Bg5 h6 5.Bxf6 Qxf6 6.Nc3 c6 7.Qb3,7
+33.90%,18.40%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Bg5 Be7 5.e3 O-O 6.Nf3 h6 7.Bh4 Ne4 8.Bxe7 Qxe7 9.cxd5 Nxc3 10.bxc3,10
+27.90%,14.00%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Bg5 Be7 5.e3 O-O 6.Nf3 h6 7.Bh4 Ne4 8.Bxe7 Qxe7 9.Qc2,9
+51.40%,20.60%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Bg5 Be7 5.Nf3 O-O 6.Qc2,6
+47.90%,23.50%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Bg5,4
+44.70%,23.50%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Bg5 Be7 5.e3 O-O 6.Nf3,6
+49.20%,19.10%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Bg5 Nbd7 5.e3,5
+46.40%,15.70%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Bg5 Be7 5.e3 O-O 6.Rc1,6
+40.60%,21.40%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Bg5 Be7 5.e3 O-O 6.Nf3 h6 7.Bh4,7
+39.60%,6.90%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Bg5 Be7 5.e3 O-O 6.Nf3 Nbd7 7.Rc1 c6 8.Bd3 dxc4 9.Bxc4 Nd5 10.Bxe7 Qxe7 11.Ne4,11
+40.20%,28.60%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Bg5 Be7 5.e3 O-O 6.Nf3 Nbd7 7.Bd3,7
+49.50%,11.90%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Bg5 Be7 5.e3 O-O 6.Nf3 Nbd7 7.Rc1 c6 8.Bd3 dxc4 9.Bxc4 Nd5 10.Bxe7 Qxe7 11.O-O Nxc3 12.Rxc3 e5 13.Qc2,13
+24.80%,10.40%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Bg5 Be7 5.e3 O-O 6.Nf3 Nbd7 7.Rc1 c6 8.Bd3 dxc4 9.Bxc4 Nd5 10.Bxe7 Qxe7 11.O-O Nxc3 12.Rxc3 e5 13.dxe5 Nxe5 14.Nxe5,14
+43.70%,18.50%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Bg5 Be7 5.e3 O-O 6.Nf3 Nbd7 7.Rc1,7
+40.10%,16.70%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Bg5 Be7 5.e3 O-O 6.Nf3 Nbd7 7.Rc1 c6 8.Bd3 dxc4 9.Bxc4 Nd5 10.Bxe7 Qxe7 11.O-O,11
+55.40%,23.30%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Bg5 Be7 5.e3 O-O 6.Nf3 Nbd7 7.Rc1 b6 8.cxd5 exd5 9.Bd3,9
+48.80%,19.60%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Bg5 Be7 5.e3 O-O 6.Nf3 Nbd7 7.Qc2,7
+30.60%,15.30%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Bg5 Be7 5.e3 O-O 6.Nf3 Nbd7 7.Qc2 c5 8.cxd5,8
+38.40%,29.30%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Bg5 c5 5.cxd5,5
+45.40%,28.10%,1.d4 d5 2.c4 e6 3.Nc3,3
+40.50%,26.60%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Nf3 Bb4 5.Qa4+,5
+35.40%,19.30%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Nf3 c5 5.cxd5 Nxd5 6.e4,6
+39.40%,15.50%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Nf3 c5 5.cxd5 Nxd5 6.e3 Nc6 7.Bd3,7
+43.70%,30.40%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Nf3 c5 5.Bg5,5
+39.70%,21.20%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Nf3 c5 5.cxd5 Nxd5 6.e3,6
+52.60%,9.10%,1.d4 d5 2.c4 e6 3.Nf3 c5 4.cxd5 exd5 5.Bg5,5
+42.20%,25.10%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Nf3,4
+42.50%,27.00%,1.d4 d5 2.c4 e6 3.Nf3 Nf6 4.Bg5,4
+27.20%,31.50%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Nf3 dxc4 5.e3,5
+43.20%,31.30%,1.d4 d5 2.c4 e5 3.dxe5 d4 4.Nf3 Nc6 5.g3,5
+55.30%,25.80%,1.d4 d5 2.c4 e5 3.dxe5 d4 4.Nf3 Nc6 5.Nbd2,5
+47.00%,33.90%,1.d4 d5 2.c4 e5 3.dxe5 d4 4.Nf3,4
+51.30%,23.50%,1.d4 d5 2.c4 Bf5 3.Qb3,3
+38.80%,20.20%,1.d4 d5 2.c4 Nc6 3.cxd5 Qxd5 4.e3 e5 5.Nc3 Bb4 6.Bd2 Bxc3 7.Bxc3 exd4 8.Ne2,8
+71.70%,13.80%,1.d4 d5 2.c4 Nc6 3.Nc3 dxc4 4.Nf3,4
+54.20%,17.80%,1.d4 d5 2.c4 Nc6 3.Nf3 Bg4 4.Qa4,4
+43.50%,20.90%,1.d4 Nf6 2.c4 e6 3.Nf3 b6 4.g3 Bb7 5.Bg2 Be7 6.Nc3,6
+44.60%,23.00%,1.d4 Nf6 2.c4 e6 3.Nf3 b6 4.g3 Bb7 5.Bg2 Be7 6.O-O,6
+47.50%,23.20%,1.d4 Nf6 2.c4 e6 3.Nf3 b6 4.g3 Bb7 5.Bg2 Be7 6.O-O O-O 7.d5 exd5 8.Nh4,8
+32.90%,21.40%,1.d4 Nf6 2.c4 e6 3.Nf3 b6 4.g3 Bb7 5.Bg2 Be7 6.O-O O-O 7.Nc3,7
+27.70%,23.20%,1.d4 Nf6 2.c4 e6 3.Nf3 b6 4.g3 Bb7 5.Bg2 Be7 6.O-O O-O 7.Nc3 Ne4 8.Qc2 Nxc3 9.Qxc3,9
+39.90%,24.40%,1.d4 Nf6 2.c4 e6 3.Nf3 b6 4.g3 Bb7 5.Bg2 Be7 6.O-O O-O 7.b3,7
+30.40%,23.60%,1.d4 Nf6 2.c4 e6 3.Nf3 b6 4.g3,4
+46.50%,18.30%,1.d4 Nf6 2.c4 e6 3.Nf3 b6 4.g3 Bb7 5.Bg2 Be7 6.O-O O-O 7.Re1,7
+31.20%,27.70%,1.d4 Nf6 2.c4 e6 3.Nf3 b6 4.g3 Ba6 5.Qa4,5
+29.70%,29.20%,1.d4 Nf6 2.c4 e6 3.Nf3 b6 4.g3 Ba6 5.b3,5
+35.30%,22.60%,1.d4 Nf6 2.c4 e6 3.Nf3 b6 4.g3 Ba6 5.Qb3,5
+45.10%,28.40%,1.d4 Nf6 2.c4 e6 3.Nf3 b6 4.g3 Bb7 5.Bg2 c5 6.d5 exd5 7.Nh4,7
+33.80%,32.60%,1.d4 Nf6 2.c4 e6 3.Nf3 b6 4.Nc3,4
+58.10%,24.70%,1.d4 Nf6 2.c4 e6 3.Nf3 b6 4.Nc3 Bb7 5.a3,5
+37.50%,24.70%,1.d4 Nf6 2.c4 e6 3.Nf3 b6 4.Nc3 Bb7 5.a3 d5 6.cxd5 Nxd5 7.Qc2,7
+37.40%,24.20%,1.d4 Nf6 2.c4 e6 3.Nf3 b6 4.Nc3 Bb7 5.a3 d5 6.cxd5 Nxd5 7.e3,7
+28.70%,30.40%,1.d4 Nf6 2.c4 e6 3.Nf3 b6 4.Nc3 Bb7 5.a3 d5 6.cxd5 Nxd5 7.Qa4+,7
+36.50%,23.20%,1.d4 Nf6 2.c4 e6 3.Nf3 b6 4.Nc3 Bb7 5.a3 d5 6.cxd5 Nxd5 7.Bd2,7
+25.70%,40.60%,1.d4 Nf6 2.Nf3 b6 3.g3 Bb7 4.Bg2 c5 5.c4 cxd4 6.Qxd4,6
+40.90%,27.20%,1.d4 Nf6 2.c4 e6 3.Nf3 b6 4.Bf4,4
+41.70%,16.30%,1.d4 Nf6 2.c4 e6 3.Nf3 b6 4.g3 Bb7 5.Bg2 Be7 6.Nc3 Ne4 7.Bd2,7
+37.40%,29.90%,1.d4 Nf6 2.c4 e6 3.Nf3 b6 4.a3,4
+32.30%,31.10%,1.d4 Nf6 2.c4 e6 3.Nf3 b6 4.e3,4
+42.50%,35.00%,1.e4 d6 2.f4,2
+39.20%,33.20%,1.Nf3 d5 2.c4 c6 3.b3,3
+50.70%,22.10%,1.Nf3 d5 2.c4 c6 3.b3 Nf6 4.Bb2,4
+51.60%,21.80%,1.Nf3 d5 2.c4 c6 3.b3 Nf6 4.Bb2 e6 5.g3 Be7 6.Bg2 O-O 7.O-O,7
+44.30%,24.00%,1.Nf3 d5 2.c4,2
+43.30%,35.70%,1.Nf3 d5 2.c4 d4 3.e3 c5 4.b4,4
+41.70%,31.80%,1.d4 d5 2.Nf3 Nf6 3.e3 e6 4.Bd3 c5 5.b3,5
+52.00%,23.00%,1.d4 d5 2.Nf3 Nf6 3.e3 e6 4.Bd3 Nbd7 5.O-O Bd6 6.b3 O-O 7.Bb2,7
+41.00%,20.00%,1.e4 e5 2.Nf3 Nf6 3.Nxe5 d6 4.Nf3 Nxe4 5.d4,5
+37.50%,35.80%,1.e4 e5 2.Nf3 Nf6 3.Nxe5 d6 4.Nf3 Nxe4 5.d4 d5 6.Bd3 Be7 7.O-O Nc6 8.Re1 Bg4 9.c3 f5 10.Nbd2,10
+38.50%,22.00%,1.e4 e5 2.Nf3 Nf6 3.Nxe5 d6 4.Nf3 Nxe4 5.d4 d5 6.Bd3 Be7 7.O-O Nc6 8.Re1,8
+35.40%,17.70%,1.e4 e5 2.Nf3 Nf6 3.Nxe5 d6 4.Nf3 Nxe4 5.d4 d5 6.Bd3 Be7 7.O-O Nc6 8.c4 Nb4 9.cxd5,9
+34.80%,14.30%,1.e4 e5 2.Nf3 Nf6 3.Nxe5 d6 4.Nf3 Nxe4 5.d4 d5 6.Bd3 Be7 7.O-O Nc6 8.c4 Nb4 9.Be2,9
+42.20%,20.30%,1.e4 e5 2.Nf3 Nf6 3.Nxe5 d6 4.Nf3 Nxe4 5.d4 d5 6.Bd3 Be7 7.O-O Nc6 8.c4,8
+55.50%,32.30%,1.e4 e5 2.Nf3 Nf6 3.Nxe5 d6 4.Nxf7 Kxf7 5.d4,5
+19.80%,16.80%,1.e4 e5 2.Nf3 Nf6 3.Nxe5 d6 4.Nf3 Nxe4 5.Qe2,5
+33.20%,25.20%,1.e4 e5 2.Nf3 Nf6 3.Nxe5 d6 4.Nf3 Nxe4 5.d3,5
+42.30%,19.10%,1.e4 e5 2.Nf3 Nf6 3.Nxe5 d6 4.Nd3,4
+43.30%,17.60%,1.e4 e5 2.Nf3 Nf6 3.Nxe5 d6 4.Nf3 Nxe4 5.c4,5
+46.80%,18.00%,1.e4 e5 2.Nf3 Nf6 3.Nxe5 d6 4.Nf3 Nxe4 5.Bd3,5
+47.80%,26.00%,1.e4 e5 2.Nf3 Nf6 3.d4,3
+46.00%,17.80%,1.e4 e5 2.Nf3 Nf6 3.d4 exd4 4.e5 Ne4 5.Qxd4,5
+44.60%,18.40%,1.e4 e5 2.Nf3 Nf6 3.d4 Nxe4 4.Bd3,4
+40.30%,39.60%,1.e4 e5 2.Nf3 Nf6 3.d4 exd4 4.Bc4,4
+42.40%,20.50%,1.e4 e5 2.Nf3 Nf6 3.Nxe5 d6 4.Nf3 Nxe4 5.Nc3,5
+42.80%,23.70%,1.e4 e5 2.Nf3 Nf6 3.Nxe5 d6 4.Nc4,4
+41.70%,32.30%,1.e4 e5 2.Nf3 Nf6 3.Nc3,3
+42.00%,45.00%,1.e4 e5 2.Nf3 Nf6 3.Bc4,3
+35.40%,41.80%,1.c3,1
+51.20%,23.20%,1.e4 d5 2.exd5 Qxd5 3.Nc3 Qa5 4.d4 Nf6 5.Nf3 Bf5 6.Ne5 c6 7.g4,7
+50.60%,23.90%,1.e4 d5 2.exd5 Qxd5 3.Nc3 Qa5 4.d4 Nf6 5.Nf3 Bg4 6.h3,6
+47.00%,40.50%,1.e4 d5 2.exd5 Qxd5 3.Nc3 Qa5 4.b4,4
+55.10%,25.40%,1.e4 d5 2.exd5 Nf6 3.d4,3
+35.50%,35.90%,1.e4 e5 2.Nf3 Nc6 3.d4 exd4 4.Nxd4 Bc5 5.Be3 Qf6 6.c3 Nge7 7.Qd2,7
+73.30%,15.60%,1.e4 e5 2.Nf3 Nc6 3.d4,3
+50.20%,28.00%,1.e4 e5 2.Nf3 Nc6 3.d4 exd4 4.Nxd4,4
+47.30%,32.30%,1.e4 e5 2.Nf3 Nc6 3.d4 exd4 4.c3,4
+51.40%,33.50%,1.e4 e5 2.Nf3 Nc6 3.d4 exd4 4.c3 dxc3 5.Bc4,5
+46.10%,33.30%,1.e4 e5 2.Nf3 Nc6 3.d4 exd4 4.Nxd4 Qh4 5.Nb5,5
+29.10%,35.90%,1.e4 e5 2.Nf3 Nc6 3.d4 exd4 4.Nxd4 Bc5 5.Be3 Qf6 6.c3 Nge7 7.Nc2,7
+37.50%,31.50%,1.e4 e5 2.Nf3 Nc6 3.d4 exd4 4.Nxd4 Nf6 5.Nxc6 bxc6 6.e5,6
+43.50%,31.20%,1.e4 e5 2.Nf3 Nc6 3.d4 exd4 4.Nxd4 Bc5 5.Nb3,5
+58.10%,24.80%,1.e4 e5 2.Nf3 Nc6 3.d4 exd4 4.Bc4,4
+39.10%,37.60%,1.e4 e5 2.Nf3 Nc6 3.d4 exd4 4.Bc4 Nf6 5.e5,5
+43.40%,35.90%,1.e4 e5 2.Nf3 Nc6 3.d4 exd4 4.Bc4 Bc5 5.Ng5,5
+31.10%,23.90%,1.e4 e5 2.Nf3 Nc6 3.d4 exd4 4.Nxd4 Nf6 5.Nxc6 bxc6 6.Nd2,6
+41.20%,35.20%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Nf3 c6 5.Bg5 h6 6.Bh4,6
+47.50%,25.90%,1.d4 d5 2.c4 e6 3.Nc3 c6 4.e3 f5 5.g4,5
+39.10%,29.20%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Nf3 c6 5.Bg5 dxc4 6.e4 b5 7.e5 h6 8.Bh4 g5 9.Nxg5,9
+43.00%,28.90%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Nf3 c6 5.Bg5 dxc4 6.e4 b5 7.e5 h6 8.Bh4 g5 9.exf6 gxh4 10.Ne5,10
+48.40%,27.10%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Nf3 c6 5.Bg5 dxc4 6.e4 b5 7.e5 h6 8.Bh4 g5 9.Nxg5 hxg5 10.Bxg5 Nbd7 11.g3,11
+44.00%,30.90%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Nf3 c6 5.Bg5 dxc4 6.e4,6
+40.30%,23.30%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Nf3 c6 5.e3 Nbd7 6.Bd3,6
+53.70%,22.10%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Nf3 c6 5.e3,5
+53.40%,23.90%,1.d4 d5 2.c4 e6 3.Nc3 c6 4.e4,4
+36.10%,31.70%,1.d4 d5 2.c4 e6 3.Nc3 c6 4.e4 dxe4 5.Nxe4 Bb4+ 6.Nc3,6
+44.60%,29.20%,1.d4 d5 2.c4 e6 3.Nc3 c6 4.e4 dxe4 5.Nxe4 Bb4+ 6.Bd2,6
+40.80%,27.40%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Nf3 c6 5.e3 Nbd7 6.Bd3 dxc4 7.Bxc4 b5 8.Bd3 a6 9.e4 c5 10.e5 cxd4 11.Nxb5,11
+36.40%,35.50%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Nf3 c6 5.e3 Nbd7 6.Bd3 dxc4 7.Bxc4 b5 8.Bd3 a6 9.e4 c5 10.e5,10
+41.30%,27.30%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Nf3 c6 5.e3 Nbd7 6.Bd3 dxc4 7.Bxc4 b5 8.Bd3 a6 9.e4 c5 10.d5,10
+46.10%,28.70%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Nf3 c6 5.e3 Nbd7 6.Bd3 dxc4 7.Bxc4 b5 8.Bd3 Bb7 9.e4 b4 10.Na4 c5 11.e5 Nd5 12.O-O cxd4 13.Nxd4,13
+46.50%,34.90%,1.d4 d5 2.Nf3 c6 3.c4 e6 4.Nc3 dxc4 5.g3,5
+47.20%,20.90%,1.d4 d5 2.c4 e6 3.Nf3 Nf6 4.e3 c6 5.Nbd2,5
+46.10%,24.10%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Nf3 c6 5.e3 Nbd7 6.Bd3 dxc4 7.Bxc4,7
+39.00%,23.20%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Nf3 c6 5.e3 Nbd7 6.Qc2,6
+29.60%,28.30%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Nf3 c6 5.e3 Nbd7 6.Qc2 Bd6 7.e4,7
+44.70%,28.30%,1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Nf3 c6 5.e3 Nbd7 6.Qc2 Bd6 7.g4,7
+28.40%,50.40%,1.e4 c5 2.Nf3 Nc6 3.d4 cxd4 4.Nxd4 g6 5.Nxc6,5
+43.00%,24.50%,1.e4 c5 2.Nf3 Nc6 3.d4 cxd4 4.Nxd4 g6 5.c4 Bg7 6.Be3,6
+38.20%,24.50%,1.e4 c5 2.Nf3 Nc6 3.d4 cxd4 4.Nxd4 g6 5.c4,5
+39.50%,32.10%,1.e4 c5 2.Nf3 Nc6 3.d4 cxd4 4.Nxd4 g6 5.Nc3 Bg7 6.Be3 Nf6 7.Bc4,7
+36.00%,39.70%,1.e4 c5 2.Nf3 Nc6 3.d4 cxd4 4.Nxd4 g6 5.Nc3,5
+46.70%,15.60%,1.e4 c5 2.c3 d5 3.exd5 Qxd5 4.d4 cxd4 5.cxd4 Nc6 6.Nf3 e5 7.Nc3 Bb4 8.Be2,8
+37.70%,34.50%,1.e4 c5 2.c3,2
+39.50%,29.40%,1.e4 c5 2.c3 Nf6 3.e5 Nd5 4.Nf3 Nc6 5.Bc4 Nb6 6.Bb3,6
+22.40%,48.80%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 Nc6 6.Be2 e5 7.Nb3,7
+22.90%,48.60%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 Nc6 6.Be2 e5 7.Nxc6,7
+22.90%,63.00%,1.e4 c5 2.Bc4,2
+33.40%,36.90%,1.e4 c5 2.Nf3 d6 3.Bb5+,3
+40.80%,23.90%,1.e4 c5 2.Nf3 d6 3.Bb5+ Bd7 4.Bxd7+ Qxd7 5.O-O Nc6 6.c3 Nf6 7.d4,7
+33.90%,35.50%,1.e4 c5 2.Nf3 d6 3.Bb5+ Nc6 4.O-O Bd7 5.c3 a6 6.Bxc6 Bxc6 7.Re1 Nf6 8.d4 Bxe4 9.Bg5,9
+43.00%,31.90%,1.e4 c5 2.Ne2,2
+41.70%,32.20%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Qxd4,4
+34.90%,35.70%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 Nc6 6.Be2,6
+33.30%,34.20%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 Nc6 6.g3,6
+29.50%,41.60%,1.e4 c5 2.Nc3 Nc6 3.g3 g6 4.Bg2 Bg7 5.d3 d6 6.f4,6
+32.00%,39.90%,1.e4 c5 2.Nc3 Nc6 3.g3 g6 4.Bg2 Bg7 5.d3 d6 6.Be3,6
+38.80%,39.60%,1.e4 c5 2.Nc3,2
+38.40%,32.40%,1.e4 c5 2.Nc3 Nc6 3.Nge2,3
+33.80%,41.00%,1.e4 c5 2.Nc3 Nc6 3.g3,3
+35.20%,34.30%,1.e4 c5 2.Nf3 e6 3.c3,3
+40.20%,34.00%,1.e4 c5 2.Nf3 d6 3.c3,3
+54.30%,23.20%,1.e4 c5 2.Nf3 d6 3.c3 Nf6 4.Be2 Nc6 5.d4 cxd4 6.cxd4 Nxe4 7.d5 Qa5+ 8.Nc3 Nxc3 9.bxc3,9
+38.90%,33.70%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 g6 6.Be2 Bg7 7.Be3 Nc6 8.Nb3,8
+28.20%,43.10%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 g6 6.Be2 Bg7 7.Be3 Nc6 8.O-O,8
+36.50%,39.50%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 g6 6.Be2 Bg7 7.Be3,7
+27.70%,36.90%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 g6 6.Be2 Bg7 7.Be3 Nc6 8.O-O O-O 9.Qd2,9
+40.70%,30.80%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 g6 6.Be2,6
+33.80%,38.30%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 g6 6.Be2 Bg7 7.Be3 Nc6 8.O-O O-O 9.Nb3,9
+45.00%,28.60%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 g6 6.g3,6
+45.90%,33.40%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 g6 6.f4,6
+44.20%,34.00%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 g6 6.Be3 Bg7 7.f3 O-O 8.Qd2 Nc6 9.Bc4 Bd7 10.O-O-O,10
+46.20%,33.40%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 g6 6.Be3 Bg7 7.f3,7
+52.60%,25.60%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 g6 6.Be3 Bg7 7.f3 O-O 8.Qd2 Nc6 9.Bc4,9
+46.70%,28.70%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 g6 6.Be3 Bg7 7.f3 O-O 8.Qd2 Nc6 9.O-O-O,9
+48.00%,26.90%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 g6 6.Be3 Bg7 7.f3 O-O 8.Qd2 Nc6 9.g4,9
+43.00%,29.90%,1.e4 c5 2.Nf3 e6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 Nc6 6.Nxc6,6
+38.30%,32.90%,1.e4 c5 2.Nf3 e6 3.b3,3
+35.70%,42.10%,1.e4 c5 2.Nc3 Nc6 3.f4,3
+32.50%,45.60%,1.e4 c5 2.Nc3 Nc6 3.f4 g6 4.Nf3 Bg7 5.Bc4 e6 6.f5,6
+41.20%,36.20%,1.e4 c5 2.Nf3 g6 3.d4,3
+36.30%,39.10%,1.e4 c5 2.Nf3 e6 3.d4 cxd4 4.Nxd4 a6 5.Nc3,5
+38.40%,35.90%,1.e4 c5 2.Nf3 e6 3.d4 cxd4 4.Nxd4 a6 5.c4,5
+40.80%,31.40%,1.e4 c5 2.Nf3 e6 3.d4 cxd4 4.Nxd4 a6 5.Bd3,5
+34.50%,41.20%,1.e4 c5 2.Nf3 e6 3.d4 cxd4 4.Nxd4 a6 5.Nc3 b5 6.g3,6
+39.00%,34.10%,1.e4 c5 2.Nf3 e6 3.d4 cxd4 4.Nxd4 a6 5.Nc3 b5 6.Bd3 Qb6 7.Nf3,7
+35.10%,35.30%,1.e4 c5 2.Nf3 e6 3.c4,3
+40.40%,35.70%,1.e4 c5 2.Na3,2
+36.40%,38.30%,1.e4 c5 2.g3,2
+25.10%,53.60%,1.e4 c5 2.Nf3 Nc6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 e5 6.Nxc6,6
+19.80%,61.00%,1.e4 c5 2.Nf3 Nc6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 e5 6.Nf3,6
+26.10%,54.40%,1.e4 c5 2.Nf3 Nc6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 e5 6.Nb3,6
+37.30%,29.80%,1.e4 c5 2.Nf3 Nc6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 e5 6.Ndb5 d6 7.Bg5 a6 8.Na3 b5 9.Nd5,9
+41.20%,36.50%,1.e4 c5 2.Nf3 Nc6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 e5 6.Ndb5 d6 7.Bg5 a6 8.Na3 b5 9.Bxf6 gxf6 10.Nd5 f5 11.Bxb5,11
+35.30%,42.90%,1.e4 c5 2.f4,2
+40.40%,43.60%,1.e4 c5 2.a3,2
+55.60%,26.30%,1.e4 c5 2.Nf3,2
+51.00%,30.70%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4,4
+40.70%,36.20%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3,5
+39.70%,41.90%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.c3,4
+42.70%,42.40%,1.e4 c5 2.d4 cxd4 3.Nf3,3
+50.00%,32.00%,1.e4 c5 2.d4 cxd4 3.Nf3 e5 4.c3,4
+37.90%,37.30%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 a6 6.Bg5 e6 7.f4,7
+38.40%,40.80%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 a6 6.Bg5,6
+41.90%,33.90%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 a6 6.h3,6
+38.50%,33.50%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 a6 6.f4,6
+39.10%,35.50%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 a6 6.Be3,6
+44.50%,32.10%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 a6 6.Rg1,6
+34.70%,38.40%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 a6 6.Be2,6
+47.20%,34.90%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 a6 6.Bg5 e6 7.f4 b5 8.e5 dxe5 9.fxe5 Qc7 10.Qe2,10
+37.60%,32.10%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 a6 6.g3,6
+40.50%,32.10%,1.e4 c5 2.Nf3 Nf6 3.e5,3
+36.00%,36.40%,1.e4 c5 2.Nf3 Nf6 3.Nc3,3
+42.60%,29.50%,1.e4 c5 2.Nf3 Nc6 3.Bb5,3
+52.60%,24.60%,1.e4 c5 2.Nf3 Nc6 3.Bb5 g6 4.O-O Bg7 5.c3 e5 6.d4,6
+45.20%,35.90%,1.e4 c5 2.Nf3 Nc6 3.Bb5 g6 4.O-O Bg7 5.c3 Nf6 6.d4,6
+45.90%,22.90%,1.e4 c5 2.Nf3 Nc6 3.Bb5 g6 4.O-O Bg7 5.c3 Nf6 6.Qa4,6
+43.90%,28.70%,1.e4 c5 2.Nf3 Nc6 3.Bb5 g6 4.O-O Bg7 5.Re1 e5 6.b4,6
+36.40%,41.40%,1.e4 c5 2.Nf3 a6 3.b3,3
+46.60%,30.70%,1.e4 c5 2.Nf3 a6 3.c4,3
+26.80%,54.20%,1.e4 c5 2.Nf3 a6 3.d4,3
+33.30%,40.90%,1.e4 c5 2.Nf3 a6 3.d3,3
+40.70%,38.20%,1.e4 c5 2.Nf3 a6 3.g3,3
+42.00%,31.00%,1.e4 c5 2.Nf3 a6 3.c3,3
+39.40%,37.70%,1.e4 c5 2.Nf3 a6 3.Nc3,3
+52.90%,27.70%,1.e4 c5 2.Nf3 Nc6 3.d4,3
+37.80%,43.60%,1.e4 c5 2.Nf3 e6 3.d4 cxd4 4.Nxd4 Nc6 5.Nc3 Nf6 6.Ndb5 Bb4 7.Nd6+,7
+31.80%,38.20%,1.e4 c5 2.Nf3 e6 3.d4 cxd4 4.Nxd4 Nc6 5.Nc3 Qc7 6.Be3 a6 7.Be2,7
+37.00%,34.90%,1.e4 c5 2.Nf3 e6 3.d4 cxd4 4.Nxd4 Nc6 5.Nc3 Qc7 6.Be3,6
+39.00%,33.20%,1.e4 c5 2.Nf3 e6 3.d4 cxd4 4.Nxd4 Nc6 5.Nc3 Qc7 6.Be3 a6 7.Qd2,7
+33.30%,44.70%,1.e4 c5 2.Nf3 e6 3.d4 cxd4 4.Nxd4 Nc6 5.Nc3 Qc7 6.Be3 a6 7.f3,7
+40.10%,39.10%,1.e4 c5 2.Nf3 e6 3.d4 cxd4 4.Nxd4 Nc6 5.Nc3 Qc7 6.Ndb5 Qb8 7.Be3 a6 8.Bb6,8
+43.20%,30.60%,1.e4 c5 2.Nf3 e6 3.d4 cxd4 4.Nxd4 Nc6 5.Nc3,5
+33.60%,34.40%,1.e4 c5 2.Nf3 e6 3.d4 cxd4 4.Nxd4 Nc6 5.Nb5,5
+54.00%,24.90%,1.e4 c5 2.Nf3 e6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 Bb4 6.e5,6
+42.40%,29.80%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.f3,5
+40.10%,31.90%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.f3 e5 6.Bb5+,6
+44.40%,30.00%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 Nc6 6.Bg5 e6 7.Qd3,7
+40.50%,24.60%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 Nc6 6.Bg5 e6 7.Qd2 Be7 8.O-O-O O-O 9.f4,9
+36.90%,24.50%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 Nc6 6.Bg5 e6 7.Qd2 Be7 8.O-O-O O-O 9.f4 Nxd4 10.Qxd4,10
+38.50%,36.70%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 Nc6 6.Bg5,6
+39.60%,29.40%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 Nc6 6.Bg5 Bd7 7.Qd2,7
+39.00%,33.10%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 Nc6 6.Bg5 e6 7.Qd2 a6 8.O-O-O Bd7 9.f4 Be7 10.Nf3 b5 11.Bxf6,11
+38.40%,33.60%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 Nc6 6.Bg5 e6 7.Qd2,7
+38.00%,35.30%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 Nc6 6.Bg5 e6 7.Bb5,7
+33.80%,34.40%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 e6 6.Be2,6
+41.90%,26.50%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 e6 6.Be2 a6 7.O-O Qc7 8.f4 Nc6 9.Be3,9
+38.10%,29.80%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 e6 6.Be2 a6 7.O-O Qc7 8.f4 Nc6 9.Kh1 Be7 10.a4,10
+46.20%,29.70%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 e6 6.Be3 a6 7.g4,7
+46.00%,30.70%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 e6 6.Be3 a6 7.g4 e5 8.Nf5 g6 9.g5,9
+41.70%,35.90%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 e6 6.Be3 a6 7.Qd2,7
+43.20%,36.40%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 e6 6.Be3 a6 7.f3,7
+34.50%,31.90%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 e6 6.g3,6
+47.40%,25.90%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 e6 6.g4,6
+42.50%,26.30%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 e6 6.f4,6
+30.80%,31.00%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 e6 6.Be2 Nc6 7.O-O Be7 8.Be3 O-O 9.f4,9
+34.70%,30.80%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 e6 6.Be2 Nc6 7.O-O Be7 8.Be3 O-O 9.f4 Bd7 10.Nb3,10
+51.20%,25.00%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 e6 6.f4 Nc6 7.Be3 Be7 8.Qf3,8
+26.00%,53.60%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 e6 6.Bb5+,6
+33.70%,47.00%,1.e4 c5 2.Nf3 e6 3.d4 cxd4 4.c3,4
+42.90%,41.10%,1.e4 c5 2.d4 cxd4 3.c3,3
+32.10%,42.20%,1.e4 c5 2.d4 cxd4 3.c3 d3 4.c4,4
+39.50%,36.90%,1.e4 c5 2.b3,2
+34.70%,41.00%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 e6 6.Bc4,6
+37.80%,37.10%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 e6 6.Bc4 Nc6 7.Be3,7
+29.50%,47.90%,1.e4 c5 2.c4,2
+43.50%,33.90%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 e6 6.Bc4 Nc6 7.Be3 Be7 8.Qe2,8
+46.80%,19.70%,1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 e5 6.Bb5+,6
+38.00%,46.20%,1.e4 c5 2.Nf3 e6 3.b4,3
+37.90%,46.40%,1.e4 c5 2.b4,2
+35.90%,51.50%,1.e4 c5 2.b4 cxb4 3.Bb2,3
+36.40%,46.90%,1.e4 c5 2.Nf3 d6 3.b4,3
+36.10%,44.80%,1.e4 c5 2.b4 cxb4 3.a3,3
+48.70%,28.30%,1.d4 d5 2.c4 c6 3.Nf3 Nf6 4.Nc3 dxc4 5.a4,5
+36.40%,34.80%,1.d4 d5 2.c4 c6 3.Nf3 Nf6 4.Nc3 dxc4 5.e3,5
+28.90%,46.10%,1.d4 d5 2.c4 c6 3.Nf3 Nf6 4.Bg5,4
+44.50%,24.80%,1.d4 d5 2.c4 c6 3.Nf3 Nf6 4.Nbd2,4
+39.70%,24.90%,1.d4 d5 2.c4 c6 3.Nf3 Nf6 4.Nc3 a6 5.c5,5
+46.30%,20.30%,1.d4 d5 2.c4 c6 3.Nf3 Nf6 4.Nc3 dxc4 5.a4 Bf5 6.Nh4,6
+35.70%,27.00%,1.d4 d5 2.c4 c6 3.Nf3 Nf6 4.Nc3 dxc4 5.a4 Bf5 6.e3,6
+34.00%,26.20%,1.d4 d5 2.c4 c6 3.Nf3 Nf6 4.Nc3 dxc4 5.a4 Bf5 6.e3 e6 7.Bxc4 Bb4 8.O-O O-O 9.Qe2,9
+40.30%,27.20%,1.d4 d5 2.c4 c6 3.Nf3 Nf6 4.Nc3 dxc4 5.a4 Bf5 6.Ne5,6
+43.80%,18.10%,1.d4 d5 2.c4 c6 3.Nf3 Nf6 4.Nc3 dxc4 5.a4 Bf5 6.Ne5 e6 7.f3 Bb4 8.e4,8
+34.30%,26.40%,1.d4 d5 2.c4 c6 3.cxd5,3
+42.00%,28.20%,1.d4 d5 2.c4 c6 3.Nf3 Nf6 4.e3 Bf5 5.cxd5 cxd5 6.Nc3,6
+42.60%,34.30%,1.d4 d5 2.c4 c6 3.Nf3 Nf6 4.Nc3 dxc4 5.e4 b5 6.e5,6
+41.50%,40.60%,1.d4 d5 2.c4 c6 3.Nf3 Nf6 4.Nc3 dxc4 5.e4,5
+45.40%,23.80%,1.d4 d5 2.c4 c6 3.Nf3,3
+45.10%,19.80%,1.d4 d5 2.c4 c6 3.Nf3 Nf6 4.e3,4
+41.90%,27.10%,1.d4 d5 2.c4 c6 3.Nc3 dxc4 4.e4,4
+59.50%,19.90%,1.d4 d5 2.c4 c6 3.Nf3 Nf6 4.Nc3,4
+54.90%,21.60%,1.e4 e5 2.Nf3 Nc6 3.Bb5 Nf6 4.O-O,4
+48.40%,15.10%,1.e4 e5 2.Nf3 Nc6 3.Bb5 Nf6 4.O-O d6 5.d4 Bd7 6.Nc3 Be7 7.Bxc6,7
+41.40%,20.40%,1.e4 e5 2.Nf3 Nc6 3.Bb5 Nf6 4.O-O Nxe4 5.d4 Be7 6.dxe5,6
+34.00%,30.20%,1.e4 e5 2.Nf3 Nc6 3.Bb5 Nf6 4.d4 exd4 5.O-O,5
+51.40%,23.60%,1.e4 e5 2.Nf3 Nc6 3.Bb5 Bc5 4.c3,4
+41.40%,28.70%,1.e4 e5 2.Nf3 Nc6 3.Bb5 Bc5 4.O-O Nf6 5.c3 O-O 6.d4 Bb6 7.Bg5,7
+48.80%,24.10%,1.e4 e5 2.Nf3 Nc6 3.Bb5 Bc5 4.O-O Nf6 5.c3,5
+34.00%,29.30%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.d4,6
+37.40%,12.60%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 O-O 8.c3 d6 9.h3 Na5 10.Bc2 c5 11.d4 Qc7 12.Nbd2 Nc6 13.dxc5,13
+39.10%,26.60%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 O-O 8.c3 d6 9.h3 Na5 10.Bc2,10
+34.40%,25.10%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Bxc6,6
+37.50%,23.10%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 O-O 8.c3 d6 9.h3,9
+40.10%,23.10%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.d3,6
+32.80%,31.70%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Nc3,6
+40.50%,27.00%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 O-O 8.c3 d6 9.d3,9
+39.00%,22.70%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 O-O 8.c3 d6 9.a3,9
+44.30%,25.90%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Qe2,6
+49.10%,20.00%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 O-O 8.c3 d6 9.d4,9
+57.80%,24.70%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4,4
+25.90%,35.70%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Bxc6,4
+36.30%,27.90%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Bxc6 dxc6 5.Nc3,5
+34.40%,32.00%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Bxc6 dxc6 5.O-O,5
+41.70%,24.50%,1.e4 e5 2.Nf3 Nc6 3.Bb5,3
+32.80%,42.70%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 O-O 8.c3 d5 9.exd5 Nxd5 10.Nxe5 Nxe5 11.Rxe5 c6 12.d4,12
+36.30%,23.00%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 O-O 8.c3 d5 9.exd5 Nxd5 10.Nxe5 Nxe5 11.Rxe5 c6 12.Bxd5 cxd5 13.d4 Bd6 14.Re3,14
+42.50%,28.40%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O,5
+41.40%,31.10%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.d3,5
+33.60%,30.30%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.Bxc6,5
+36.30%,22.30%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 O-O 8.c3 d6 9.h3 Nb8 10.d3,10
+41.10%,24.20%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 O-O 8.c3 d6 9.h3 Na5 10.Bc2 c5 11.d4 Qc7 12.Nbd2 cxd4 13.cxd4,13
+40.90%,29.40%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.d3 d6 6.c4,6
+41.00%,27.40%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.d4,5
+42.00%,28.20%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 d6 5.O-O,5
+46.20%,26.60%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 d6 5.c3,5
+39.90%,26.90%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 d6 5.Bxc6+ bxc6 6.d4,6
+40.40%,25.30%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 d6 5.c3 f5 6.exf5 Bxf5 7.O-O,7
+34.20%,28.20%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 d6 5.c4,5
+41.00%,28.60%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.Nc3,5
+59.90%,20.40%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O b5 6.Bb3 Be7 7.a4,7
+41.50%,32.10%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.Qe2,5
+44.00%,24.20%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Nxe4 6.d4 b5 7.Bb3,7
+38.00%,19.40%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Nxe4 6.d4 b5 7.Bb3 d5 8.dxe5 Be6 9.Nbd2,9
+40.00%,33.80%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Nxe4 6.d4 b5 7.Bb3 d5 8.dxe5 Be6 9.c3 Be7 10.Re1,10
+40.10%,20.70%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Nxe4 6.d4 b5 7.Bb3 d5 8.dxe5 Be6 9.Qe2,9
+32.70%,23.80%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Nxe4 6.d4 b5 7.Bb3 d5 8.dxe5 Be6 9.Nbd2 Nc5 10.c3 d4 11.Ng5,11
+33.30%,19.10%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Nxe4 6.d4 b5 7.Bb3 d5 8.dxe5 Be6 9.c3 Be7 10.Nbd2 O-O 11.Qe2,11
+43.60%,17.90%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Nxe4 6.d4 b5 7.Bb3 d5 8.dxe5 Be6 9.c3 Bc5 10.Qd3,10
+38.30%,28.90%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Nxe4 6.d4 b5 7.Bb3 d5 8.dxe5 Be6 9.c3 Bc5 10.Nbd2,10
+28.80%,47.90%,1.e4 e5 2.Nf3 Nc6 3.Bb5 f5 4.exf5,4
+46.40%,30.00%,1.e4 e5 2.Nf3 Nc6 3.Bb5 f5 4.Nc3,4
+38.30%,33.80%,1.e4 e5 2.Nf3 Nc6 3.Bb5 f5 4.Bxc6,4
+34.30%,45.60%,1.e4 e5 2.Nf3 Nc6 3.Bb5 f5 4.d4,4
+59.60%,14.40%,1.e4 e5 2.Nf3 Nc6 3.Bb5 d6 4.d4 Bd7 5.Nc3 Nf6 6.Bxc6,6
+31.00%,52.50%,1.d4 Nf6 2.f4,2
+44.20%,19.40%,1.d4 d5 2.c4 e6 3.Nc3 c5 4.cxd5 exd5 5.Nf3 Nc6 6.g3 Nf6 7.Bg2 Be7 8.O-O O-O 9.Bg5,9
+45.90%,15.90%,1.d4 d5 2.c4 e6 3.Nc3 c5 4.cxd5 exd5 5.Nf3 Nc6 6.g3 Nf6 7.Bg2 Be7 8.O-O O-O 9.dxc5 Bxc5 10.Na4,10
+52.20%,18.40%,1.d4 d5 2.c4 e6 3.Nc3 c5 4.cxd5 exd5 5.Nf3 Nc6 6.g3,6
+43.60%,24.50%,1.d4 d5 2.c4 e6 3.Nc3 c5 4.cxd5 exd5 5.Nf3,5
+47.10%,32.90%,1.e4 e5 2.Nf3 Nc6 3.Nc3,3
+38.20%,32.70%,1.e4 e5 2.Nf3 Nc6 3.Nc3 g6 4.d4 exd4 5.Nd5,5
+36.80%,32.30%,1.d4 Nf6 2.Nf3 e6 3.Bg5,3
+50.60%,16.10%,1.d4 Nf6 2.Nf3 e6 3.Bg5 c5 4.e3 b6 5.d5,5
+35.80%,33.40%,1.d4 Nf6 2.Nf3 g6 3.Bg5,3
+40.80%,33.60%,1.d4 Nf6 2.Bg5 e6 3.e4,3
+41.00%,37.10%,1.d4 Nf6 2.Bg5 Ne4 3.Bh4,3
+40.60%,33.50%,1.d4 Nf6 2.Bg5,2
+47.40%,35.80%,1.d4 Nf6 2.Bg5 c5 3.d5 Qb6 4.Nc3,4
+42.90%,32.10%,1.d4 Nf6 2.Bg5 Ne4 3.h4,3
+44.40%,40.70%,1.Nc3 e5 2.a3,2
+39.80%,36.10%,1.Nc3,1
+57.20%,19.90%,1.Nc3 e5 2.Nf3 Nc6 3.d4,3
+32.90%,39.30%,1.Nc3 c5 2.Nf3 Nc6 3.d4 cxd4 4.Nxd4,4
+35.60%,45.90%,1.e3,1
+49.50%,31.80%,1.e4 e5 2.Nc3,2
+39.00%,33.90%,1.e4 e5 2.Nc3 Nf6 3.a3,3
+41.10%,30.10%,1.e4 e5 2.Nc3 Nf6 3.g3,3
+54.60%,29.20%,1.e4 e5 2.Nc3 d6 3.f4,3
+44.00%,30.20%,1.e4 e5 2.Nc3 Nc6 3.g3,3
+47.10%,37.70%,1.e4 e5 2.Nc3 Nf6 3.Bc4,3
+31.50%,26.10%,1.e4 e5 2.Nc3 Nf6 3.Bc4 Nxe4 4.Qh5 Nd6 5.Bb3 Be7 6.Nf3 Nc6 7.Nxe5,7
+54.50%,29.50%,1.e4 e5 2.Nc3 Nc6 3.f4,3
+66.10%,20.00%,1.e4 e5 2.Nc3 Nf6 3.f4,3
+47.80%,23.40%,1.e4 e5 2.Nc3 Nf6 3.f4 d5 4.fxe5 Nxe4 5.Nf3 Bg4 6.Qe2,6
+34.20%,40.30%,1.e4 e5 2.Nc3 Nf6 3.f4 d5 4.fxe5 Nxe4 5.d3,5
+44.70%,32.80%,1.e4 e5 2.Nc3 Nf6 3.f4 d5 4.fxe5 Nxe4 5.Qf3,5
+47.50%,33.90%,1.e4 e5 2.Nc3 Nc6 3.f4 exf4 4.Nf3,4
+50.90%,34.50%,1.a4,1
+40.70%,35.20%,1.Nf3 Nf6 2.b3 g6 3.Bb2 Bg7 4.g3 O-O 5.Bg2 d6 6.O-O,6
+47.70%,20.30%,1.Nf3 c5 2.g3 d5 3.Bg2 Nc6 4.d4 e6 5.O-O,5
+59.20%,21.70%,1.Nf3 f5 2.d3 Nf6 3.e4,3
+41.90%,34.40%,1.Nf3 f5 2.e4,2
+39.60%,32.40%,1.Nf3 Nf6 2.b3,2
+37.80%,40.80%,1.Nf3 d5 2.d3,2
+40.20%,33.60%,1.Nf3 Nf6 2.e3,2
+37.00%,43.40%,1.Nf3 d5 2.Nc3,2
+33.90%,39.70%,1.Nf3 d5 2.b4,2
+38.10%,44.80%,1.Nf3 d5 2.e4,2
+44.40%,22.40%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 O-O 8.c3 d6,8
+41.20%,25.10%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 O-O 8.c3 d6 9.h3 Na5 10.Bc2 c5,10
+39.90%,24.90%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 O-O 8.c3 d6 9.h3 Bb7,9
+31.40%,31.40%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 O-O 8.c3 d6 9.h3 a5,9
+36.80%,27.00%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 O-O 8.c3 d6 9.h3 Na5 10.Bc2 c5 11.d4 Nd7,11
+37.50%,23.80%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 O-O 8.c3 d6 9.h3 Nd7,9
+37.90%,18.30%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 O-O 8.c3 d6 9.h3 Be6,9
+36.30%,23.30%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 O-O 8.c3 d6 9.h3 h6,9
+40.50%,17.00%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 O-O 8.c3 d6 9.h3 Re8 10.d4 Bb7 11.Nbd2 Bf8 12.a3 h6,12
+46.40%,25.90%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 Bb7,7
+39.50%,30.30%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Qe2 b5 7.Bb3 O-O,7
+46.40%,25.10%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Qe2 b5 7.Bb3 d6,7
+30.70%,20.40%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 O-O 8.c3 d6 9.h3 Re8,9
+42.50%,33.10%,1.e4 e5 2.Nf3 Nc6 3.Bb5 Nge7,3
+51.50%,22.60%,1.e4 e5 2.Nf3 Nc6 3.Bb5 Nge7 4.Nc3 g6,4
+40.30%,25.70%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Bxc6 dxc6 5.O-O Bg4 6.h3 h5,6
+31.40%,25.00%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Bxc6 dxc6 5.d4 exd4 6.Qxd4 Qxd4 7.Nxd4 Bd6,7
+31.40%,34.00%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Bxc6 dxc6 5.O-O Qd6,5
+33.40%,25.40%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Bxc6 dxc6 5.O-O f6,5
+40.10%,28.20%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Bxc6 dxc6 5.O-O Bd6,5
+54.40%,28.30%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Bxc6 bxc6,4
+36.10%,33.50%,1.e4 e5 2.Nf3 Nc6 3.Bb5 g6,3
+35.90%,32.60%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 O-O 8.c3 d5,8
+31.40%,34.80%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 O-O 8.c3 d5 9.exd5 Nxd5 10.Nxe5 Nxe5 11.Rxe5 c6 12.d4 Bd6 13.Re1 Qh4 14.g3 Qh3,14
+33.90%,24.90%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 O-O 8.c3 d5 9.exd5 Nxd5 10.Nxe5 Nxe5 11.Rxe5 c6,11
+37.80%,44.60%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 O-O 8.c3 d5 9.exd5 Nxd5 10.Nxe5 Nxe5 11.Rxe5 Nf6,11
+46.00%,38.10%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 O-O 8.c3 d5 9.exd5 e4,9
+54.90%,21.10%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O b5 6.Bb3 d6,6
+37.90%,30.80%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O b5 6.Bb3 Bb7,6
+30.80%,35.90%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 O-O 8.c3 d6 9.h3 Nb8,9
+36.10%,26.10%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 O-O 8.c3 d6 9.h3 Nb8 10.d4 Nbd7,10
+59.70%,23.90%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 b5,4
+49.00%,31.00%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Bc5,4
+33.80%,38.90%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nge7,4
+38.10%,36.50%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 g6,4
+64.80%,21.00%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 b5 5.Bb3 Bc5,5
+40.90%,26.10%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 d6 5.c3 Bd7 6.d4 Nge7,6
+35.50%,32.70%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 d6 5.Bxc6+ bxc6 6.d4 f6,6
+39.60%,28.10%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 d6 5.c3 Bd7,5
+32.90%,40.80%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 d6,4
+36.30%,25.70%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 d6 5.c3 Bd7 6.d4 g6,6
+33.90%,42.60%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 d6 5.c3 f5,5
+39.70%,28.10%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Bc5,5
+41.40%,33.50%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 b5 5.Bb3 Na5,5
+40.70%,34.60%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 f5,4
+47.30%,25.90%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O d6,5
+40.30%,30.60%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Nxe4 6.d4 b5 7.Bb3 d5 8.dxe5 Be6 9.c3 Nc5,9
+39.00%,25.60%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Nxe4 6.d4 b5 7.Bb3 d5 8.dxe5 Be6 9.c3 Be7,9
+32.20%,37.90%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Nxe4 6.d4 b5 7.Bb3 d5 8.dxe5 Be6 9.c3 Bc5 10.Nbd2 O-O 11.Bc2 Nxf2,11
+35.40%,30.90%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Nxe4 6.d4 b5 7.Bb3 d5 8.dxe5 Be6 9.c3 Bc5,9
+40.00%,24.30%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Nxe4 6.d4 b5 7.Bb3 d5 8.dxe5 Be6,8
+32.80%,34.20%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Nxe4,5
+43.10%,29.40%,1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Nxe4 6.d4 exd4,6
+42.70%,34.00%,1.e4 e5 2.Nf3 Nc6 3.Bb5 f5,3
+46.20%,27.10%,1.e4 e5 2.Nf3 Nc6 3.Bb5 f5 4.Nc3 fxe4 5.Nxe4 d5 6.Nxe5 dxe4 7.Nxc6 Qg5,7
+42.10%,24.40%,1.e4 e5 2.Nf3 Nc6 3.Bb5 f5 4.Nc3 fxe4 5.Nxe4 d5 6.Nxe5 dxe4 7.Nxc6 Qd5,7
+43.10%,23.80%,1.e4 e5 2.Nf3 Nc6 3.Bb5 f5 4.Nc3 fxe4 5.Nxe4 Nf6,5
+61.20%,21.10%,1.e4 e5 2.Nf3 Nc6 3.Bb5 d6,3
+44.80%,39.60%,1.e4 a6,1
+51.30%,28.80%,1.e4 a6 2.d4 e6 3.Nf3 b5 4.Bd3 c5 5.c3 Bb7 6.O-O Nf6,6
+51.70%,31.40%,1.e4 a6 2.d4 b5 3.Nf3 Bb7 4.Bd3 e6,4
+43.60%,20.60%,1.d4 d5 2.c4 e6 3.Nc3 c5 4.cxd5 exd5 5.Nf3 Nc6 6.g3 Nf6 7.Bg2 Be7 8.O-O O-O,8
+42.20%,22.70%,1.d4 d5 2.c4 e6 3.Nc3 c5 4.cxd5 exd5 5.Nf3 Nc6 6.g3 Nf6 7.Bg2 Be7 8.O-O O-O 9.Bg5 c4,9
+44.20%,29.30%,1.d4 d5 2.c4 e6 3.Nc3 c5 4.cxd5 exd5 5.Nf3 Nc6 6.g3 Nf6 7.Bg2 Be7 8.O-O O-O 9.dxc5 d4,9
+49.10%,13.20%,1.d4 d5 2.c4 e6 3.Nc3 c5 4.cxd5 exd5 5.Nf3 Nc6 6.g3 Nf6 7.Bg2 Be7 8.O-O O-O 9.Bg5 Be6,9
+44.40%,18.10%,1.d4 d5 2.c4 e6 3.Nc3 c5 4.cxd5 exd5 5.Nf3 Nc6 6.g3 Nf6 7.Bg2 Be7 8.O-O O-O 9.Bg5 cxd4 10.Nxd4 h6 11.Be3 Re8,11
+46.10%,18.80%,1.d4 d5 2.c4 e6 3.Nc3 c5 4.cxd5 exd5 5.Nf3 Nc6 6.g3 Nf6 7.Bg2 Be7 8.O-O O-O 9.Bg5 cxd4 10.Nxd4 Re8,10
+42.10%,18.90%,1.d4 d5 2.c4 e6 3.Nc3 c5 4.cxd5 exd5 5.Nf3 Nc6 6.g3 Nf6 7.Bg2 Be7 8.O-O O-O 9.Bg5 cxd4 10.Nxd4 h6 11.Be3 Bg4,11
+35.50%,37.50%,1.d4 d5 2.c4 e6 3.Nc3 c5,3
+42.50%,25.90%,1.d4 d5 2.c4 e6 3.Nc3 c5 4.cxd5 exd5 5.Nf3 Nc6 6.g3 Nf6,6
+44.70%,22.10%,1.d4 d5 2.c4 e6 3.Nc3 c5 4.cxd5 exd5 5.Nf3 Nc6 6.g3 Nf6 7.Bg2 Be7,7
+43.20%,33.40%,1.d4 d5 2.c4 e6 3.Nc3 c5 4.cxd5 cxd4,4
+40.50%,26.40%,1.d4 d5 2.c4 e6 3.Nc3 c5 4.cxd5 exd5 5.Nf3 Nc6 6.g3 c4,6
+35.00%,27.80%,1.d4 d5 2.c4 e6 3.Nc3 c5 4.e3 Nf6 5.Nf3 Nc6,5
+44.80%,25.00%,1.d4 d5 2.c4 e6 3.Nc3 c5 4.cxd5 exd5 5.Nf3 Nc6 6.g3 Nf6 7.Bg2 Bg4,7
+37.70%,38.00%,1.e4 e5 2.Nf3 Nc6 3.Nc3 g6,3
+29.10%,40.90%,1.d4 Nf6 2.Nf3 e6 3.Bg5 h6,3
+32.90%,27.00%,1.d4 Nf6 2.Nf3 g6 3.Bg5 Bg7 4.Nbd2 c5,4
+62.50%,25.70%,1.d4 Nf6 2.Bg5 Ne4 3.Bf4 g5,3
+40.60%,31.70%,1.d4 Nf6 2.Bg5 e6,2
+32.20%,46.40%,1.Nc3 d5 2.e4 c6,2
+49.70%,24.30%,1.Nc3 d5 2.e4 dxe4 3.Nxe4 e5,3
+42.40%,34.80%,1.Nc3 e5,1
+45.30%,32.60%,1.e4 e5 2.Nc3 Bc5,2
+43.10%,37.40%,1.e4 e5 2.Nc3 Nf6,2
+43.70%,40.40%,1.e4 e5 2.Nc3 Nf6 3.Bc4 Nxe4 4.Qh5 Nd6 5.Bb3 Nc6 6.Nb5 g6 7.Qf3 f5 8.Qd5 Qe7 9.Nxc7+ Kd8 10.Nxa8 b6,10
+32.20%,39.50%,1.e4 e5 2.Nc3 Nf6 3.Bc4 Nxe4,3
+45.80%,35.70%,1.e4 e5 2.Nc3 Nf6 3.Bc4 Nxe4 4.Qh5 Nd6 5.Bb3 Be7,5
+36.90%,37.60%,1.e4 e5 2.Nc3 Nf6 3.Bc4 Bb4,3
+42.50%,39.70%,1.e4 e5 2.Nc3 Nf6 3.Bc4 Nc6,3
+42.00%,40.00%,1.e4 e5 2.Nc3 Nf6 3.f4 d5 4.fxe5 Nxe4 5.Qf3 f5,5
+33.80%,36.40%,1.e4 e5 2.Nc3 Nf6 3.f4 d5 4.fxe5 Nxe4 5.Nf3 Be7,5
+36.70%,40.10%,1.e4 e5 2.Nc3 Nf6 3.f4 d5,3
+36.90%,30.30%,1.d4 d6 2.Nf3 Bg4,2
+45.80%,37.50%,1.Nf3 h6,1
+49.50%,30.30%,1.Nf3 Nc6,1
+43.60%,29.00%,1.Nf3 f5,1
+36.40%,35.80%,1.Nf3 g6,1
+41.10%,34.10%,1.Nf3 d6,1
+38.50%,35.50%,1.Nf3 b5,1
+43.30%,29.70%,1.Nf3 d5,1
+48.20%,26.20%,1.Nf3 e6,1
+39.90%,33.70%,1.Nf3 b6,1
+36.80%,35.50%,1.d4 d5 2.Nf3 c5,2
+36.70%,32.70%,1.Nf3 c5,1
+50.70%,30.00%,1.Nf3 c6,1
+52.40%,35.20%,1.Nf3 a6,1
+39.50%,29.20%,1.Nf3 Nf6,1
+44.10%,22.30%,1.Nf3 d6 2.d4 Bg4 3.c4 Nd7 4.Qb3 Rb8,4
+38.30%,35.50%,1.Nf3 d6 2.e4 Bg4,2
