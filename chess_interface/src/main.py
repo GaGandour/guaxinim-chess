@@ -7,7 +7,7 @@ from chess_interface.src.interface import Interface
 from chess_interface.src.square import Square
 from chess_interface.src.move import Move
 
-PVP_ON = True
+PVP_ON = False
 
 class Main:
 
@@ -16,7 +16,7 @@ class Main:
         self.screen = pygame.display.set_mode( (WIDTH, HEIGHT) )
         pygame.display.set_caption('CT-213 Guaxinim Chess (Human x AI)')
         self.interface = Interface()
-        self.engine = ChessEngine(depth=2)
+        self.engine = ChessEngine(depth=4)
 
     def mainloop(self):
         screen = self.screen
