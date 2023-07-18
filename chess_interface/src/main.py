@@ -7,6 +7,8 @@ from chess_interface.src.interface import Interface
 from chess_interface.src.square import Square
 from chess_interface.src.move import Move
 
+PVP_ON = True
+
 class Main:
 
     def __init__(self) -> None:
@@ -14,16 +16,14 @@ class Main:
         self.screen = pygame.display.set_mode( (WIDTH, HEIGHT) )
         pygame.display.set_caption('CT-213 Guaxinim Chess (Human x AI)')
         self.interface = Interface()
-        self.engine = ChessEngine(depth=4)
+        self.engine = ChessEngine(depth=2)
 
     def mainloop(self):
         screen = self.screen
         interface = self.interface
         board = self.interface.board
         dragger = self.interface.dragger
-        promotion_time = False
-
-        
+        promotion_time = False        
 
         while True:
             # Draw stuff on screen
@@ -34,7 +34,8 @@ class Main:
                 dragger.update_blit(screen)
             # Handle events
             for event in pygame.event.get():
-                if interface.next_player == 'white':
+                # Player behavior
+                if interface.next_player == 'white' or PVP_ON:
                     if not promotion_time:
                         # Click event
                         if event.type == pygame.MOUSEBUTTONDOWN:
@@ -85,7 +86,7 @@ class Main:
                                         interface.next_turn()
                             
                             dragger.undrag_piece()
-                
+                # AI Behavior
                 else:
                     best_move = self.engine.best_move(board.chess_game)
                     initial = Square.position_to_row_col(str(best_move)[0:2])

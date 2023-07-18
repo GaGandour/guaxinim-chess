@@ -20,7 +20,7 @@ class ChessGame:
         current board state.
         """
         legal_moves = list(self.board.legal_moves)
-        legal_moves = sorted(legal_moves, key = lambda m: self._move_score(m))
+        # legal_moves = sorted(legal_moves, key = lambda m: self._move_score(m))
         return legal_moves
     
     def _move_score(self, move: chess.Move) -> int:
@@ -172,6 +172,7 @@ class ChessEngine:
             return opening_move
         
         alpha_beta_function = self._alpha_beta_recursion
+        # alpha_beta_function = self._hard_alpha_beta_recursion
         
         assert not chess_game.has_finished()
         
@@ -188,7 +189,7 @@ class ChessEngine:
                 del self.tree_height_memory[position]
                 del self.tree_time_memory[position]
             else:
-                self.tree_time_memory[position] -= 2
+                self.tree_time_memory[position] -= 1
         return best_move
     
     def _try_to_get_opening_move(self, chess_game: ChessGame) -> chess.Move:
@@ -237,8 +238,49 @@ class ChessEngine:
                 break
         return self._store_node_alpha_beta_value(chess_game, best_value, best_move, depth)
     
+    def _hard_alpha_beta_recursion(self, chess_game: ChessGame, depth: int, alpha, beta) -> Tuple[float, chess.Move]:
+        pre_value_move = self._get_node_alpha_beta_value_and_move(chess_game, depth)
+        if pre_value_move[0] is not None:
+            return pre_value_move
+        
+        if depth == 0 or chess_game.has_finished():
+            return self._evaluate_game_node(chess_game), None
+        if chess_game.white_to_play():
+            best_value = -inf
+            best_move = None
+            for move in chess_game.legal_moves():
+                chess_game.play(move)
+                alpha_beta, _ = self._hard_alpha_beta_recursion(chess_game, depth - 1, alpha, beta)
+                chess_game.pop_play()
+                if alpha_beta == ChessEngine.MATE_PUNCTUATION:
+                    return self._store_node_alpha_beta_value(chess_game, alpha_beta, move, depth)
+                if alpha_beta >= best_value:
+                    best_move = move
+                    best_value = alpha_beta
+                if beta <= alpha:
+                    break
+                if best_value > alpha:
+                    alpha = best_value
+            return self._store_node_alpha_beta_value(chess_game, best_value, best_move, depth)
+        # if black:
+        best_value = +inf
+        best_move = None
+        for move in chess_game.legal_moves():
+            chess_game.play(move)
+            alpha_beta, _ = self._hard_alpha_beta_recursion(chess_game, depth - 1, alpha, beta)
+            chess_game.pop_play()
+            if alpha_beta == -ChessEngine.MATE_PUNCTUATION:
+                return self._store_node_alpha_beta_value(chess_game, alpha_beta, move, depth)
+            if alpha_beta <= best_value:
+                best_value = alpha_beta
+                best_move = move
+            if beta <= alpha:
+                break
+            if best_value < beta:
+                beta = best_value
+        return self._store_node_alpha_beta_value(chess_game, best_value, best_move, depth)
+    
     def _get_node_alpha_beta_value_and_move(self, game: ChessGame, height: int) -> Tuple[float, chess.Move]:
-        # return None, None
         game_hash = game.hash
         stored_height = self.tree_height_memory.get(game_hash, None)
         if stored_height is None:
@@ -248,7 +290,6 @@ class ChessEngine:
         return None, None
     
     def _store_node_alpha_beta_value(self, game: ChessGame, alpha_beta_value: float, move: chess.Move, height: int) -> Tuple[float, chess.Move]:
-        # return alpha_beta_value, move
         game_hash = game.hash
         self.tree_values_memory[game_hash] = alpha_beta_value
         self.tree_moves_memory[game_hash] = move
@@ -279,7 +320,7 @@ class ChessEngine:
 
     def _alternative_evaluation(self, board: chess.Board) -> float:
         MOBILITY_WEIGHT = 0.00001
-        CENTRAL_CONTROL_WEIGHT = 0.04
+        CENTRAL_CONTROL_WEIGHT = 0.05
         OUTER_CENTRAL_CONTROL_WEIGHT = 0.005
         MATERIAL_POINTS_WEIGHT = 1
         DEVELOPMENT_WEIGHT = 0.035
@@ -371,5 +412,5 @@ class ChessEngine:
         # print("outer central control:", outer_center_control)
         # print("mobility:", mobility)
         # print("material:", material_points)
-        
+        # print(evaluation)
         return evaluation
