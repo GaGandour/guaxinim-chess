@@ -14,7 +14,7 @@ class Main:
         self.screen = pygame.display.set_mode( (WIDTH, HEIGHT) )
         pygame.display.set_caption('CT-213 Guaxinim Chess (Human x AI)')
         self.interface = Interface()
-        self.engine = ChessEngine(depth=2)
+        self.engine = ChessEngine(depth=4)
 
     def mainloop(self):
         screen = self.screen

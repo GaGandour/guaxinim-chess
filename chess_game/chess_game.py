@@ -188,7 +188,7 @@ class ChessEngine:
                 del self.tree_height_memory[position]
                 del self.tree_time_memory[position]
             else:
-                self.tree_time_memory[position] -= 1
+                self.tree_time_memory[position] -= 2
         return best_move
     
     def _try_to_get_opening_move(self, chess_game: ChessGame) -> chess.Move:
@@ -260,11 +260,10 @@ class ChessEngine:
         """
         Evaluates the advantage or disadvantage of white pieces in a board.
         """
-        return self._dummy_evaluation(game.board)
+        return self._alternative_evaluation(game.board)
 
     def _dummy_evaluation(self, board: chess.Board) -> float:
         # DUMMY EVALUATION
-
         if board.result() == "0-1":
             return -ChessEngine.MATE_PUNCTUATION
         if board.result() == "1-0":
@@ -276,4 +275,101 @@ class ChessEngine:
         for i in range(64):
             piece = str(board.piece_at(i))
             evaluation += ChessEngine.PUNCTUATIONS.get(piece, 0)
+        return evaluation
+
+    def _alternative_evaluation(self, board: chess.Board) -> float:
+        MOBILITY_WEIGHT = 0.00001
+        CENTRAL_CONTROL_WEIGHT = 0.04
+        OUTER_CENTRAL_CONTROL_WEIGHT = 0.005
+        MATERIAL_POINTS_WEIGHT = 1
+        DEVELOPMENT_WEIGHT = 0.035
+
+        # Checkmates and Stalemantes
+        if board.result() == "0-1":
+            return -ChessEngine.MATE_PUNCTUATION
+        if board.result() == "1-0":
+            return ChessEngine.MATE_PUNCTUATION
+        if board.result() == "1/2-1/2":
+            return 0
+        
+        board_rows = str(board).split('\n')
+
+        material_points = 0
+        # Material Evaluation
+        for i in range(64):
+            piece = str(board.piece_at(i))
+            material_points += ChessEngine.PUNCTUATIONS.get(piece, 0)
+        material_points *= MATERIAL_POINTS_WEIGHT
+
+        # Mobility Evaluation
+        mobility = len(list(board.legal_moves))*MOBILITY_WEIGHT
+        if not board.turn:
+            mobility *= -1
+
+        # Center Control
+        central_control = 0
+
+        central_control += len(board.attackers(chess.WHITE, chess.D4))
+        central_control += len(board.attackers(chess.WHITE, chess.D5))
+        central_control += len(board.attackers(chess.WHITE, chess.E4))
+        central_control += len(board.attackers(chess.WHITE, chess.E5))
+        
+        central_control -= len(board.attackers(chess.BLACK, chess.D4))
+        central_control -= len(board.attackers(chess.BLACK, chess.D5))
+        central_control -= len(board.attackers(chess.BLACK, chess.E4))
+        central_control -= len(board.attackers(chess.BLACK, chess.E5))
+        
+        central_control *= CENTRAL_CONTROL_WEIGHT
+
+        # Outer Center Control
+        outer_center_control = 0
+
+        outer_center_control += len(board.attackers(chess.WHITE, chess.C6))
+        outer_center_control += len(board.attackers(chess.WHITE, chess.D6))
+        outer_center_control += len(board.attackers(chess.WHITE, chess.E6))
+        outer_center_control += len(board.attackers(chess.WHITE, chess.F6))
+        outer_center_control += len(board.attackers(chess.WHITE, chess.C5))
+        outer_center_control += len(board.attackers(chess.WHITE, chess.F5))
+        outer_center_control += len(board.attackers(chess.WHITE, chess.C4))
+        outer_center_control += len(board.attackers(chess.WHITE, chess.F4))
+        outer_center_control += len(board.attackers(chess.WHITE, chess.C3))
+        outer_center_control += len(board.attackers(chess.WHITE, chess.D3))
+        outer_center_control += len(board.attackers(chess.WHITE, chess.E3))
+        outer_center_control += len(board.attackers(chess.WHITE, chess.F3))
+
+        outer_center_control -= len(board.attackers(chess.BLACK, chess.C6))
+        outer_center_control -= len(board.attackers(chess.BLACK, chess.D6))
+        outer_center_control -= len(board.attackers(chess.BLACK, chess.E6))
+        outer_center_control -= len(board.attackers(chess.BLACK, chess.F6))
+        outer_center_control -= len(board.attackers(chess.BLACK, chess.C5))
+        outer_center_control -= len(board.attackers(chess.BLACK, chess.F5))
+        outer_center_control -= len(board.attackers(chess.BLACK, chess.C4))
+        outer_center_control -= len(board.attackers(chess.BLACK, chess.F4))
+        outer_center_control -= len(board.attackers(chess.BLACK, chess.C3))
+        outer_center_control -= len(board.attackers(chess.BLACK, chess.D3))
+        outer_center_control -= len(board.attackers(chess.BLACK, chess.E3))
+        outer_center_control -= len(board.attackers(chess.BLACK, chess.F3))
+        
+        outer_center_control *= OUTER_CENTRAL_CONTROL_WEIGHT
+
+        development = 0
+        white_row = board_rows[7]
+        black_row = board_rows[0]
+        black_pieces_hiding = len([x for x in black_row if x != '.' and x != 'k'])
+        white_pieces_hiding = len([x for x in white_row if x != '.' and x != 'K'])
+        development = black_pieces_hiding - white_pieces_hiding
+        development *= DEVELOPMENT_WEIGHT
+
+
+        evaluation = 0
+        evaluation += material_points
+        evaluation += mobility
+        evaluation += central_control
+        evaluation += outer_center_control
+        evaluation += development
+        # print("central control:", central_control)
+        # print("outer central control:", outer_center_control)
+        # print("mobility:", mobility)
+        # print("material:", material_points)
+        
         return evaluation
