@@ -10,13 +10,13 @@ class Square:
         self.col = col
         self.piece = piece
         self.alphacol = Square.ALPHACOLS[col]
-        self.position = self.row_col_to_position(row, col)
+        self.position = Square.row_col_to_position(row, col)
     
-    def row_col_to_position(self, row, col) -> str:
+    def row_col_to_position(row, col) -> str:
         position = Square.ALPHACOLS[col] + str(8-row)
         return position
 
-    def position_to_row_col(self, position) -> Tuple[int, int]:
+    def position_to_row_col(position) -> Tuple[int, int]:
         col_alpha = position[0]
         col = Square.ALPHACOLS_INVERSE[col_alpha]
         row = 8 - int(position[1])

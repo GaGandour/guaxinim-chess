@@ -38,7 +38,7 @@ class ChessGame:
         Returns a list containing all the legal moves for a
         given piece. 
         """
-        return [move for move in self.legal_moves() if move[0:2] == piece_pos]
+        return [move for move in self.legal_moves() if str(move)[0:2] == piece_pos]
 
     def play(self, move: Union[str, chess.Move]) -> None:
         """

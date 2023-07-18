@@ -53,6 +53,20 @@ class Queen(Piece):
 class King(Piece):
 
     def __init__(self, color):
-        self.left_rook = None
-        self.right_rook = None
         super().__init__('king', color, 10000.0)
+
+PIECE_MAPPING = {
+    "R": [Rook,   "white"],
+    "N": [Knight, "white"],
+    "B": [Bishop, "white"],
+    "Q": [Queen,  "white"],
+    "P": [Pawn,   "white"],
+    "K": [King,   "white"],
+    "r": [Rook,   "black"],
+    "n": [Knight, "black"],
+    "b": [Bishop, "black"],
+    "q": [Queen,  "black"],
+    "p": [Pawn,   "black"],
+    "k": [King,   "black"],
+    ".": [None,   None]
+}
