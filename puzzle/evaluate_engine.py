@@ -4,10 +4,12 @@ from time import time
 
 global_counter = 1
 
+
 def debug():
     global global_counter
     print(global_counter)
     global_counter += 1
+
 
 def engine_solves_puzzle(puzzle: Puzzle, engine: ChessEngine) -> bool:
     game = ChessGameByFen(puzzle.fen)
@@ -22,12 +24,12 @@ def engine_solves_puzzle(puzzle: Puzzle, engine: ChessEngine) -> bool:
         predicted_move = engine.best_move(game)
         total_time += time() - start
         if predicted_move != moves[2 * i + 1]:
-            return False, total_time/(i+1)
+            return False, total_time / (i + 1)
         game.play(predicted_move)
-    return True, total_time/num_moves
+    return True, total_time / num_moves
 
 
-def evaluate_engine_by_category(category: str, limit=None) -> float:
+def evaluate_engine_by_category(category: str, limit=None, depth=3) -> float:
     file_name = "puzzle/puzzles/category_separated/" + category + ".csv"
     report_file_name = "puzzle/puzzles/category_reports/" + category + ".csv"
     total_count = 0
@@ -35,9 +37,9 @@ def evaluate_engine_by_category(category: str, limit=None) -> float:
     total_time = 0
     with open(file_name, "r") as f:
         for line in f:
-            chess_engine = ChessEngine()
+            chess_engine = ChessEngine(depth=depth)
             puzzle = Puzzle(line)
-            
+
             success, average_time_per_move = engine_solves_puzzle(puzzle, chess_engine)
             if success:
                 correct_count += 1

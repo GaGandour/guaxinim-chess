@@ -1,6 +1,6 @@
 .PHONY: lint-python
 lint-python:
-	black . --line-length 90
+	black . --line-length 120
 
 freeze:
 	pip freeze > requirements.txt

@@ -11,31 +11,24 @@ from chess_interface.src.sound import Sound
 
 class Board:
     def __init__(self):
-        self.squares: Square = [[None]*ROWS for col in range(COLS)]
+        self.squares: Square = [[None] * ROWS for col in range(COLS)]
         self.last_move: Move = None
         self.chess_game: ChessGame = ChessGame()
         self._create_squares()
         self._update_pieces()
 
-
     def move(self, move: Move, promotion: str = None) -> None:
         if promotion:
-            self.chess_game.play(move.uci_code() + promotion)    
+            self.chess_game.play(move.uci_code() + promotion)
         else:
             self.chess_game.play(move.uci_code())
         self._update_pieces()
 
-        
-        
     def is_valid_move(self, move: Move) -> bool:
         """
         Checks if attempted move is valid or not.
         """
-        return (
-            chess.Move.from_uci(move.uci_code()) 
-            in self.chess_game.piece_legal_moves(move.initial.position)
-        ) 
-    
+        return chess.Move.from_uci(move.uci_code()) in self.chess_game.piece_legal_moves(move.initial.position)
 
     def is_promotion_move(self, move: Move) -> bool:
         """
@@ -43,11 +36,7 @@ class Board:
         """
         if 1 < int(move.uci_code()[-1]) < 8:
             return False
-        return (
-            chess.Move.from_uci(move.uci_code()+"q") 
-            in self.chess_game.piece_legal_moves(move.initial.position)
-        )
-
+        return chess.Move.from_uci(move.uci_code() + "q") in self.chess_game.piece_legal_moves(move.initial.position)
 
     def calc_moves(self, row, col) -> List[Tuple[int, int]]:
         """
@@ -55,19 +44,19 @@ class Board:
         of a piece based on the piece's initial position.
         """
         position = Square.row_col_to_position(row, col)
-        valid_end_pos = [Square.position_to_row_col(str(move)[2:4]) for move in self.chess_game.piece_legal_moves(position)]
+        valid_end_pos = [
+            Square.position_to_row_col(str(move)[2:4]) for move in self.chess_game.piece_legal_moves(position)
+        ]
         return valid_end_pos
-
 
     def _create_squares(self):
         for row in range(ROWS):
             for col in range(COLS):
                 self.squares[row][col] = Square(row, col)
 
-
     def _update_pieces(self) -> None:
         """
-        Updates pieces in each of our board's squares 
+        Updates pieces in each of our board's squares
         according to the board_matrix returned from chess_game
         """
         board_matrix = self.chess_game.board_matrix()

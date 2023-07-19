@@ -6,12 +6,14 @@ opening_sheet = dict()
 opening_probabilities = dict()
 opening_length = dict()
 
+
 def parse_opening(opening_string: str) -> List[str]:
     moves = opening_string.split(" ")
     moves_san = []
     for move in moves:
         moves_san.append(move.split(".")[-1])
     return moves_san
+
 
 with open("opening_parser/Guaxinim Chess Openings - FinalTable.csv") as opening_table:
     count = 0
@@ -24,7 +26,7 @@ with open("opening_parser/Guaxinim Chess Openings - FinalTable.csv") as opening_
         white_probability = float(fields[0][:-1])
         black_probability = float(fields[1][:-1])
         opening = fields[2]
-        if opening[-1] == '\n':
+        if opening[-1] == "\n":
             opening = opening[:-1]
         moves = parse_opening(opening)
         num_moves = len(moves)
@@ -41,11 +43,9 @@ with open("opening_parser/Guaxinim Chess Openings - FinalTable.csv") as opening_
                 # opening_probabilities[chess_game.hash_game()] = white_probability
                 opening_length[chess_game.hash_game()] = num_moves
                 opening_sheet[chess_game.hash_game()] = str(chess_game.parse_san(move))
-            
+
             chess_game.play_by_san(move)
 
 
-
-
-with open('opening_parser/opening_sheet.json', 'w') as f:
+with open("opening_parser/opening_sheet.json", "w") as f:
     json.dump(opening_sheet, f, indent=4)

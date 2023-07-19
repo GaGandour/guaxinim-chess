@@ -9,12 +9,12 @@ from chess_interface.src.move import Move
 
 PVP_ON = False
 
-class Main:
 
+class Main:
     def __init__(self) -> None:
         pygame.init()
-        self.screen = pygame.display.set_mode( (WIDTH, HEIGHT) )
-        pygame.display.set_caption('CT-213 Guaxinim Chess (Human x AI)')
+        self.screen = pygame.display.set_mode((WIDTH, HEIGHT))
+        pygame.display.set_caption("CT-213 Guaxinim Chess (Human x AI)")
         self.interface = Interface()
         self.engine = ChessEngine(depth=4)
 
@@ -23,7 +23,7 @@ class Main:
         interface = self.interface
         board = self.interface.board
         dragger = self.interface.dragger
-        promotion_time = False        
+        promotion_time = False
 
         while True:
             # Draw stuff on screen
@@ -35,7 +35,7 @@ class Main:
             # Handle events
             for event in pygame.event.get():
                 # Player behavior
-                if interface.next_player == 'white' or PVP_ON:
+                if interface.next_player == "white" or PVP_ON:
                     if not promotion_time:
                         # Click event
                         if event.type == pygame.MOUSEBUTTONDOWN:
@@ -52,7 +52,7 @@ class Main:
                                     dragger.save_initial(event.pos)
                                     dragger.save_valid_moves(board.calc_moves(clicked_row, clicked_col))
                                     dragger.drag_piece(piece)
-                    
+
                         # Mouse motion
                         elif event.type == pygame.MOUSEMOTION:
                             motion_row = event.pos[1] // SQSIZE
@@ -62,7 +62,7 @@ class Main:
 
                             if dragger.dragging:
                                 dragger.update_mouse(event.pos)
-                    
+
                         # Click release event
                         elif event.type == pygame.MOUSEBUTTONUP:
                             if dragger.dragging:
@@ -73,7 +73,7 @@ class Main:
                                 initial = Square(dragger.initial_row, dragger.initial_col)
                                 final = Square(released_row, released_col)
                                 move = Move(initial, final)
-                                
+
                                 # If a valid move
                                 if initial != final:
                                     if board.is_promotion_move(move):
@@ -84,29 +84,26 @@ class Main:
                                         board.move(move)
                                         interface.play_sound(is_capture)
                                         interface.next_turn()
-                            
+
                             dragger.undrag_piece()
                 # AI Behavior
                 else:
                     best_move = self.engine.best_move(board.chess_game)
                     initial = Square.position_to_row_col(str(best_move)[0:2])
                     final = Square.position_to_row_col(str(best_move)[2:4])
-                    
+
                     AI_initial = Square(initial[0], initial[1])
                     AI_final = Square(final[0], final[1])
                     AI_move = Move(AI_initial, AI_final)
-                    
+
                     is_capture = board.squares[final[0]][final[1]].has_piece()
                     board.last_move = AI_move
                     board.move(AI_move)
                     interface.play_sound(is_capture)
                     interface.next_turn()
-                    
-
 
                 # Key press events
                 if event.type == pygame.KEYDOWN:
-                    
                     # Promotion
                     if promotion_time:
                         chosen = None
@@ -141,7 +138,7 @@ class Main:
                 elif event.type == pygame.QUIT:
                     pygame.quit()
                     sys.exit()
-            
+
             pygame.display.update()
 
 
