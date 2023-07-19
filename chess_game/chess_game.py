@@ -244,9 +244,13 @@ class ChessEngine:
                 best_move = move
                 best_value = alpha_beta
             if white_to_play == 1:
-                alpha = max(alpha, best_value)
+                # alpha = max(alpha, best_value)
+                if best_value > alpha:
+                    alpha = best_value
             else:
-                beta = min(beta, best_value)
+                # beta = min(beta, best_value)
+                if best_value < beta:
+                    beta = best_value
             if beta <= alpha:
                 break
         return self._store_node_alpha_beta_value(chess_game, best_value, best_move, depth, move_value)
