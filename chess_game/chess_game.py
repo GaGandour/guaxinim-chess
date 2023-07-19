@@ -175,30 +175,12 @@ class ChessEngine:
         if opening_move is not None:
             return opening_move
 
-        # alpha_beta_function = self._alpha_beta_recursion
-        alpha_beta_function = self._alpha_beta_recursion_pvs
+        # alpha_beta_function = self._call_alpha_beta
+        alpha_beta_function = self._call_pvs
 
         assert not chess_game.has_finished()
 
-        aspiration = True
-        best_move = None
-
-        if aspiration:
-            previous = self.tree_values_memory.get(chess_game.hash, 0)
-            alpha = previous - ChessEngine.WINDOW
-            beta = previous + ChessEngine.WINDOW
-            while True:
-                score, best_move = alpha_beta_function(chess_game, self.depth, alpha, beta)
-                if score <= alpha:
-                    alpha = -ChessEngine.MATE_PUNCTUATION
-                elif score >= beta:
-                    beta = ChessEngine.MATE_PUNCTUATION
-                else:
-                    break
-        else:
-            alpha = -ChessEngine.MATE_PUNCTUATION
-            beta = +ChessEngine.MATE_PUNCTUATION
-            _, best_move = alpha_beta_function(chess_game, self.depth, alpha, beta)
+        _, best_move = alpha_beta_function(chess_game)
 
         stored_positions = [position for position in self.tree_height_memory]
         for position in stored_positions:
@@ -228,6 +210,11 @@ class ChessEngine:
         if move is None:
             return None
         return chess.Move.from_uci(move)
+    
+    def _call_alpha_beta(self, chess_game: ChessGame) -> Tuple[float, chess.Move]:
+        alpha = -ChessEngine.MATE_PUNCTUATION
+        beta = +ChessEngine.MATE_PUNCTUATION
+        return self._alpha_beta_recursion(chess_game, self.depth, alpha, beta)
 
     def _alpha_beta_recursion(self, chess_game: ChessGame, depth: int, alpha, beta) -> Tuple[float, chess.Move]:
         pre_value_move = self._get_node_alpha_beta_value_and_move(chess_game, depth)
@@ -269,6 +256,28 @@ class ChessEngine:
             if beta <= alpha:
                 break
         return self._store_node_alpha_beta_value(chess_game, best_value, best_move, depth, move_value)
+    
+    def _call_pvs(self, chess_game: ChessGame) -> Tuple[float, chess.Move]:
+        aspiration = True
+        best_move = None
+        score = None
+        if aspiration:
+            previous = self.tree_values_memory.get(chess_game.hash, 0)
+            alpha = previous - ChessEngine.WINDOW
+            beta = previous + ChessEngine.WINDOW
+            while True:
+                score, best_move = self._alpha_beta_recursion_pvs(chess_game, self.depth, alpha, beta)
+                if score <= alpha:
+                    alpha = -ChessEngine.MATE_PUNCTUATION
+                elif score >= beta:
+                    beta = ChessEngine.MATE_PUNCTUATION
+                else:
+                    break
+        else:
+            alpha = -ChessEngine.MATE_PUNCTUATION
+            beta = +ChessEngine.MATE_PUNCTUATION
+            score, best_move = self._alpha_beta_recursion_pvs(chess_game, self.depth, alpha, beta)
+        return score, best_move
     
     def _alpha_beta_recursion_pvs(self, chess_game: ChessGame, depth: int, alpha, beta) -> Tuple[float, chess.Move]:
         pre_value_move = self._get_node_alpha_beta_value_and_move(chess_game, depth)
