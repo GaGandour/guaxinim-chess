@@ -8,4 +8,4 @@ def evaluate_category(category: str, limit=None, depth=3):
     print(f"""Score for category "{category}": {score*100}%""")
 
 
-evaluate_category("mateIn2", limit=2, depth=5)
+evaluate_category("mateIn2", limit=20, depth=5)

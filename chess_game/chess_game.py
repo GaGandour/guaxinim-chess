@@ -302,9 +302,15 @@ class ChessEngine:
 
         for move in legal_moves:
             chess_game.play(move)
+            alpha_beta = 0
             if best_move is None:
                 alpha_beta, _ = self._alpha_beta_recursion_pvs(chess_game, depth - 1, alpha, beta)
+                best_move = move
+                best_value = alpha_beta
+                chess_game.pop_play()
+                continue
             else:
+                # alpha_beta, _ = self._alpha_beta_recursion_pvs(chess_game, depth - 1, alpha, alpha + 1)
                 if white_to_play == 1:
                     alpha_beta, _ = self._alpha_beta_recursion_pvs(chess_game, depth - 1, alpha, alpha + 1)
                 else:
@@ -398,7 +404,7 @@ class ChessEngine:
         CENTRAL_CONTROL_WEIGHT = 0.05
         OUTER_CENTRAL_CONTROL_WEIGHT = 0.005
         MATERIAL_POINTS_WEIGHT = 1
-        DEVELOPMENT_WEIGHT = 0.035
+        DEVELOPMENT_WEIGHT = 0.1
 
         # Checkmates and Stalemantes
         if board.result() == "0-1":
@@ -448,15 +454,15 @@ class ChessEngine:
         outer_center_control += len(board.attackers(chess.WHITE, chess.F5))
         outer_center_control += len(board.attackers(chess.WHITE, chess.C4))
         outer_center_control += len(board.attackers(chess.WHITE, chess.F4))
-        outer_center_control += len(board.attackers(chess.WHITE, chess.C3))
-        outer_center_control += len(board.attackers(chess.WHITE, chess.D3))
-        outer_center_control += len(board.attackers(chess.WHITE, chess.E3))
-        outer_center_control += len(board.attackers(chess.WHITE, chess.F3))
+        # outer_center_control += len(board.attackers(chess.WHITE, chess.C3))
+        # outer_center_control += len(board.attackers(chess.WHITE, chess.D3))
+        # outer_center_control += len(board.attackers(chess.WHITE, chess.E3))
+        # outer_center_control += len(board.attackers(chess.WHITE, chess.F3))
 
-        outer_center_control -= len(board.attackers(chess.BLACK, chess.C6))
-        outer_center_control -= len(board.attackers(chess.BLACK, chess.D6))
-        outer_center_control -= len(board.attackers(chess.BLACK, chess.E6))
-        outer_center_control -= len(board.attackers(chess.BLACK, chess.F6))
+        # outer_center_control -= len(board.attackers(chess.BLACK, chess.C6))
+        # outer_center_control -= len(board.attackers(chess.BLACK, chess.D6))
+        # outer_center_control -= len(board.attackers(chess.BLACK, chess.E6))
+        # outer_center_control -= len(board.attackers(chess.BLACK, chess.F6))
         outer_center_control -= len(board.attackers(chess.BLACK, chess.C5))
         outer_center_control -= len(board.attackers(chess.BLACK, chess.F5))
         outer_center_control -= len(board.attackers(chess.BLACK, chess.C4))
@@ -468,11 +474,10 @@ class ChessEngine:
 
         outer_center_control *= OUTER_CENTRAL_CONTROL_WEIGHT
 
-        development = 0
         white_row = board_rows[7]
         black_row = board_rows[0]
-        black_pieces_hiding = len([x for x in black_row if x != "." and x != "k"])
-        white_pieces_hiding = len([x for x in white_row if x != "." and x != "K"])
+        black_pieces_hiding = len([x for x in black_row if x in ["n", "b"]])
+        white_pieces_hiding = len([x for x in white_row if x in ["N", "B"]])
         development = black_pieces_hiding - white_pieces_hiding
         development *= DEVELOPMENT_WEIGHT
 
