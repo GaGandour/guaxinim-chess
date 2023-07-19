@@ -210,7 +210,7 @@ class ChessEngine:
         if move is None:
             return None
         return chess.Move.from_uci(move)
-    
+
     def _call_alpha_beta(self, chess_game: ChessGame) -> Tuple[float, chess.Move]:
         alpha = -ChessEngine.MATE_PUNCTUATION
         beta = +ChessEngine.MATE_PUNCTUATION
@@ -256,7 +256,7 @@ class ChessEngine:
             if beta <= alpha:
                 break
         return self._store_node_alpha_beta_value(chess_game, best_value, best_move, depth, move_value)
-    
+
     def _call_pvs(self, chess_game: ChessGame) -> Tuple[float, chess.Move]:
         aspiration = True
         best_move = None
@@ -278,7 +278,7 @@ class ChessEngine:
             beta = +ChessEngine.MATE_PUNCTUATION
             score, best_move = self._alpha_beta_recursion_pvs(chess_game, self.depth, alpha, beta)
         return score, best_move
-    
+
     def _alpha_beta_recursion_pvs(self, chess_game: ChessGame, depth: int, alpha, beta) -> Tuple[float, chess.Move]:
         pre_value_move = self._get_node_alpha_beta_value_and_move(chess_game, depth)
         if pre_value_move[0] is not None:
