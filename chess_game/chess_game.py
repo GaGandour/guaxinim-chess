@@ -175,11 +175,12 @@ class ChessEngine:
             return opening_move
 
         alpha_beta_function = self._alpha_beta_recursion
+        # alpha_beta_function = self._alpha_beta_recursion_pvs
 
         assert not chess_game.has_finished()
 
-        alpha = -inf
-        beta = +inf
+        alpha = -ChessEngine.MATE_PUNCTUATION
+        beta = +ChessEngine.MATE_PUNCTUATION
         _, best_move = alpha_beta_function(chess_game, self.depth, alpha, beta)
 
         stored_positions = [position for position in self.tree_height_memory]
@@ -237,9 +238,6 @@ class ChessEngine:
             alpha_beta, _ = self._alpha_beta_recursion(chess_game, depth - 1, alpha, beta)
             chess_game.pop_play()
             move_value[move] = alpha_beta
-            if alpha_beta == mate_punctuation:
-                # found mate in x
-                return self._store_node_alpha_beta_value(chess_game, alpha_beta, move, depth, move_value)
             if (alpha_beta * white_to_play) >= (best_value * white_to_play):
                 best_move = move
                 best_value = alpha_beta
@@ -253,6 +251,49 @@ class ChessEngine:
                     beta = best_value
             if beta <= alpha:
                 break
+        return self._store_node_alpha_beta_value(chess_game, best_value, best_move, depth, move_value)
+    
+    def _alpha_beta_recursion_pvs(self, chess_game: ChessGame, depth: int, alpha, beta) -> Tuple[float, chess.Move]:
+        pre_value_move = self._get_node_alpha_beta_value_and_move(chess_game, depth)
+        if pre_value_move[0] is not None:
+            return pre_value_move
+
+        if depth == 0 or chess_game.has_finished():
+            return self._evaluate_game_node(chess_game), None
+
+        best_value = -inf
+        best_move = None
+        mate_punctuation = ChessEngine.MATE_PUNCTUATION
+
+        white_to_play = 1 if chess_game.white_to_play() else -1
+
+        best_value *= white_to_play
+        mate_punctuation *= white_to_play
+
+        legal_moves = self._get_legal_moves(chess_game)
+
+        move_value = {a: -mate_punctuation for a in legal_moves}
+
+        for move in legal_moves:
+            chess_game.play(move)
+            if best_move is None:
+                alpha_beta, _ = self._alpha_beta_recursion_pvs(chess_game, depth - 1, alpha, beta)
+            else:
+                alpha_beta, _ = self._alpha_beta_recursion_pvs(chess_game, depth - 1, alpha, alpha + 1)
+                if alpha_beta > alpha and alpha_beta < beta:
+                    alpha_beta, _ = self._alpha_beta_recursion_pvs(chess_game, depth - 1, alpha, beta)
+            chess_game.pop_play()
+            move_value[move] = alpha_beta
+            if (alpha_beta * white_to_play) >= (best_value * white_to_play):
+                best_move = move
+                best_value = alpha_beta
+                if alpha_beta >= alpha:
+                    alpha = alpha_beta
+                if alpha_beta >= beta:
+                    break
+            if alpha_beta == mate_punctuation:
+                # found mate in x
+                return self._store_node_alpha_beta_value(chess_game, alpha_beta, move, depth, move_value)
         return self._store_node_alpha_beta_value(chess_game, best_value, best_move, depth, move_value)
 
     def _get_legal_moves(self, chess_game: ChessGame) -> List[chess.Move]:
