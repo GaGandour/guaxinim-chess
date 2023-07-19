@@ -174,8 +174,7 @@ class ChessEngine:
         if opening_move is not None:
             return opening_move
 
-        # alpha_beta_function = self._alpha_beta_recursion
-        alpha_beta_function = self._alternative_alpha_beta_recursion
+        alpha_beta_function = self._alpha_beta_recursion
 
         assert not chess_game.has_finished()
 
@@ -219,67 +218,6 @@ class ChessEngine:
 
         if depth == 0 or chess_game.has_finished():
             return self._evaluate_game_node(chess_game), None
-        if chess_game.white_to_play():
-            best_value = -inf
-            best_move = None
-            for move in chess_game.legal_moves():
-                chess_game.play(move)
-                alpha_beta, _ = self._alpha_beta_recursion(chess_game, depth - 1, alpha, beta)
-                chess_game.pop_play()
-                if alpha_beta == ChessEngine.MATE_PUNCTUATION:
-                    return self._store_node_alpha_beta_value(chess_game, alpha_beta, move, depth)
-                if alpha_beta >= best_value:
-                    best_move = move
-                    best_value = alpha_beta
-                alpha = max(alpha, best_value)
-                if beta <= alpha:
-                    break
-            return self._store_node_alpha_beta_value(chess_game, best_value, best_move, depth)
-        # if black:
-        best_value = +inf
-        best_move = None
-        for move in chess_game.legal_moves():
-            chess_game.play(move)
-            alpha_beta, _ = self._alpha_beta_recursion(chess_game, depth - 1, alpha, beta)
-            chess_game.pop_play()
-            if alpha_beta == -ChessEngine.MATE_PUNCTUATION:
-                return self._store_node_alpha_beta_value(chess_game, alpha_beta, move, depth)
-            if alpha_beta <= best_value:
-                best_value = alpha_beta
-                best_move = move
-            beta = min(beta, best_value)
-            if beta <= alpha:
-                break
-        return self._store_node_alpha_beta_value(chess_game, best_value, best_move, depth)
-
-    def _get_node_alpha_beta_value_and_move(self, game: ChessGame, height: int) -> Tuple[float, chess.Move]:
-        game_hash = game.hash
-        stored_height = self.tree_height_memory.get(game_hash, None)
-        if stored_height is None:
-            return None, None
-        if stored_height >= height:
-            return self.tree_values_memory.get(game_hash, None), self.tree_moves_memory.get(game_hash, None)
-        return None, None
-
-    def _store_node_alpha_beta_value(
-        self, game: ChessGame, alpha_beta_value: float, move: chess.Move, height: int
-    ) -> Tuple[float, chess.Move]:
-        game_hash = game.hash
-        self.tree_values_memory[game_hash] = alpha_beta_value
-        self.tree_moves_memory[game_hash] = move
-        self.tree_height_memory[game_hash] = height
-        self.tree_time_memory[game_hash] = height + 1
-        return alpha_beta_value, move
-
-    def _alternative_alpha_beta_recursion(
-        self, chess_game: ChessGame, depth: int, alpha, beta
-    ) -> Tuple[float, chess.Move]:
-        pre_value_move = self._alternative_get_node_alpha_beta_value_and_move(chess_game, depth)
-        if pre_value_move[0] is not None:
-            return pre_value_move
-
-        if depth == 0 or chess_game.has_finished():
-            return self._evaluate_game_node(chess_game), None
 
         best_value = -inf
         best_move = None
@@ -290,18 +228,18 @@ class ChessEngine:
         best_value *= white_to_play
         mate_punctuation *= white_to_play
 
-        legal_moves = self._alternative_get_legal_moves(chess_game)
+        legal_moves = self._get_legal_moves(chess_game)
 
         move_value = {a: -mate_punctuation for a in legal_moves}
 
         for move in legal_moves:
             chess_game.play(move)
-            alpha_beta, _ = self._alternative_alpha_beta_recursion(chess_game, depth - 1, alpha, beta)
+            alpha_beta, _ = self._alpha_beta_recursion(chess_game, depth - 1, alpha, beta)
             chess_game.pop_play()
             move_value[move] = alpha_beta
             if alpha_beta == mate_punctuation:
                 # found mate in x
-                return self._alternative_store_node_alpha_beta_value(chess_game, alpha_beta, move, depth, move_value)
+                return self._store_node_alpha_beta_value(chess_game, alpha_beta, move, depth, move_value)
             if (alpha_beta * white_to_play) >= (best_value * white_to_play):
                 best_move = move
                 best_value = alpha_beta
@@ -311,15 +249,15 @@ class ChessEngine:
                 beta = min(beta, best_value)
             if beta <= alpha:
                 break
-        return self._alternative_store_node_alpha_beta_value(chess_game, best_value, best_move, depth, move_value)
+        return self._store_node_alpha_beta_value(chess_game, best_value, best_move, depth, move_value)
 
-    def _alternative_get_legal_moves(self, chess_game: ChessGame) -> List[chess.Move]:
+    def _get_legal_moves(self, chess_game: ChessGame) -> List[chess.Move]:
         legal_moves = self.legal_moves.get(chess_game.hash, None)
         if legal_moves:
             return legal_moves
         return chess_game.legal_moves()
 
-    def _alternative_set_legal_moves(self, chess_game: ChessGame, move_value: dict, depth: int) -> None:
+    def _set_legal_moves(self, chess_game: ChessGame, move_value: dict, depth: int) -> None:
         self.legal_moves_validity[chess_game.hash] = self.depth + 1
         stored_depth = self.legal_moves_depth.get(chess_game.hash, 0)
         if stored_depth < depth:
@@ -331,7 +269,7 @@ class ChessEngine:
             self.legal_moves_depth[chess_game.hash] = depth
             self.legal_moves[chess_game.hash] = move_value_list
 
-    def _alternative_get_node_alpha_beta_value_and_move(self, game: ChessGame, height: int) -> Tuple[float, chess.Move]:
+    def _get_node_alpha_beta_value_and_move(self, game: ChessGame, height: int) -> Tuple[float, chess.Move]:
         game_hash = game.hash
         stored_height = self.tree_height_memory.get(game_hash, None)
         if stored_height is None:
@@ -340,7 +278,7 @@ class ChessEngine:
             return self.tree_values_memory.get(game_hash, None), self.tree_moves_memory.get(game_hash, None)
         return None, None
 
-    def _alternative_store_node_alpha_beta_value(
+    def _store_node_alpha_beta_value(
         self,
         game: ChessGame,
         alpha_beta_value: float,
@@ -354,7 +292,7 @@ class ChessEngine:
         self.tree_height_memory[game_hash] = height
         self.tree_time_memory[game_hash] = height + 1
 
-        self._alternative_set_legal_moves(game, move_value, height)
+        self._set_legal_moves(game, move_value, height)
         return alpha_beta_value, move
 
     def _evaluate_game_node(self, game: ChessGame) -> float:
