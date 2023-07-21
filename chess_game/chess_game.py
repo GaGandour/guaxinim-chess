@@ -45,7 +45,7 @@ class ChessGame:
             score += 1
         self.pop_play()
         return -score
-    
+
     def piece_legal_moves(self, piece_pos: str) -> List[chess.Move]:
         """
         Returns a list containing all the legal 
@@ -98,7 +98,7 @@ class ChessGame:
         to a piece or a blank square (".") in the board.
         """
         matrix = str(self.board).split("\n")
-        matrix = [line.split(' ') for line in matrix]
+        matrix = [line.split(" ") for line in matrix]
         return matrix
 
     def has_finished(self) -> bool:
@@ -166,14 +166,20 @@ class ChessEngine:
         "q": -9,
         "p": -1,
     }
+    WINDOW = 0.25
 
-    def __init__(self, depth: int = 6, algorithm: Literal["minimax", "abp", "abpi"] = "abpi") -> None:
+    def __init__(self, depth: int = 6, algorithm: Literal["minimax", "abp", "abpi", "pvs"] = "abpi") -> None:
         self.games_dictionary = dict()
         self.tree_values_memory = dict()
         self.tree_moves_memory = dict()
         self.tree_height_memory = dict()
         self.tree_time_memory = dict()
         self.opening_sheet = dict()
+
+        self.legal_moves = dict()  # dict[str, List[chess.Move]]
+        self.legal_moves_depth = dict()  # dict[str, int]
+        self.legal_moves_validity = dict()  # dict[str, int]
+
         self.depth = depth
         self.algorithm = algorithm
         with open("opening_parser/opening_sheet.json", "r") as f:
@@ -189,16 +195,20 @@ class ChessEngine:
         
         assert not chess_game.has_finished()
 
-        # Minimax Algorithm
+        # Minimax 
         if self.algorithm == "minimax":
             _, best_move = self._minimax(chess_game, self.depth)
             return best_move
-        # Alpha-Beta Pruning Algorithm
+        # Alpha-Beta Pruning
         elif self.algorithm == "abp":
             _, best_move = self._alpha_beta_basic(chess_game, self.depth, -inf, +inf)
-        # Alpha-Beta Pruning Algorithm with Improvements 
-        elif self.algorithm == "abpi":
-            _, best_move = self._alpha_beta_improved(chess_game, self.depth, -inf, +inf)
+        # Alpha-Beta Pruning with Improvements 
+        # or PVS
+        elif self.algorithm == "abpi" or self.algorithm == "pvs":
+            if self.algorithm == "abpi":
+                _, best_move = self._call_alpha_beta(chess_game)
+            elif self.algorithm == "pvs":
+                _, best_move = self._call_pvs(chess_game)
             stored_positions = [position for position in self.tree_height_memory]
             for position in stored_positions:
                 remaining_time = self.tree_time_memory[position]
@@ -209,8 +219,17 @@ class ChessEngine:
                     del self.tree_time_memory[position]
                 else:
                     self.tree_time_memory[position] -= 1
+            stored_positions_for_legal_moves = [position for position in self.legal_moves_validity]
+            for position in stored_positions_for_legal_moves:
+                remaining_validity = self.legal_moves_validity[position]
+                if remaining_validity == 0:
+                    del self.legal_moves[position]
+                    del self.legal_moves_depth[position]
+                    del self.legal_moves_validity[position]
+                else:
+                    self.legal_moves_validity[position] -= 1
         return best_move
-    
+
     def _try_to_get_opening_move(self, chess_game: ChessGame) -> chess.Move:
         """
         Check if current chess_game is among the ones
@@ -290,6 +309,11 @@ class ChessEngine:
             beta = min(beta, best_value)
         return best_value, best_move
     
+    def _call_alpha_beta(self, chess_game: ChessGame) -> Tuple[float, chess.Move]:
+        alpha = -ChessEngine.MATE_PUNCTUATION
+        beta = +ChessEngine.MATE_PUNCTUATION
+        return self._alpha_beta_improved(chess_game, self.depth, alpha, beta)
+    
     def _alpha_beta_improved(self, chess_game: ChessGame, depth: int, alpha: float, beta: float) -> Tuple[float, chess.Move]:
         """
         Implements the basic Alpha-Beta Pruning
@@ -299,90 +323,173 @@ class ChessEngine:
         pre_value_move = self._get_node_alpha_beta_value_and_move(chess_game, depth)
         if pre_value_move[0] is not None:
             return pre_value_move
-        
+
         if depth == 0 or chess_game.has_finished():
             return self._evaluate_game_node(chess_game), None
-        # White's turn (maximizing)
-        if chess_game.white_to_play():
-            best_value = -inf
-            best_move = None
-            for move in chess_game._legal_moves_sorted():
-                chess_game.play(move)
-                value, _ = self._alpha_beta_improved(chess_game, depth - 1, alpha, beta)
-                chess_game.pop_play()
-                # Skip comparison if it causes mate
-                if value == ChessEngine.MATE_PUNCTUATION:
-                    return self._store_node_alpha_beta_value(chess_game, value, move, depth)
-                if value > best_value:
-                    best_value = value
-                    best_move = move
-                alpha = max(alpha, best_value)
-                if alpha > beta:
-                    break
-            return self._store_node_alpha_beta_value(chess_game, best_value, best_move, depth)
-        # Black's turn (minimizing)
-        best_value = +inf
+        # # White's turn (maximizing)
+        # if chess_game.white_to_play():
+        #     best_value = -inf
+        #     best_move = None
+        #     for move in chess_game._legal_moves_sorted():
+        #         chess_game.play(move)
+        #         value, _ = self._alpha_beta_improved(chess_game, depth - 1, alpha, beta)
+        #         chess_game.pop_play()
+        #         # Skip comparison if it causes mate
+        #         if value == ChessEngine.MATE_PUNCTUATION:
+        #             return self._store_node_alpha_beta_value(chess_game, value, move, depth)
+        #         if value > best_value:
+        #             best_value = value
+        #             best_move = move
+        #         alpha = max(alpha, best_value)
+        #         if alpha > beta:
+        #             break
+        #     return self._store_node_alpha_beta_value(chess_game, best_value, best_move, depth)
+        # # Black's turn (minimizing)
+        # best_value = +inf
+        # best_move = None
+        # for move in chess_game._legal_moves_sorted():
+        #     chess_game.play(move)
+        #     value, _ = self._alpha_beta_improved(chess_game, depth - 1, alpha, beta)
+        #     chess_game.pop_play()
+        #     # Skip comparison if it causes mate
+        #     if value == -ChessEngine.MATE_PUNCTUATION:
+        #         return self._store_node_alpha_beta_value(chess_game, value, move, depth)
+        #     if value < best_value:
+        #         best_value = value
+        #         best_move = move
+        #     beta = min(beta, best_value)
+        #     if beta < alpha:
+        #         break
+        # return self._store_node_alpha_beta_value(chess_game, best_value, best_move, depth)
+
+        best_value = -inf
         best_move = None
-        for move in chess_game._legal_moves_sorted():
+        mate_punctuation = ChessEngine.MATE_PUNCTUATION
+
+        white_to_play = 1 if chess_game.white_to_play() else -1
+
+        best_value *= white_to_play
+        mate_punctuation *= white_to_play
+
+        legal_moves = self._get_legal_moves(chess_game)
+
+        move_value = {a: -mate_punctuation for a in legal_moves}
+
+        for move in legal_moves:   
             chess_game.play(move)
-            value, _ = self._alpha_beta_improved(chess_game, depth - 1, alpha, beta)
+            alpha_beta, _ = self._alpha_beta_improved(chess_game, depth - 1, alpha, beta)
             chess_game.pop_play()
-            # Skip comparison if it causes mate
-            if value == -ChessEngine.MATE_PUNCTUATION:
-                return self._store_node_alpha_beta_value(chess_game, value, move, depth)
-            if value < best_value:
-                best_value = value
+            move_value[move] = alpha_beta
+            if (alpha_beta * white_to_play) >= (best_value * white_to_play):
                 best_move = move
-            beta = min(beta, best_value)
-            if beta < alpha:
+                best_value = alpha_beta
+            if white_to_play == 1:
+                # alpha = max(alpha, best_value)
+                if best_value > alpha:
+                    alpha = best_value
+            else:
+                # beta = min(beta, best_value)
+                if best_value < beta:
+                    beta = best_value
+            if beta <= alpha:
                 break
-        return self._store_node_alpha_beta_value(chess_game, best_value, best_move, depth)
-    
-    # def _alpha_beta_recursion(self, chess_game: ChessGame, depth: int, alpha, beta) -> Tuple[float, chess.Move]:
-    #     """
-    #     Implements the Alpha-Beta Pruning algorithm to find 
-    #     the next move for a given a Chess board configuration.
-    #     """
-    #     pre_value_move = self._get_node_alpha_beta_value_and_move(chess_game, depth)
-    #     if pre_value_move[0] is not None:
-    #         return pre_value_move
-        
-    #     if depth == 0 or chess_game.has_finished():
-    #         return self._evaluate_game_node(chess_game), None
-    #     # White's turn (maximizing)
-    #     if chess_game.white_to_play():
-    #         best_value = -inf
-    #         best_move = None
-    #         for move in chess_game.legal_moves():
-    #             chess_game.play(move)
-    #             alpha_beta, _ = self._alpha_beta_recursion(chess_game, depth - 1, alpha, beta)
-    #             chess_game.pop_play()
-    #             if alpha_beta == ChessEngine.MATE_PUNCTUATION:
-    #                 return self._store_node_alpha_beta_value(chess_game, alpha_beta, move, depth)
-    #             if alpha_beta >= best_value:
-    #                 best_move = move
-    #                 best_value = alpha_beta
-    #             alpha = max(alpha, best_value)
-    #             if beta <= alpha:
-    #                 break
-    #         return self._store_node_alpha_beta_value(chess_game, best_value, best_move, depth)
-    #     # Black's turn (minimizing)
-    #     best_value = +inf
-    #     best_move = None
-    #     for move in chess_game.legal_moves():
-    #         chess_game.play(move)
-    #         alpha_beta, _ = self._alpha_beta_recursion(chess_game, depth - 1, alpha, beta)
-    #         chess_game.pop_play()
-    #         if alpha_beta == -ChessEngine.MATE_PUNCTUATION:
-    #             return self._store_node_alpha_beta_value(chess_game, alpha_beta, move, depth)
-    #         if alpha_beta <= best_value:
-    #             best_value = alpha_beta
-    #             best_move = move
-    #         beta = min(beta, best_value)
-    #         if beta <= alpha:
-    #             break
-    #     return self._store_node_alpha_beta_value(chess_game, best_value, best_move, depth)
-    
+        return self._store_node_alpha_beta_value(chess_game, best_value, best_move, depth, move_value)
+
+    def _call_pvs(self, chess_game: ChessGame) -> Tuple[float, chess.Move]:
+        aspiration = True
+        best_move = None
+        score = None
+        if aspiration:
+            previous = self.tree_values_memory.get(chess_game.hash, 0)
+            alpha = previous - ChessEngine.WINDOW
+            beta = previous + ChessEngine.WINDOW
+            while True:
+                score, best_move = self._alpha_beta_recursion_pvs(chess_game, self.depth, alpha, beta)
+                if score <= alpha:
+                    alpha = -ChessEngine.MATE_PUNCTUATION
+                elif score >= beta:
+                    beta = ChessEngine.MATE_PUNCTUATION
+                else:
+                    break
+        else:
+            alpha = -ChessEngine.MATE_PUNCTUATION
+            beta = +ChessEngine.MATE_PUNCTUATION
+            score, best_move = self._alpha_beta_recursion_pvs(chess_game, self.depth, alpha, beta)
+        return score, best_move
+
+    def _alpha_beta_recursion_pvs(self, chess_game: ChessGame, depth: int, alpha, beta) -> Tuple[float, chess.Move]:
+        pre_value_move = self._get_node_alpha_beta_value_and_move(chess_game, depth)
+        if pre_value_move[0] is not None:
+            return pre_value_move
+
+        if depth == 0 or chess_game.has_finished():
+            return self._evaluate_game_node(chess_game), None
+
+        best_value = -inf
+        best_move = None
+        mate_punctuation = ChessEngine.MATE_PUNCTUATION
+
+        white_to_play = 1 if chess_game.white_to_play() else -1
+
+        best_value *= white_to_play
+        mate_punctuation *= white_to_play
+
+        legal_moves = self._get_legal_moves(chess_game)
+
+        move_value = {a: -mate_punctuation for a in legal_moves}
+
+        for move in legal_moves:
+            chess_game.play(move)
+            alpha_beta = 0
+            if best_move is None:
+                alpha_beta, _ = self._alpha_beta_recursion_pvs(chess_game, depth - 1, alpha, beta)
+                best_move = move
+                best_value = alpha_beta
+                chess_game.pop_play()
+                continue
+            else:
+                # alpha_beta, _ = self._alpha_beta_recursion_pvs(chess_game, depth - 1, alpha, alpha + 1)
+                if white_to_play == 1:
+                    alpha_beta, _ = self._alpha_beta_recursion_pvs(chess_game, depth - 1, alpha, alpha + 1)
+                else:
+                    alpha_beta, _ = self._alpha_beta_recursion_pvs(chess_game, depth - 1, beta - 1, beta)
+                if alpha_beta > alpha and alpha_beta < beta:
+                    alpha_beta, _ = self._alpha_beta_recursion_pvs(chess_game, depth - 1, alpha, beta)
+            chess_game.pop_play()
+            move_value[move] = alpha_beta
+            if (alpha_beta * white_to_play) >= (best_value * white_to_play):
+                best_move = move
+                best_value = alpha_beta
+            if white_to_play == 1:
+                # alpha = max(alpha, best_value)
+                if best_value >= alpha:
+                    alpha = best_value
+            else:
+                # beta = min(beta, best_value)
+                if best_value <= beta:
+                    beta = best_value
+            if alpha >= beta:
+                break
+        return self._store_node_alpha_beta_value(chess_game, best_value, best_move, depth, move_value)
+
+    def _get_legal_moves(self, chess_game: ChessGame) -> List[chess.Move]:
+        legal_moves = self.legal_moves.get(chess_game.hash, None)
+        if legal_moves:
+            return legal_moves
+        return chess_game.legal_moves()
+
+    def _set_legal_moves(self, chess_game: ChessGame, move_value: dict, depth: int) -> None:
+        self.legal_moves_validity[chess_game.hash] = self.depth + 1
+        stored_depth = self.legal_moves_depth.get(chess_game.hash, 0)
+        if stored_depth < depth:
+            move_value_list = sorted(
+                [move for move in move_value],
+                key=lambda move: move_value[move],
+                reverse=chess_game.white_to_play(),
+            )
+            self.legal_moves_depth[chess_game.hash] = depth
+            self.legal_moves[chess_game.hash] = move_value_list
+
     def _get_node_alpha_beta_value_and_move(self, game: ChessGame, height: int) -> Tuple[float, chess.Move]:
         """
         Checks if node was recently calculated. If it is still
@@ -400,11 +507,22 @@ class ChessEngine:
         """
         Store recent nodes' value and move.
         """
+
+    def _store_node_alpha_beta_value(
+        self,
+        game: ChessGame,
+        alpha_beta_value: float,
+        move: chess.Move,
+        height: int,
+        move_value: dict,
+    ) -> Tuple[float, chess.Move]:
         game_hash = game.hash
         self.tree_values_memory[game_hash] = alpha_beta_value
         self.tree_moves_memory[game_hash] = move
         self.tree_height_memory[game_hash] = height
         self.tree_time_memory[game_hash] = height + 1
+
+        self._set_legal_moves(game, move_value, height)
         return alpha_beta_value, move
 
     def _evaluate_game_node(self, game: ChessGame) -> float:
@@ -440,7 +558,7 @@ class ChessEngine:
         CENTRAL_CONTROL_WEIGHT = 0.05
         OUTER_CENTRAL_CONTROL_WEIGHT = 0.005
         MATERIAL_POINTS_WEIGHT = 1
-        DEVELOPMENT_WEIGHT = 0.035
+        DEVELOPMENT_WEIGHT = 0.1
 
         # Checkmates and Stalemantes
         if board.result() == "0-1":
@@ -449,8 +567,8 @@ class ChessEngine:
             return ChessEngine.MATE_PUNCTUATION
         if board.result() == "1/2-1/2":
             return 0
-        
-        board_rows = str(board).split('\n')
+
+        board_rows = str(board).split("\n")
 
         # Material Evaluation
         material_points = 0
@@ -460,7 +578,7 @@ class ChessEngine:
         material_points *= MATERIAL_POINTS_WEIGHT
 
         # Mobility Evaluation
-        mobility = len(list(board.legal_moves))*MOBILITY_WEIGHT
+        mobility = len(list(board.legal_moves)) * MOBILITY_WEIGHT
         if not board.turn:
             mobility *= -1
 
@@ -471,12 +589,12 @@ class ChessEngine:
         central_control += len(board.attackers(chess.WHITE, chess.D5))
         central_control += len(board.attackers(chess.WHITE, chess.E4))
         central_control += len(board.attackers(chess.WHITE, chess.E5))
-        
+
         central_control -= len(board.attackers(chess.BLACK, chess.D4))
         central_control -= len(board.attackers(chess.BLACK, chess.D5))
         central_control -= len(board.attackers(chess.BLACK, chess.E4))
         central_control -= len(board.attackers(chess.BLACK, chess.E5))
-        
+
         central_control *= CENTRAL_CONTROL_WEIGHT
 
         # Outer Center Control Evaluation
@@ -490,15 +608,15 @@ class ChessEngine:
         outer_center_control += len(board.attackers(chess.WHITE, chess.F5))
         outer_center_control += len(board.attackers(chess.WHITE, chess.C4))
         outer_center_control += len(board.attackers(chess.WHITE, chess.F4))
-        outer_center_control += len(board.attackers(chess.WHITE, chess.C3))
-        outer_center_control += len(board.attackers(chess.WHITE, chess.D3))
-        outer_center_control += len(board.attackers(chess.WHITE, chess.E3))
-        outer_center_control += len(board.attackers(chess.WHITE, chess.F3))
+        # outer_center_control += len(board.attackers(chess.WHITE, chess.C3))
+        # outer_center_control += len(board.attackers(chess.WHITE, chess.D3))
+        # outer_center_control += len(board.attackers(chess.WHITE, chess.E3))
+        # outer_center_control += len(board.attackers(chess.WHITE, chess.F3))
 
-        outer_center_control -= len(board.attackers(chess.BLACK, chess.C6))
-        outer_center_control -= len(board.attackers(chess.BLACK, chess.D6))
-        outer_center_control -= len(board.attackers(chess.BLACK, chess.E6))
-        outer_center_control -= len(board.attackers(chess.BLACK, chess.F6))
+        # outer_center_control -= len(board.attackers(chess.BLACK, chess.C6))
+        # outer_center_control -= len(board.attackers(chess.BLACK, chess.D6))
+        # outer_center_control -= len(board.attackers(chess.BLACK, chess.E6))
+        # outer_center_control -= len(board.attackers(chess.BLACK, chess.F6))
         outer_center_control -= len(board.attackers(chess.BLACK, chess.C5))
         outer_center_control -= len(board.attackers(chess.BLACK, chess.F5))
         outer_center_control -= len(board.attackers(chess.BLACK, chess.C4))
@@ -507,15 +625,15 @@ class ChessEngine:
         outer_center_control -= len(board.attackers(chess.BLACK, chess.D3))
         outer_center_control -= len(board.attackers(chess.BLACK, chess.E3))
         outer_center_control -= len(board.attackers(chess.BLACK, chess.F3))
-        
+
         outer_center_control *= OUTER_CENTRAL_CONTROL_WEIGHT
 
         # Development Evaluation
         development = 0
         white_row = board_rows[7]
         black_row = board_rows[0]
-        black_pieces_hiding = len([x for x in black_row if x != '.' and x != 'k'])
-        white_pieces_hiding = len([x for x in white_row if x != '.' and x != 'K'])
+        black_pieces_hiding = len([x for x in black_row if x in ["n", "b"]])
+        white_pieces_hiding = len([x for x in white_row if x in ["N", "B"]])
         development = black_pieces_hiding - white_pieces_hiding
         development *= DEVELOPMENT_WEIGHT
 

@@ -6,10 +6,12 @@ from puzzle.puzzle_parser.puzzle_parser import Puzzle
 
 global_counter = 1
 
+
 def debug():
     global global_counter
     print(global_counter)
     global_counter += 1
+
 
 def engine_solves_puzzle(puzzle: Puzzle, engine: ChessEngine) -> bool:
     game = ChessGameByFen(puzzle.fen)
@@ -24,9 +26,9 @@ def engine_solves_puzzle(puzzle: Puzzle, engine: ChessEngine) -> bool:
         predicted_move = engine.best_move(game)
         total_time += time() - start
         if predicted_move != moves[2 * i + 1]:
-            return False, total_time/(i+1)
+            return False, total_time / (i + 1)
         game.play(predicted_move)
-    return True, total_time/num_moves
+    return True, total_time / num_moves
 
 
 def evaluate_engine_by_category(category: str, depth: int, algorithm: Literal["minimax", "abp", "abpi"] = "abpi", limit=None) -> float:
@@ -39,7 +41,7 @@ def evaluate_engine_by_category(category: str, depth: int, algorithm: Literal["m
         for line in f:
             chess_engine = ChessEngine(depth = depth, algorithm=algorithm)
             puzzle = Puzzle(line)
-            
+
             success, average_time_per_move = engine_solves_puzzle(puzzle, chess_engine)
             if success:
                 correct_count += 1

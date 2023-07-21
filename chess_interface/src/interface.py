@@ -9,10 +9,10 @@ from chess_interface.src.config import Config
 from chess_interface.src.square import Square
 from chess_interface.src.piece import *
 
-class Interface:
 
+class Interface:
     def __init__(self) -> None:
-        self.next_player = 'white'
+        self.next_player = "white"
         self.hovered_sqr = None
         self.board = Board()
         self.dragger = Dragger()
@@ -31,7 +31,7 @@ class Interface:
                 # Row labels (1, 2, 3, ...)
                 if col == 0:
                     color = self.theme.bg.dark if row % 2 == 0 else self.theme.bg.light
-                    label = self.config.font.render(str(ROWS-row), 1, color)
+                    label = self.config.font.render(str(ROWS - row), 1, color)
                     label_pos = (5, 5 + row * SQSIZE)
                     surface.blit(label, label_pos)
                 # Column labels (a, b, c, ...)
@@ -53,7 +53,10 @@ class Interface:
                     if piece is not self.dragger.piece:
                         piece.set_texture(size=80)
                         img = pygame.image.load(piece.texture)
-                        img_center = col * SQSIZE + SQSIZE // 2, row * SQSIZE + SQSIZE // 2
+                        img_center = (
+                            col * SQSIZE + SQSIZE // 2,
+                            row * SQSIZE + SQSIZE // 2,
+                        )
                         piece.texture_rect = img.get_rect(center=img_center)
                         surface.blit(img, piece.texture_rect)
 
@@ -62,9 +65,9 @@ class Interface:
         Display all possible (valid) moves when dragging a piece.
         """
         if self.dragger.dragging:
-           for move in self.dragger.valid_moves:
+            for move in self.dragger.valid_moves:
                 color = self.theme.moves.light if (move[0] + move[1]) % 2 == 0 else self.theme.moves.dark
-                rect = (move[1] * SQSIZE, move[0]* SQSIZE, SQSIZE, SQSIZE)
+                rect = (move[1] * SQSIZE, move[0] * SQSIZE, SQSIZE, SQSIZE)
                 pygame.draw.rect(surface, color, rect)
 
     def show_last_move(self, surface: pygame.Surface) -> None:
@@ -80,7 +83,12 @@ class Interface:
     def show_hover(self, surface: pygame.Surface) -> None:
         if self.hovered_sqr:
             color = (180, 180, 180)
-            rect = (self.hovered_sqr.col * SQSIZE, self.hovered_sqr.row * SQSIZE, SQSIZE, SQSIZE)
+            rect = (
+                self.hovered_sqr.col * SQSIZE,
+                self.hovered_sqr.row * SQSIZE,
+                SQSIZE,
+                SQSIZE,
+            )
             pygame.draw.rect(surface, color, rect, width=3)
 
     def show_promotion_dialog(self, surface: pygame.Surface) -> None:
@@ -88,21 +96,21 @@ class Interface:
         Displays promotion dialog, containing possible
         pieces and respective numbers to press.
         """
-        transparency = pygame.Surface((WIDTH, HEIGHT))  
-        transparency.set_alpha(192)                
-        transparency.fill(self.theme.bg.dark)      
-        surface.blit(transparency, (0,0))
+        transparency = pygame.Surface((WIDTH, HEIGHT))
+        transparency.set_alpha(192)
+        transparency.fill(self.theme.bg.dark)
+        surface.blit(transparency, (0, 0))
 
         message = "Choose the piece you want to promote to!"
         text = self.config.font_big.render(message, 1, "black", "white")
-        text_rect = text.get_rect(center = (4 * SQSIZE, -5 + 3.5 * SQSIZE))
+        text_rect = text.get_rect(center=(4 * SQSIZE, -5 + 3.5 * SQSIZE))
         surface.blit(text, text_rect)
 
         for piece, num in [
-            (Queen("white"),  1), 
-            (Rook("white"),   2), 
-            (Knight("white"), 3), 
-            (Bishop("white"), 4)
+            (Queen("white"), 1),
+            (Rook("white"), 2),
+            (Knight("white"), 3),
+            (Bishop("white"), 4),
         ]:
             # Draw piece
             texture = piece.texture
@@ -112,9 +120,8 @@ class Interface:
             surface.blit(img, piece.texture_rect)
             # Draw corresponding number
             number = self.config.font_big.render(str(num), 1, "black", "white")
-            number_rect = number.get_rect(center = ((num + 1.5) * SQSIZE, 5 + 4.5 * SQSIZE))
+            number_rect = number.get_rect(center=((num + 1.5) * SQSIZE, 5 + 4.5 * SQSIZE))
             surface.blit(number, number_rect)
-    
 
     def show_all(self, surface: pygame.Surface) -> None:
         self.show_bg(surface)
@@ -126,7 +133,7 @@ class Interface:
     # other methods
 
     def next_turn(self) -> None:
-        self.next_player = 'white' if self.next_player == 'black' else 'black'
+        self.next_player = "white" if self.next_player == "black" else "black"
 
     def set_hover(self, row, col) -> None:
         self.hovered_sqr = self.board.squares[row][col]

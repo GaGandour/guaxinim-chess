@@ -3,8 +3,8 @@ from typing import List, Tuple
 
 from chess_interface.src.const import *
 
-class Dragger:
 
+class Dragger:
     def __init__(self):
         self.piece = None
         self.dragging = False
@@ -28,9 +28,9 @@ class Dragger:
         surface.blit(img, self.piece.texture_rect)
 
     # other methods
-    
+
     def update_mouse(self, pos):
-        self.mouseX, self.mouseY = pos # (xcor, ycor)
+        self.mouseX, self.mouseY = pos  # (xcor, ycor)
 
     def save_initial(self, pos):
         self.initial_row = pos[1] // SQSIZE
