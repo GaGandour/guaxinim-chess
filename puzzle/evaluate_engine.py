@@ -1,6 +1,8 @@
+from typing import Literal
+from time import time
+
 from chess_game.chess_game import ChessEngine, ChessGameByFen
 from puzzle.puzzle_parser.puzzle_parser import Puzzle
-from time import time
 
 global_counter = 1
 
@@ -27,7 +29,7 @@ def engine_solves_puzzle(puzzle: Puzzle, engine: ChessEngine) -> bool:
     return True, total_time/num_moves
 
 
-def evaluate_engine_by_category(category: str, limit=None) -> float:
+def evaluate_engine_by_category(category: str, depth: int, algorithm: Literal["minimax", "abp", "abpi"] = "abpi", limit=None) -> float:
     file_name = "puzzle/puzzles/category_separated/" + category + ".csv"
     report_file_name = "puzzle/puzzles/category_reports/" + category + ".csv"
     total_count = 0
@@ -35,7 +37,7 @@ def evaluate_engine_by_category(category: str, limit=None) -> float:
     total_time = 0
     with open(file_name, "r") as f:
         for line in f:
-            chess_engine = ChessEngine()
+            chess_engine = ChessEngine(depth = depth, algorithm=algorithm)
             puzzle = Puzzle(line)
             
             success, average_time_per_move = engine_solves_puzzle(puzzle, chess_engine)
