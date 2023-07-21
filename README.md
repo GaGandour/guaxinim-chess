@@ -26,15 +26,15 @@ The `chess_game` provides the ChessGame class, responsible for managing the Ches
 
 ### Chess Interface
 
-The `chess_interface` provides an interface to interact with the AI or simply play agains another human.
+The `chess_interface` provides an interface to interact with the AI or simply play against another human.
 
 #### Known bugs
 
-For now, there is no indication that the game has finished in the interface, the player simply cannot move any piece since there aren't any available moves. Also, when winning against the AI, the game window automatically closes since the AI tries to assert the game hasn't ended before calculating the next move.
+For now, there is no indication that the game has finished in the interface, the player simply cannot move any piece since there aren't any available moves. Also, when winning against the AI, the game window automatically closes since the AI tries to assert the game hasn't ended before calculating the next move. Finally, pay attention not to drag a piece out of the game window, otherwise, the game crashes too.
 
 ### Opening Parser
 
-The `opening_parser` provides the database and parser required for the AI to use in the first game moves. It's supposed to work in a similar way to a Chess player which studies and remember the most famous openings. 
+The `opening_parser` provides the database and parser required for the AI to use in the first game moves. It's supposed to work in a similar way to a Chess player, who studies and memorizes the most famous openings. 
 
 ### Puzzle
 
@@ -42,7 +42,7 @@ The `puzzle` provides the database, parser and some functions to evaluate our en
 
 ## Credits
 
-The "Guaxinim-Chess" projected used some valuable materials during its development, which are listed and credited below.
+The "Guaxinim-Chess" project used some valuable materials during its development, which are listed and credited below.
 
 The puzzles' database located in the `puzzle` folder was addapted from the puzzles provided by Lichess.com. [[`Lichess.com's puzzles`](https://old.chesstempo.com/chess-openings.html)]
 
