@@ -27,11 +27,9 @@ def evaluate_category(category: str, depth: int, algorithm: Literal["minimax", "
 #     evaluate_category("middlegame", 2, algorithm=algorithm, limit=20)
 #     evaluate_category("middlegame", 3, algorithm=algorithm, limit=20)
 #     evaluate_category("middlegame", 4, algorithm=algorithm, limit=20)
-#     evaluate_category("middlegame", 5, algorithm=algorithm, limit=20)
 
 for algorithm in ["abpi"]:
     evaluate_category("endgame", 1, algorithm=algorithm, limit=20)
     evaluate_category("endgame", 2, algorithm=algorithm, limit=20)
     evaluate_category("endgame", 3, algorithm=algorithm, limit=20)
     evaluate_category("endgame", 4, algorithm=algorithm, limit=20)
-    evaluate_category("endgame", 5, algorithm=algorithm, limit=20)
