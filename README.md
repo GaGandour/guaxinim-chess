@@ -12,7 +12,7 @@ First, clone this git's repository. Then, you have to setup the needed environme
 
 ### Running interactive interface
 
-To run the interactive interface, run the `python run_chess_interface.py` or `python3 run_chess_interface.py` command also in the root folder. Please pay attention to the `PVP_ON` and `DEPTH` global variables inside `chess_interface/src/main.py` file. Set them accordingly to your needs, though we suggest a depth value of 5 or less, otherwise the delay originated from the AI calculations gets too high.
+To run the interactive interface, run the `python run_chess_interface.py` or `python3 run_chess_interface.py` command also in the root folder. Please pay attention to the `PVP_ON` and `DEPTH` global variables inside `chess_interface/src/main.py` file. Set them accordingly to your needs, though we suggest a depth value of 4 or less, otherwise the delay originated from the AI calculations gets too high.
 
 ### Evaluating the engine
 
