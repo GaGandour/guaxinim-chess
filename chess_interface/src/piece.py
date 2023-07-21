@@ -2,13 +2,9 @@ import os
 
 
 class Piece:
-    def __init__(self, name, color, value, texture=None, texture_rect=None):
+    def __init__(self, name, color, texture=None, texture_rect=None) -> None:
         self.name = name
         self.color = color
-        value_sign = 1 if color == "white" else -1
-        self.value = value * value_sign
-        self.moves = []
-        self.moved = False
         self.texture = texture
         self.set_texture()
         self.texture_rect = texture_rect
@@ -16,57 +12,52 @@ class Piece:
     def set_texture(self, size=80):
         self.texture = os.path.join(f"chess_interface/assets/images/imgs-{size}px/{self.color}_{self.name}.png")
 
-    def add_move(self, move):
-        self.moves.append(move)
-
-    def clear_moves(self):
-        self.moves = []
-
 
 class Pawn(Piece):
-    def __init__(self, color):
+    def __init__(self, color) -> None:
         self.dir = -1 if color == "white" else 1
-        self.en_passant = False
-        super().__init__("pawn", color, 1.0)
+        super().__init__("pawn", color)
 
 
 class Knight(Piece):
-    def __init__(self, color):
-        super().__init__("knight", color, 3.0)
+    def __init__(self, color) -> None:
+        super().__init__("knight", color)
 
 
 class Bishop(Piece):
-    def __init__(self, color):
-        super().__init__("bishop", color, 3.001)
+    def __init__(self, color) -> None:
+        super().__init__("bishop", color)
 
 
 class Rook(Piece):
-    def __init__(self, color):
-        super().__init__("rook", color, 5.0)
+    def __init__(self, color) -> None:
+        super().__init__("rook", color)
 
 
 class Queen(Piece):
-    def __init__(self, color):
-        super().__init__("queen", color, 9.0)
+    def __init__(self, color) -> None:
+        super().__init__("queen", color)
 
 
 class King(Piece):
-    def __init__(self, color):
-        super().__init__("king", color, 10000.0)
+    def __init__(self, color) -> None:
+        super().__init__("king", color)
 
 
+# The following dictionary maps python's chess package
+# letter codes to the Piece classes created above.
 PIECE_MAPPING = {
-    "R": [Rook, "white"],
+    "R": [Rook,   "white"],
     "N": [Knight, "white"],
     "B": [Bishop, "white"],
-    "Q": [Queen, "white"],
-    "P": [Pawn, "white"],
-    "K": [King, "white"],
-    "r": [Rook, "black"],
+    "Q": [Queen,  "white"],
+    "P": [Pawn,   "white"],
+    "K": [King,   "white"],
+    "r": [Rook,   "black"],
     "n": [Knight, "black"],
     "b": [Bishop, "black"],
-    "q": [Queen, "black"],
-    "p": [Pawn, "black"],
-    "k": [King, "black"],
+    "q": [Queen,  "black"],
+    "p": [Pawn,   "black"],
+    "k": [King,   "black"],
     ".": [None, None],
 }

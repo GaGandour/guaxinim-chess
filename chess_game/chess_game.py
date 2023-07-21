@@ -201,14 +201,16 @@ class ChessEngine:
             return best_move
         # Alpha-Beta Pruning
         elif self.algorithm == "abp":
-            _, best_move = self._alpha_beta_basic(chess_game, self.depth, -inf, +inf)
-        # Alpha-Beta Pruning with Improvements 
-        # or PVS
-        elif self.algorithm == "abpi" or self.algorithm == "pvs":
-            if self.algorithm == "abpi":
-                _, best_move = self._call_alpha_beta(chess_game)
-            elif self.algorithm == "pvs":
-                _, best_move = self._call_pvs(chess_game)
+            _, best_move = self._call_alpha_beta(chess_game, False)
+        # Alpha-Beta Pruning with Improvements
+        elif self.algorithm == "abpi":
+            _, best_move = self._call_alpha_beta(chess_game, True)
+        # ABP PVS variation (out of CT-213 Exam's scope!)
+        elif self.algorithm == "pvs":
+            _, best_move = self._call_pvs(chess_game)
+            
+        # Improvements related to repeated calculations
+        if self.algorithm == "abpi" or self.algorithm == "pvs":
             stored_positions = [position for position in self.tree_height_memory]
             for position in stored_positions:
                 remaining_time = self.tree_time_memory[position]
@@ -309,12 +311,25 @@ class ChessEngine:
             beta = min(beta, best_value)
         return best_value, best_move
     
-    def _call_alpha_beta(self, chess_game: ChessGame) -> Tuple[float, chess.Move]:
+    def _call_alpha_beta(self, chess_game: ChessGame, improved: bool) -> Tuple[float, chess.Move]:
+        """
+        Provides the initial call to the Alpha-Beta Pruning algorithm.
+        If 'improved' = True, it calls the improved method. Else 
+        it calls the default Alpha-Beta Pruning implementation.
+        """
         alpha = -ChessEngine.MATE_PUNCTUATION
         beta = +ChessEngine.MATE_PUNCTUATION
+        if not improved:
+            return self._alpha_beta_basic(chess_game, self.depth, alpha, beta)
         return self._alpha_beta_improved(chess_game, self.depth, alpha, beta)
     
-    def _alpha_beta_improved(self, chess_game: ChessGame, depth: int, alpha: float, beta: float) -> Tuple[float, chess.Move]:
+    def _alpha_beta_improved(
+        self, 
+        chess_game: ChessGame, 
+        depth: int, 
+        alpha: float, 
+        beta: float
+     ) -> Tuple[float, chess.Move]:
         """
         Implements the basic Alpha-Beta Pruning
         algorithm with some other improvements.
@@ -323,45 +338,10 @@ class ChessEngine:
         pre_value_move = self._get_node_alpha_beta_value_and_move(chess_game, depth)
         if pre_value_move[0] is not None:
             return pre_value_move
-
+        # Check if leaf or max depth was reached
         if depth == 0 or chess_game.has_finished():
             return self._evaluate_game_node(chess_game), None
-        # # White's turn (maximizing)
-        # if chess_game.white_to_play():
-        #     best_value = -inf
-        #     best_move = None
-        #     for move in chess_game._legal_moves_sorted():
-        #         chess_game.play(move)
-        #         value, _ = self._alpha_beta_improved(chess_game, depth - 1, alpha, beta)
-        #         chess_game.pop_play()
-        #         # Skip comparison if it causes mate
-        #         if value == ChessEngine.MATE_PUNCTUATION:
-        #             return self._store_node_alpha_beta_value(chess_game, value, move, depth)
-        #         if value > best_value:
-        #             best_value = value
-        #             best_move = move
-        #         alpha = max(alpha, best_value)
-        #         if alpha > beta:
-        #             break
-        #     return self._store_node_alpha_beta_value(chess_game, best_value, best_move, depth)
-        # # Black's turn (minimizing)
-        # best_value = +inf
-        # best_move = None
-        # for move in chess_game._legal_moves_sorted():
-        #     chess_game.play(move)
-        #     value, _ = self._alpha_beta_improved(chess_game, depth - 1, alpha, beta)
-        #     chess_game.pop_play()
-        #     # Skip comparison if it causes mate
-        #     if value == -ChessEngine.MATE_PUNCTUATION:
-        #         return self._store_node_alpha_beta_value(chess_game, value, move, depth)
-        #     if value < best_value:
-        #         best_value = value
-        #         best_move = move
-        #     beta = min(beta, best_value)
-        #     if beta < alpha:
-        #         break
-        # return self._store_node_alpha_beta_value(chess_game, best_value, best_move, depth)
-
+        
         best_value = -inf
         best_move = None
         mate_punctuation = ChessEngine.MATE_PUNCTUATION
@@ -396,6 +376,11 @@ class ChessEngine:
         return self._store_node_alpha_beta_value(chess_game, best_value, best_move, depth, move_value)
 
     def _call_pvs(self, chess_game: ChessGame) -> Tuple[float, chess.Move]:
+        """
+        Out of CT-213 Exam's scope!
+
+        Provides the initial call to ABP PVS variation algorithm.
+        """
         aspiration = True
         best_move = None
         score = None
@@ -417,7 +402,18 @@ class ChessEngine:
             score, best_move = self._alpha_beta_recursion_pvs(chess_game, self.depth, alpha, beta)
         return score, best_move
 
-    def _alpha_beta_recursion_pvs(self, chess_game: ChessGame, depth: int, alpha, beta) -> Tuple[float, chess.Move]:
+    def _alpha_beta_recursion_pvs(
+        self, 
+        chess_game: ChessGame, 
+        depth: int, 
+        alpha: float, 
+        beta: float
+    ) -> Tuple[float, chess.Move]:
+        """
+        Out of CT-213 Exam's scope!
+
+        Implementation of Alpha-Beta Pruning PVS variation.
+        """
         pre_value_move = self._get_node_alpha_beta_value_and_move(chess_game, depth)
         if pre_value_move[0] is not None:
             return pre_value_move
@@ -473,12 +469,25 @@ class ChessEngine:
         return self._store_node_alpha_beta_value(chess_game, best_value, best_move, depth, move_value)
 
     def _get_legal_moves(self, chess_game: ChessGame) -> List[chess.Move]:
+        """
+        Checks if the 'legal_moves' dictionary already contains
+        the moves for the current board configuration.
+        """
         legal_moves = self.legal_moves.get(chess_game.hash, None)
         if legal_moves:
             return legal_moves
         return chess_game.legal_moves()
 
-    def _set_legal_moves(self, chess_game: ChessGame, move_value: dict, depth: int) -> None:
+    def _set_legal_moves(
+        self, 
+        chess_game: ChessGame, 
+        move_value: dict, 
+        depth: int
+    ) -> None:
+        """
+        Saves the legal moves to the 'legal_moves' dictionary,
+        ordering them by the values calculated in the current iteration.
+        """
         self.legal_moves_validity[chess_game.hash] = self.depth + 1
         stored_depth = self.legal_moves_depth.get(chess_game.hash, 0)
         if stored_depth < depth:
@@ -503,11 +512,6 @@ class ChessEngine:
             return self.tree_values_memory.get(game_hash, None), self.tree_moves_memory.get(game_hash, None)
         return None, None
     
-    def _store_node_alpha_beta_value(self, game: ChessGame, alpha_beta_value: float, move: chess.Move, height: int) -> Tuple[float, chess.Move]:
-        """
-        Store recent nodes' value and move.
-        """
-
     def _store_node_alpha_beta_value(
         self,
         game: ChessGame,
@@ -516,6 +520,9 @@ class ChessEngine:
         height: int,
         move_value: dict,
     ) -> Tuple[float, chess.Move]:
+        """
+        Store recent nodes' value and move.
+        """
         game_hash = game.hash
         self.tree_values_memory[game_hash] = alpha_beta_value
         self.tree_moves_memory[game_hash] = move

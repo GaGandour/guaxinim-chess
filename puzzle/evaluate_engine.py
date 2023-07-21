@@ -1,4 +1,4 @@
-from typing import Literal
+from typing import Literal, Tuple
 from time import time
 
 from chess_game.chess_game import ChessEngine, ChessGameByFen
@@ -13,7 +13,14 @@ def debug():
     global_counter += 1
 
 
-def engine_solves_puzzle(puzzle: Puzzle, engine: ChessEngine) -> bool:
+def engine_solves_puzzle(
+    puzzle: Puzzle, 
+    engine: ChessEngine
+    ) -> Tuple[bool, float]:
+    """
+    Evaluates whether an engine 
+    solves a single puzzle.
+    """
     game = ChessGameByFen(puzzle.fen)
     moves = puzzle.moves
     num_moves = len(moves)
@@ -31,7 +38,16 @@ def engine_solves_puzzle(puzzle: Puzzle, engine: ChessEngine) -> bool:
     return True, total_time / num_moves
 
 
-def evaluate_engine_by_category(category: str, depth: int, algorithm: Literal["minimax", "abp", "abpi"] = "abpi", limit=None) -> float:
+def evaluate_engine_by_category(
+    category: str, 
+    depth: int, 
+    algorithm: Literal["minimax", "abp", "abpi"] = "abpi", 
+    limit=None
+    ) -> Tuple[float, float]:
+    """
+    Evaluates an engine (defined by its 'algorithm' and 'depth')
+    using n = 'limit' puzzles from the given 'category'.
+    """
     file_name = "puzzle/puzzles/category_separated/" + category + ".csv"
     report_file_name = "puzzle/puzzles/category_reports/" + category + ".csv"
     total_count = 0
@@ -53,7 +69,6 @@ def evaluate_engine_by_category(category: str, depth: int, algorithm: Literal["m
             if limit:
                 if total_count >= limit:
                     break
-
     score = correct_count / total_count
     average_time_per_move = total_time / total_count
     return score, average_time_per_move

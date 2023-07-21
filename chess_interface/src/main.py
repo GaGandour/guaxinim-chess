@@ -8,17 +8,24 @@ from chess_interface.src.square import Square
 from chess_interface.src.move import Move
 
 PVP_ON = False
+DEPTH = 2
 
 
 class Main:
     def __init__(self) -> None:
         pygame.init()
         self.screen = pygame.display.set_mode((WIDTH, HEIGHT))
+        caption = "CT-213 Guaxinim-Chess "
+        caption += "(Human x Human)" if PVP_ON else "(Human x AI)"
         pygame.display.set_caption("CT-213 Guaxinim Chess (Human x AI)")
         self.interface = Interface()
-        self.engine = ChessEngine(depth=5)
+        self.engine = ChessEngine(depth=DEPTH)
 
     def mainloop(self):
+        """
+        Handles the main loop logic. If PVP_ON = True, both turns should
+        be player driven (Human x Human). Else, it should be Human x AI.
+        """
         screen = self.screen
         interface = self.interface
         board = self.interface.board
@@ -47,7 +54,7 @@ class Main:
                             # If clicked square has a piece
                             if board.squares[clicked_row][clicked_col].has_piece():
                                 piece = board.squares[clicked_row][clicked_col].piece
-                                # If piece is from the correct player
+                                # If piece is from the current player
                                 if piece.color == interface.next_player:
                                     dragger.save_initial(event.pos)
                                     dragger.save_valid_moves(board.calc_moves(clicked_row, clicked_col))
@@ -69,12 +76,12 @@ class Main:
                                 released_row = dragger.mouseY // SQSIZE
                                 released_col = dragger.mouseX // SQSIZE
 
-                                # create possible move
+                                # Create possible move
                                 initial = Square(dragger.initial_row, dragger.initial_col)
                                 final = Square(released_row, released_col)
                                 move = Move(initial, final)
 
-                                # If a valid move
+                                # If the move created is a valid one
                                 if initial != final:
                                     if board.is_promotion_move(move):
                                         promotion_time = True
@@ -107,12 +114,16 @@ class Main:
                     # Promotion
                     if promotion_time:
                         chosen = None
+                        # >> Press [1] key <<
                         if event.key == pygame.K_1:
                             chosen = "q"
+                        # >> Press [2] key <<
                         if event.key == pygame.K_2:
                             chosen = "r"
+                        # >> Press [3] key <<
                         if event.key == pygame.K_3:
                             chosen = "n"
+                        # >> Press [4] key <<
                         if event.key == pygame.K_4:
                             chosen = "b"
                         if chosen:
@@ -123,11 +134,13 @@ class Main:
                             interface.play_sound(is_capture)
                             interface.next_turn()
 
-                    # Color theme change
+                    # Color theme change 
+                    # >> Press [T] key <<
                     if event.key == pygame.K_t:
                         interface.change_theme()
 
                     # Game reset
+                    # >> Press [R] key <<
                     if event.key == pygame.K_r:
                         interface.reset()
                         interface = self.interface

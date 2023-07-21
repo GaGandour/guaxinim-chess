@@ -3,14 +3,14 @@ from typing import List, Tuple
 
 from chess_game.chess_game import ChessGame
 from chess_interface.src.const import *
-from chess_interface.src.square import Square
-from chess_interface.src.piece import *
 from chess_interface.src.move import Move
+from chess_interface.src.piece import *
+from chess_interface.src.square import Square
 from chess_interface.src.sound import Sound
 
 
 class Board:
-    def __init__(self):
+    def __init__(self) -> None:
         self.squares: Square = [[None] * ROWS for col in range(COLS)]
         self.last_move: Move = None
         self.chess_game: ChessGame = ChessGame()
@@ -18,6 +18,9 @@ class Board:
         self._update_pieces()
 
     def move(self, move: Move, promotion: str = None) -> None:
+        """
+        Advances the board with the given move.
+        """
         if promotion:
             self.chess_game.play(move.uci_code() + promotion)
         else:
@@ -38,18 +41,22 @@ class Board:
             return False
         return chess.Move.from_uci(move.uci_code() + "q") in self.chess_game.piece_legal_moves(move.initial.position)
 
-    def calc_moves(self, row, col) -> List[Tuple[int, int]]:
+    def calc_moves(self, row: int, col: int) -> List[Tuple[int, int]]:
         """
         Calculate all the possible (valid) end positions
         of a piece based on the piece's initial position.
         """
         position = Square.row_col_to_position(row, col)
         valid_end_pos = [
-            Square.position_to_row_col(str(move)[2:4]) for move in self.chess_game.piece_legal_moves(position)
+            Square.position_to_row_col(str(move)[2:4]) 
+            for move in self.chess_game.piece_legal_moves(position)
         ]
         return valid_end_pos
 
-    def _create_squares(self):
+    def _create_squares(self) -> None:
+        """
+        Initial squares constructor.
+        """
         for row in range(ROWS):
             for col in range(COLS):
                 self.squares[row][col] = Square(row, col)
@@ -57,7 +64,7 @@ class Board:
     def _update_pieces(self) -> None:
         """
         Updates pieces in each of our board's squares
-        according to the board_matrix returned from chess_game
+        according to the board_matrix returned from chess_game.
         """
         board_matrix = self.chess_game.board_matrix()
         for row in range(ROWS):

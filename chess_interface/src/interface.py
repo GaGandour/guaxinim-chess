@@ -71,6 +71,10 @@ class Interface:
                 pygame.draw.rect(surface, color, rect)
 
     def show_last_move(self, surface: pygame.Surface) -> None:
+        """
+        Highlights the initial and final squares
+        of the most recent piece movement.
+        """
         if self.board.last_move:
             initial = self.board.last_move.initial
             final = self.board.last_move.final
@@ -81,6 +85,10 @@ class Interface:
                 pygame.draw.rect(surface, color, rect)
 
     def show_hover(self, surface: pygame.Surface) -> None:
+        """
+        Highlights the border of the square
+        which the mouse is currently hovering.
+        """
         if self.hovered_sqr:
             color = (180, 180, 180)
             rect = (
@@ -124,25 +132,41 @@ class Interface:
             surface.blit(number, number_rect)
 
     def show_all(self, surface: pygame.Surface) -> None:
+        """
+        Display in the correct layer order all the previous 
+        blits functions in the, except for the promotion dialog.
+        """
         self.show_bg(surface)
         self.show_last_move(surface)
         self.show_moves(surface)
         self.show_pieces(surface)
         self.show_hover(surface)
 
-    # other methods
-
     def next_turn(self) -> None:
+        """
+        Sets the 'next_player' attribute to the other player.
+        """
         self.next_player = "white" if self.next_player == "black" else "black"
 
     def set_hover(self, row, col) -> None:
+        """
+        Sets the 'hovered_sqr' attribute as the given coordinates.
+        """
         self.hovered_sqr = self.board.squares[row][col]
 
     def change_theme(self) -> None:
+        """
+        Changes current color theme to the next one. Loops
+        through the [green, brown, blue, gray] order.
+        """
         self.config.change_theme()
         self.theme = self.config.theme
 
     def play_sound(self, captured=False) -> None:
+        """
+        Plays one of the two available sounds: one meant
+        for captures and one meant for all other movements.
+        """
         if captured:
             self.config.capture_sound.play()
         else:
