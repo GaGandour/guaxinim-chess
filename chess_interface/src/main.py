@@ -8,7 +8,7 @@ from chess_interface.src.square import Square
 from chess_interface.src.move import Move
 
 PVP_ON = False
-DEPTH = 2
+DEPTH = 5
 
 
 class Main:
@@ -19,7 +19,7 @@ class Main:
         caption += "(Human x Human)" if PVP_ON else "(Human x AI)"
         pygame.display.set_caption("CT-213 Guaxinim Chess (Human x AI)")
         self.interface = Interface()
-        self.engine = ChessEngine(depth=DEPTH)
+        self.engine = ChessEngine(depth=DEPTH, algorithm="pvs")
 
     def mainloop(self):
         """

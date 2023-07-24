@@ -40,10 +40,10 @@ class ChessGame:
         score = 0
         if self.board.is_capture(move):
             score += 1
-        self.play(move)
-        if self.board.is_check():
-            score += 1
-        self.pop_play()
+        # self.play(move)
+        # if self.board.is_check():
+        #     score += 1
+        # self.pop_play()
         return -score
 
     def piece_legal_moves(self, piece_pos: str) -> List[chess.Move]:
@@ -446,9 +446,11 @@ class ChessEngine:
             else:
                 # alpha_beta, _ = self._alpha_beta_recursion_pvs(chess_game, depth - 1, alpha, alpha + 1)
                 if white_to_play == 1:
-                    alpha_beta, _ = self._alpha_beta_recursion_pvs(chess_game, depth - 1, alpha, alpha + 1)
+                    alpha_beta, _ = self._alpha_beta_recursion_pvs(chess_game, depth - 1, alpha, alpha + 0.00001)
                 else:
-                    alpha_beta, _ = self._alpha_beta_recursion_pvs(chess_game, depth - 1, beta - 1, beta)
+
+                    alpha_beta, _ = self._alpha_beta_recursion_pvs(chess_game, depth - 1, alpha, alpha + 0.00001)
+                    # alpha_beta, _ = self._alpha_beta_recursion_pvs(chess_game, depth - 1, beta - 0.00001, beta)
                 if alpha_beta > alpha and alpha_beta < beta:
                     alpha_beta, _ = self._alpha_beta_recursion_pvs(chess_game, depth - 1, alpha, beta)
             chess_game.pop_play()
