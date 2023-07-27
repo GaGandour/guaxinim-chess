@@ -379,7 +379,8 @@ class ChessEngine:
 
         Provides the initial call to ABP PVS variation algorithm.
         """
-        aspiration = True
+        aspiration = False
+        mtd = True
         best_move = None
         score = None
         if aspiration:
@@ -394,6 +395,13 @@ class ChessEngine:
                     beta = ChessEngine.MATE_PUNCTUATION
                 else:
                     break
+        elif mtd:
+            test = 0
+            while True:
+                score, best_move = self._alpha_beta_recursion_pvs(chess_game, self.depth, test-0.005, test + 0.005)
+                if test == score:
+                    break
+                test = score
         else:
             alpha = -ChessEngine.MATE_PUNCTUATION
             beta = +ChessEngine.MATE_PUNCTUATION
@@ -438,12 +446,7 @@ class ChessEngine:
                 chess_game.pop_play()
                 continue
             else:
-                # alpha_beta, _ = self._alpha_beta_recursion_pvs(chess_game, depth - 1, alpha, alpha + 1)
-                if white_to_play == 1:
-                    alpha_beta, _ = self._alpha_beta_recursion_pvs(chess_game, depth - 1, alpha, alpha + 0.00001)
-                else:
-                    alpha_beta, _ = self._alpha_beta_recursion_pvs(chess_game, depth - 1, alpha, alpha + 0.00001)
-                    # alpha_beta, _ = self._alpha_beta_recursion_pvs(chess_game, depth - 1, beta - 0.00001, beta)
+                alpha_beta, _ = self._alpha_beta_recursion_pvs(chess_game, depth - 1, alpha, alpha + 0.005)
                 if alpha_beta > alpha and alpha_beta < beta:
                     alpha_beta, _ = self._alpha_beta_recursion_pvs(chess_game, depth - 1, alpha, beta)
             chess_game.pop_play()
@@ -551,7 +554,7 @@ class ChessEngine:
         Evaluates a board configuration according
         to some Chess heuristics listed below.
         """
-        MOBILITY_WEIGHT = 0.00001
+        # MOBILITY_WEIGHT = 0.00001
         CENTRAL_CONTROL_WEIGHT = 0.05
         OUTER_CENTRAL_CONTROL_WEIGHT = 0.005
         MATERIAL_POINTS_WEIGHT = 1
@@ -575,9 +578,9 @@ class ChessEngine:
         material_points *= MATERIAL_POINTS_WEIGHT
 
         # Mobility Evaluation
-        mobility = len(list(board.legal_moves)) * MOBILITY_WEIGHT
-        if not board.turn:
-            mobility *= -1
+        # mobility = len(list(board.legal_moves)) * MOBILITY_WEIGHT
+        # if not board.turn:
+        #     mobility *= -1
 
         # Center Control Evaluation
         central_control = 0
@@ -637,7 +640,7 @@ class ChessEngine:
         # Add All Evaluation Elements
         evaluation = 0
         evaluation += material_points
-        evaluation += mobility
+        # evaluation += mobility
         evaluation += central_control
         evaluation += outer_center_control
         evaluation += development
