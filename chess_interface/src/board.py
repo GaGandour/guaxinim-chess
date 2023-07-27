@@ -48,8 +48,7 @@ class Board:
         """
         position = Square.row_col_to_position(row, col)
         valid_end_pos = [
-            Square.position_to_row_col(str(move)[2:4]) 
-            for move in self.chess_game.piece_legal_moves(position)
+            Square.position_to_row_col(str(move)[2:4]) for move in self.chess_game.piece_legal_moves(position)
         ]
         return valid_end_pos
 

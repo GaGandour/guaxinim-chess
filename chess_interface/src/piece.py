@@ -47,17 +47,17 @@ class King(Piece):
 # The following dictionary maps python's chess package
 # letter codes to the Piece classes created above.
 PIECE_MAPPING = {
-    "R": [Rook,   "white"],
+    "R": [Rook, "white"],
     "N": [Knight, "white"],
     "B": [Bishop, "white"],
-    "Q": [Queen,  "white"],
-    "P": [Pawn,   "white"],
-    "K": [King,   "white"],
-    "r": [Rook,   "black"],
+    "Q": [Queen, "white"],
+    "P": [Pawn, "white"],
+    "K": [King, "white"],
+    "r": [Rook, "black"],
     "n": [Knight, "black"],
     "b": [Bishop, "black"],
-    "q": [Queen,  "black"],
-    "p": [Pawn,   "black"],
-    "k": [King,   "black"],
+    "q": [Queen, "black"],
+    "p": [Pawn, "black"],
+    "k": [King, "black"],
     ".": [None, None],
 }

@@ -13,12 +13,9 @@ def debug():
     global_counter += 1
 
 
-def engine_solves_puzzle(
-    puzzle: Puzzle, 
-    engine: ChessEngine
-    ) -> Tuple[bool, float]:
+def engine_solves_puzzle(puzzle: Puzzle, engine: ChessEngine) -> Tuple[bool, float]:
     """
-    Evaluates whether an engine 
+    Evaluates whether an engine
     solves a single puzzle.
     """
     game = ChessGameByFen(puzzle.fen)
@@ -39,11 +36,8 @@ def engine_solves_puzzle(
 
 
 def evaluate_engine_by_category(
-    category: str, 
-    depth: int, 
-    algorithm: Literal["minimax", "abp", "abpi"] = "abpi", 
-    limit=None
-    ) -> Tuple[float, float]:
+    category: str, depth: int, algorithm: Literal["minimax", "abp", "abpi"] = "abpi", limit=None
+) -> Tuple[float, float]:
     """
     Evaluates an engine (defined by its 'algorithm' and 'depth')
     using n = 'limit' puzzles from the given 'category'.
@@ -55,7 +49,7 @@ def evaluate_engine_by_category(
     total_time = 0
     with open(file_name, "r") as f:
         for line in f:
-            chess_engine = ChessEngine(depth = depth, algorithm=algorithm)
+            chess_engine = ChessEngine(depth=depth, algorithm=algorithm)
             puzzle = Puzzle(line)
 
             success, average_time_per_move = engine_solves_puzzle(puzzle, chess_engine)

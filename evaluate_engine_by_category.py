@@ -5,7 +5,7 @@ from puzzle.evaluate_engine import evaluate_engine_by_category
 
 def evaluate_category(category: str, depth: int, algorithm: Literal["minimax", "abp", "abpi"] = "abpi", limit=None):
     print(f'\nEvaluating for depth = "{depth}" and algorithm = "{algorithm}"...')
-    
+
     score, average_time = evaluate_engine_by_category(category, depth, algorithm=algorithm, limit=limit)
 
     print(f'Average time per move for category "{category}": {average_time} s')

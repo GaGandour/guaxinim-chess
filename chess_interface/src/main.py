@@ -134,7 +134,7 @@ class Main:
                             interface.play_sound(is_capture)
                             interface.next_turn()
 
-                    # Color theme change 
+                    # Color theme change
                     # >> Press [T] key <<
                     if event.key == pygame.K_t:
                         interface.change_theme()

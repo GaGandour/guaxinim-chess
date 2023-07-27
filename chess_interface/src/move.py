@@ -5,7 +5,7 @@ class Move:
     def __init__(self, initial: Square, final: Square) -> None:
         """
         A move is defined by a initial square and final
-        square. It represents the initial position and 
+        square. It represents the initial position and
         final position through which the piece moves.
         """
         self.initial = initial

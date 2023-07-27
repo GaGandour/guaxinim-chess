@@ -133,7 +133,7 @@ class Interface:
 
     def show_all(self, surface: pygame.Surface) -> None:
         """
-        Display in the correct layer order all the previous 
+        Display in the correct layer order all the previous
         blits functions in the, except for the promotion dialog.
         """
         self.show_bg(surface)
